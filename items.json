@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Red Barrel",
+    "unit_price": 664.0,
+    "stack_size": 1,
+    "weight_per_item": 2.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
+  }
+]
