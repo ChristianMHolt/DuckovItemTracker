@@ -11,6 +11,7 @@ except ImportError:
 
 
 DATA_FILE = "items.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 class Item:
@@ -183,7 +184,13 @@ class ItemTrackerApp:
             ("Image files", "*.png *.jpg *.jpeg *.gif *.bmp"),
             ("All files", "*.*"),
         ]
-        filename = filedialog.askopenfilename(title="Select icon image", filetypes=filetypes)
+        default_dir = os.path.join(BASE_DIR, "ItemPNGS")
+        initial_dir = default_dir if os.path.isdir(default_dir) else BASE_DIR
+        filename = filedialog.askopenfilename(
+            title="Select icon image",
+            filetypes=filetypes,
+            initialdir=initial_dir,
+        )
         if filename:
             self.current_icon_path = filename
             self.icon_label_var.set(os.path.basename(filename))
@@ -284,7 +291,7 @@ class ItemTrackerApp:
         try:
             if PIL_AVAILABLE:
                 img = Image.open(item.icon_path)
-                img.thumbnail((32, 32), Image.LANCZOS)
+                img.thumbnail((64, 64), Image.LANCZOS)
                 photo = ImageTk.PhotoImage(img)
             else:
                 # Fallback: Tk's PhotoImage supports only a few formats (e.g. GIF/PGM/PPM)
