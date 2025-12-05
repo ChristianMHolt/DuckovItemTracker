@@ -239,6 +239,15 @@ class ItemTrackerApp:
 
         new_item = Item(name, unit_price, stack_size, weight_per_item, self.current_icon_path)
 
+        # Enforce unique item names (case-insensitive)
+        existing_index = next(
+            (i for i, item in enumerate(self.items) if item.name.lower() == name.lower()),
+            None,
+        )
+        if existing_index is not None and existing_index != self.current_item_index:
+            messagebox.showerror("Duplicate item", f"An item named '{name}' already exists.")
+            return
+
         if self.current_item_index is None:
             # Add new
             self.items.append(new_item)
