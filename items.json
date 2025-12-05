@@ -1,17 +1,31 @@
 [
   {
-    "name": "Red Barrel",
-    "unit_price": 664.0,
-    "stack_size": 1,
-    "weight_per_item": 2.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
-  },
-  {
     "name": "Metal Fuel Barrel",
     "unit_price": 1860.0,
     "stack_size": 1,
     "weight_per_item": 4.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalFuelBarrel.PNG"
+  },
+  {
+    "name": "Fading Feather",
+    "unit_price": 104.0,
+    "stack_size": 15,
+    "weight_per_item": 0.01,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FadingFeather.PNG"
+  },
+  {
+    "name": "Cold Core Fragment",
+    "unit_price": 130.0,
+    "stack_size": 6,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ColdCoreFragment.PNG"
+  },
+  {
+    "name": "Red Barrel",
+    "unit_price": 664.0,
+    "stack_size": 1,
+    "weight_per_item": 2.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
   },
   {
     "name": "Apple",
@@ -21,6 +35,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Apple.PNG"
   },
   {
+    "name": "Portable Hard Drive",
+    "unit_price": 124.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
+  },
+  {
     "name": "Headmaster's Office Key",
     "unit_price": 70.0,
     "stack_size": 1,
@@ -28,10 +49,10 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HeadMastersOfficeKey.PNG"
   },
   {
-    "name": "Portable Hard Drive",
-    "unit_price": 124.0,
+    "name": "Red-Band Cigarette",
+    "unit_price": 54.0,
     "stack_size": 3,
     "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
   }
 ]
