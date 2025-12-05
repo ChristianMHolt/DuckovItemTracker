@@ -57,6 +57,10 @@ class ItemTrackerApp:
         self.root.title("Game Item Price Tracker")
         self.root.geometry("1000x600")
 
+        # Increase row height so item icons have enough vertical space and do not overlap
+        style = ttk.Style(self.root)
+        style.configure("Treeview", rowheight=72)
+
         self.items = []  # list[Item]
         self.tree_images = {}  # keep references to PhotoImage
         self.current_item_index = None
