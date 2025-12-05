@@ -65,6 +65,7 @@ class ItemTrackerApp:
         self.tree_images = {}  # keep references to PhotoImage
         self.current_item_index = None
         self.current_icon_path = ""
+        self.filtered_indices = []
 
         self.create_widgets()
         self.load_items()
@@ -141,6 +142,18 @@ class ItemTrackerApp:
         sort_order_cb.pack(side="left", padx=5)
 
         ttk.Button(sort_frame, text="Apply Sort", command=self.apply_sort).pack(side="left", padx=10)
+
+        # --- Search frame ---
+        search_frame = ttk.LabelFrame(main_frame, text="Search", padding=10)
+        search_frame.pack(fill="x", padx=5, pady=5)
+
+        ttk.Label(search_frame, text="Search items:").pack(side="left")
+        self.search_var = tk.StringVar()
+        search_entry = ttk.Entry(search_frame, textvariable=self.search_var, width=30)
+        search_entry.pack(side="left", padx=5)
+        self.search_var.trace_add("write", self.on_search_change)
+
+        ttk.Button(search_frame, text="Clear Search", command=self.clear_search).pack(side="left", padx=5)
 
         # --- Treeview frame ---
         tree_frame = ttk.Frame(main_frame)
@@ -225,27 +238,25 @@ class ItemTrackerApp:
         if self.current_item_index is None:
             # Add new
             self.items.append(new_item)
-            self.insert_tree_item(len(self.items) - 1)
             self.status_var.set(f"Added item: {name}")
         else:
             # Update existing
             self.items[self.current_item_index] = new_item
-            self.refresh_tree()
             self.status_var.set(f"Updated item: {name}")
 
+        self.update_filter()
         self.clear_form(keep_status=True)
 
     def delete_selected(self):
-        sel = self.tree.selection()
-        if not sel:
+        selected_index = self.get_selected_index()
+        if selected_index is None:
             messagebox.showinfo("No selection", "Please select an item to delete.")
             return
 
-        index = self.tree.index(sel[0])
-        item_name = self.items[index].name
+        item_name = self.items[selected_index].name
         if messagebox.askyesno("Confirm delete", f"Delete '{item_name}'?"):
-            del self.items[index]
-            self.refresh_tree()
+            del self.items[selected_index]
+            self.update_filter()
             self.clear_form()
             self.status_var.set(f"Deleted item: {item_name}")
 
@@ -262,11 +273,8 @@ class ItemTrackerApp:
             self.status_var.set("Form cleared")
 
     def on_tree_select(self, event):
-        sel = self.tree.selection()
-        if not sel:
-            return
-        index = self.tree.index(sel[0])
-        if index < 0 or index >= len(self.items):
+        index = self.get_selected_index()
+        if index is None:
             return
         item = self.items[index]
 
@@ -322,7 +330,7 @@ class ItemTrackerApp:
         # Clear image cache; will be recreated as needed
         self.tree_images.clear()
         self.tree.delete(*self.tree.get_children())
-        for i in range(len(self.items)):
+        for i in self.filtered_indices:
             self.insert_tree_item(i)
 
     def apply_sort(self):
@@ -339,17 +347,18 @@ class ItemTrackerApp:
             key_func = lambda it: it.price_per_kg
 
         self.items.sort(key=key_func, reverse=reverse)
-        self.refresh_tree()
+        self.update_filter()
         self.status_var.set(f"Sorted by {field} ({order.lower()})")
 
     def load_items(self):
         if not os.path.isfile(DATA_FILE):
+            self.update_filter()
             return
         try:
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
             self.items = [Item.from_dict(d) for d in data]
-            self.refresh_tree()
+            self.update_filter()
             self.status_var.set(f"Loaded {len(self.items)} items from {DATA_FILE}")
         except Exception as e:
             messagebox.showerror("Load error", f"Could not load items from {DATA_FILE}:\n{e}")
@@ -365,6 +374,39 @@ class ItemTrackerApp:
     def on_close(self):
         self.save_items()
         self.root.destroy()
+
+    def update_filter(self, show_message=False):
+        query = self.search_var.get().strip().lower() if hasattr(self, "search_var") else ""
+        if query:
+            self.filtered_indices = [i for i, item in enumerate(self.items) if query in item.name.lower()]
+        else:
+            self.filtered_indices = list(range(len(self.items)))
+
+        self.refresh_tree()
+
+        if show_message:
+            if query:
+                self.status_var.set(f"Found {len(self.filtered_indices)} item(s) matching '{self.search_var.get().strip()}'")
+            else:
+                self.status_var.set("Showing all items")
+
+    def on_search_change(self, *args):
+        self.update_filter(show_message=True)
+
+    def clear_search(self):
+        self.search_var.set("")
+
+    def get_selected_index(self):
+        sel = self.tree.selection()
+        if not sel:
+            return None
+        try:
+            index = int(sel[0])
+        except (TypeError, ValueError):
+            return None
+        if 0 <= index < len(self.items):
+            return index
+        return None
 
 
 def main():
