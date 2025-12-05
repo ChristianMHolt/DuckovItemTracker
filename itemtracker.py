@@ -57,9 +57,9 @@ class ItemTrackerApp:
         self.root.title("Game Item Price Tracker")
         self.root.geometry("1000x600")
 
-        # Increase row height so item icons have enough vertical space and do not overlap
+        # Set row height so 32x32 item icons have enough vertical space and do not overlap
         style = ttk.Style(self.root)
-        style.configure("Treeview", rowheight=72)
+        style.configure("Treeview", rowheight=40)
 
         self.items = []  # list[Item]
         self.tree_images = {}  # keep references to PhotoImage
@@ -307,7 +307,7 @@ class ItemTrackerApp:
         try:
             if PIL_AVAILABLE:
                 img = Image.open(item.icon_path)
-                img.thumbnail((64, 64), Image.LANCZOS)
+                img.thumbnail((32, 32), Image.LANCZOS)
                 photo = ImageTk.PhotoImage(img)
             else:
                 # Fallback: Tk's PhotoImage supports only a few formats (e.g. GIF/PGM/PPM)
