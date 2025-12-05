@@ -115,9 +115,13 @@ class ItemTrackerApp:
         ttk.Button(btn_frame, text="Clear Form", command=self.clear_form).pack(side="left", padx=5)
         ttk.Button(btn_frame, text="Delete Selected", command=self.delete_selected).pack(side="left", padx=5)
 
-        # --- Sorting frame ---
-        sort_frame = ttk.LabelFrame(main_frame, text="Sorting", padding=10)
-        sort_frame.pack(fill="x", padx=5, pady=5)
+        # --- Controls row: sorting + search ---
+        controls_row = ttk.Frame(main_frame)
+        controls_row.pack(fill="x", padx=5, pady=5)
+
+        # Sorting section
+        sort_frame = ttk.LabelFrame(controls_row, text="Sorting", padding=10)
+        sort_frame.pack(side="left", padx=(0, 5))
 
         ttk.Label(sort_frame, text="Sort by:").pack(side="left")
         self.sort_field_var = tk.StringVar(value="Unit Price")
@@ -143,14 +147,14 @@ class ItemTrackerApp:
 
         ttk.Button(sort_frame, text="Apply Sort", command=self.apply_sort).pack(side="left", padx=10)
 
-        # --- Search frame ---
-        search_frame = ttk.LabelFrame(main_frame, text="Search", padding=10)
-        search_frame.pack(fill="x", padx=5, pady=5)
+        # Search section
+        search_frame = ttk.LabelFrame(controls_row, text="Search", padding=10)
+        search_frame.pack(side="left", fill="x", expand=True, padx=(5, 0))
 
         ttk.Label(search_frame, text="Search items:").pack(side="left")
         self.search_var = tk.StringVar()
         search_entry = ttk.Entry(search_frame, textvariable=self.search_var, width=30)
-        search_entry.pack(side="left", padx=5)
+        search_entry.pack(side="left", padx=5, fill="x", expand=True)
         self.search_var.trace_add("write", self.on_search_change)
 
         ttk.Button(search_frame, text="Clear Search", command=self.clear_search).pack(side="left", padx=5)
