@@ -1,115 +1,17 @@
 [
   {
-    "name": "AP Bullet (AR)",
-    "unit_price": 22.0,
-    "stack_size": 240,
-    "weight_per_item": 0.02,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletAR.PNG"
-  },
-  {
-    "name": "Metal Fuel Barrel",
-    "unit_price": 1860.0,
+    "name": "Abandoned Gas Station Key",
+    "unit_price": 114.0,
     "stack_size": 1,
-    "weight_per_item": 4.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalFuelBarrel.PNG"
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AbandonedGasStationKey.PNG"
   },
   {
-    "name": "Fading Feather",
-    "unit_price": 104.0,
-    "stack_size": 15,
+    "name": "Advanced AP Bullet (S)",
+    "unit_price": 43.0,
+    "stack_size": 320,
     "weight_per_item": 0.01,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FadingFeather.PNG"
-  },
-  {
-    "name": "Cold Core Fragment",
-    "unit_price": 130.0,
-    "stack_size": 6,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ColdCoreFragment.PNG"
-  },
-  {
-    "name": "Hemostatic Drug Injector",
-    "unit_price": 232.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HemostaticDrugInjector.PNG"
-  },
-  {
-    "name": "Red Barrel",
-    "unit_price": 664.0,
-    "stack_size": 1,
-    "weight_per_item": 2.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
-  },
-  {
-    "name": "Apple",
-    "unit_price": 173.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Apple.PNG"
-  },
-  {
-    "name": "Portable Hard Drive",
-    "unit_price": 124.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
-  },
-  {
-    "name": "Red-Band Cigarette",
-    "unit_price": 54.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
-  },
-  {
-    "name": "Headmaster's Office Key",
-    "unit_price": 70.0,
-    "stack_size": 1,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HeadMastersOfficeKey.PNG"
-  },
-  {
-    "name": "Whiskey",
-    "unit_price": 1784.0,
-    "stack_size": 1,
-    "weight_per_item": 0.7,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Whiskey.PNG"
-  },
-  {
-    "name": "Ketchup",
-    "unit_price": 66.0,
-    "stack_size": 3,
-    "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ketchup.PNG"
-  },
-  {
-    "name": "Dumpling",
-    "unit_price": 110.0,
-    "stack_size": 3,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Dumpling.PNG"
-  },
-  {
-    "name": "Fire RES Injector",
-    "unit_price": 336.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
-  },
-  {
-    "name": "Black Market Contact Notes",
-    "unit_price": 1321.0,
-    "stack_size": 5,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlackMarketContactNotes.PNG"
-  },
-  {
-    "name": "Special AP Bullet (L)",
-    "unit_price": 182.0,
-    "stack_size": 240,
-    "weight_per_item": 0.03,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletS.PNG"
   },
   {
     "name": "AK-47",
@@ -119,60 +21,25 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
   },
   {
-    "name": "Bottled Water",
-    "unit_price": 195.0,
+    "name": "AK-74U",
+    "unit_price": 780.0,
     "stack_size": 1,
-    "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG"
+    "weight_per_item": 2.71,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
   },
   {
-    "name": "Duck Egg",
-    "unit_price": 45.0,
-    "stack_size": 3,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DuckEgg.PNG"
+    "name": "AP Bullet (AR)",
+    "unit_price": 22.0,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletAR.PNG"
   },
   {
-    "name": "Encrypted USB Drive",
-    "unit_price": 1282.0,
-    "stack_size": 3,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EncryptedUSBDrive.PNG"
-  },
-  {
-    "name": "Basic AP Arrow",
-    "unit_price": 49.0,
-    "stack_size": 30,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BasicAPArrow.PNG"
-  },
-  {
-    "name": "Marker",
-    "unit_price": 151.0,
-    "stack_size": 1,
-    "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Marker.PNG"
-  },
-  {
-    "name": "Painkiller",
-    "unit_price": 336.0,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PainKiller.PNG"
-  },
-  {
-    "name": "Abandoned Gas Station Key",
-    "unit_price": 114.0,
-    "stack_size": 1,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AbandonedGasStationKey.PNG"
-  },
-  {
-    "name": "TOZ-66 Dragon's Breath",
-    "unit_price": 1607.0,
-    "stack_size": 1,
-    "weight_per_item": 3.0,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TOZ-66DragonsBreath.PNG"
+    "name": "AP Bullet (S)",
+    "unit_price": 15.0,
+    "stack_size": 320,
+    "weight_per_item": 0.01,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletS.PNG"
   },
   {
     "name": "AP Shotgun Shell",
@@ -182,6 +49,41 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APShotgunShell.PNG"
   },
   {
+    "name": "Apple",
+    "unit_price": 173.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Apple.PNG"
+  },
+  {
+    "name": "Basic AP Arrow",
+    "unit_price": 49.0,
+    "stack_size": 30,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BasicAPArrow.PNG"
+  },
+  {
+    "name": "Black Market Contact Notes",
+    "unit_price": 1321.0,
+    "stack_size": 5,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlackMarketContactNotes.PNG"
+  },
+  {
+    "name": "Bottled Water",
+    "unit_price": 195.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG"
+  },
+  {
+    "name": "Cold Core Fragment",
+    "unit_price": 130.0,
+    "stack_size": 6,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ColdCoreFragment.PNG"
+  },
+  {
     "name": "Crimson Core Fragment",
     "unit_price": 260.0,
     "stack_size": 6,
@@ -189,25 +91,25 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CrimsonCoreFragment.PNG"
   },
   {
-    "name": "Red Lantern",
-    "unit_price": 1233.0,
-    "stack_size": 1,
-    "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedLantern.PNG"
-  },
-  {
-    "name": "Toy Fish",
-    "unit_price": 465.0,
-    "stack_size": 1,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyFish.PNG"
-  },
-  {
-    "name": "Recovery Injector",
-    "unit_price": 454.0,
+    "name": "Duck Egg",
+    "unit_price": 45.0,
     "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RecoveryInjector.PNG"
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DuckEgg.PNG"
+  },
+  {
+    "name": "Dumpling",
+    "unit_price": 110.0,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Dumpling.PNG"
+  },
+  {
+    "name": "Encrypted USB Drive",
+    "unit_price": 1282.0,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EncryptedUSBDrive.PNG"
   },
   {
     "name": "Endurance Injector",
@@ -217,11 +119,46 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EnduranceInjector.PNG"
   },
   {
-    "name": "Soda",
-    "unit_price": 53.0,
+    "name": "Fading Feather",
+    "unit_price": 104.0,
+    "stack_size": 15,
+    "weight_per_item": 0.01,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FadingFeather.PNG"
+  },
+  {
+    "name": "Fire RES Injector",
+    "unit_price": 336.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
+  },
+  {
+    "name": "Headmaster's Office Key",
+    "unit_price": 70.0,
     "stack_size": 1,
-    "weight_per_item": 0.4,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Soda.PNG"
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HeadMastersOfficeKey.PNG"
+  },
+  {
+    "name": "Hemostatic Drug Injector",
+    "unit_price": 232.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HemostaticDrugInjector.PNG"
+  },
+  {
+    "name": "J-Lab Access Card (Blue)",
+    "unit_price": 70304.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/J-LabAccessCardBlue.PNG"
+  },
+  {
+    "name": "Ketchup",
+    "unit_price": 66.0,
+    "stack_size": 3,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ketchup.PNG"
   },
   {
     "name": "Lv.3 Light Helmet",
@@ -231,11 +168,109 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3LightHelmet.PNG"
   },
   {
+    "name": "Marker",
+    "unit_price": 151.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Marker.PNG"
+  },
+  {
+    "name": "Metal Fuel Barrel",
+    "unit_price": 1860.0,
+    "stack_size": 1,
+    "weight_per_item": 4.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalFuelBarrel.PNG"
+  },
+  {
+    "name": "Metal Plate",
+    "unit_price": 46.0,
+    "stack_size": 50,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalPlate.png"
+  },
+  {
+    "name": "Military Backpack MAX",
+    "unit_price": 2447.0,
+    "stack_size": 1,
+    "weight_per_item": 3.9,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MilitaryBackpackMAX.PNG"
+  },
+  {
+    "name": "Mine Manager's Iris Data",
+    "unit_price": 156.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MineManagersIrisData.PNG"
+  },
+  {
     "name": "MP-155",
     "unit_price": 885.0,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
+  },
+  {
+    "name": "Newspaper",
+    "unit_price": 180.0,
+    "stack_size": 10,
+    "weight_per_item": 0.25,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Newspaper.png"
+  },
+  {
+    "name": "Painkiller",
+    "unit_price": 336.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PainKiller.PNG"
+  },
+  {
+    "name": "Portable Hard Drive",
+    "unit_price": 124.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
+  },
+  {
+    "name": "Recovery Injector",
+    "unit_price": 454.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RecoveryInjector.PNG"
+  },
+  {
+    "name": "Red Barrel",
+    "unit_price": 664.0,
+    "stack_size": 1,
+    "weight_per_item": 2.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
+  },
+  {
+    "name": "Red Lantern",
+    "unit_price": 1233.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedLantern.PNG"
+  },
+  {
+    "name": "Red-Band Cigarette",
+    "unit_price": 54.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
+  },
+  {
+    "name": "Soda",
+    "unit_price": 53.0,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Soda.PNG"
+  },
+  {
+    "name": "Special AP Bullet (L)",
+    "unit_price": 182.0,
+    "stack_size": 240,
+    "weight_per_item": 0.03,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
   },
   {
     "name": "Totem: Efficiency II",
@@ -245,17 +280,24 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotelEfficiencyII.PNG"
   },
   {
-    "name": "AK-74U",
-    "unit_price": 780.0,
+    "name": "Toy Fish",
+    "unit_price": 465.0,
     "stack_size": 1,
-    "weight_per_item": 2.71,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyFish.PNG"
   },
   {
-    "name": "Advanced AP Bullet (S)",
-    "unit_price": 43.0,
-    "stack_size": 320,
-    "weight_per_item": 0.01,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletS.PNG"
+    "name": "TOZ-66 Dragon's Breath",
+    "unit_price": 1607.0,
+    "stack_size": 1,
+    "weight_per_item": 3.0,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TOZ-66DragonsBreath.PNG"
+  },
+  {
+    "name": "Whiskey",
+    "unit_price": 1784.0,
+    "stack_size": 1,
+    "weight_per_item": 0.7,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Whiskey.PNG"
   }
 ]
