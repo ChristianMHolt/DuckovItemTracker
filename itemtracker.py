@@ -125,11 +125,11 @@ class ItemTrackerApp:
         sort_frame.pack(side="left", padx=(0, 5))
 
         ttk.Label(sort_frame, text="Sort by:").pack(side="left")
-        self.sort_field_var = tk.StringVar(value="Unit Price")
+        self.sort_field_var = tk.StringVar(value="Name")
         sort_field_cb = ttk.Combobox(
             sort_frame,
             textvariable=self.sort_field_var,
-            values=["Unit Price", "Price per Stack", "Price per kg"],
+            values=["Name", "Unit Price", "Price per Stack", "Price per kg"],
             state="readonly",
             width=15,
         )
@@ -355,7 +355,9 @@ class ItemTrackerApp:
 
         reverse = order == "Descending"
 
-        if field == "Unit Price":
+        if field == "Name":
+            key_func = lambda it: it.name.lower()
+        elif field == "Unit Price":
             key_func = lambda it: it.unit_price
         elif field == "Price per Stack":
             key_func = lambda it: it.price_per_stack
