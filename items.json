@@ -250,5 +250,12 @@
     "stack_size": 1,
     "weight_per_item": 2.71,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
+  },
+  {
+    "name": "Advanced AP Bullet (S)",
+    "unit_price": 43.0,
+    "stack_size": 320,
+    "weight_per_item": 0.01,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletS.PNG"
   }
 ]
