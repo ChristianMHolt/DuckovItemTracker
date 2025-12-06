@@ -10,8 +10,9 @@ except ImportError:
     PIL_AVAILABLE = False
 
 
-DATA_FILE = "items.json"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = "items.json"
+DATA_FILE_PATH = os.path.join(BASE_DIR, DATA_FILE)
 
 
 class Item:
@@ -258,6 +259,7 @@ class ItemTrackerApp:
             self.status_var.set(f"Updated item: {name}")
 
         self.update_filter()
+        self.save_items()
         self.clear_form(keep_status=True)
 
     def delete_selected(self):
@@ -270,6 +272,7 @@ class ItemTrackerApp:
         if messagebox.askyesno("Confirm delete", f"Delete '{item_name}'?"):
             del self.items[selected_index]
             self.update_filter()
+            self.save_items()
             self.clear_form()
             self.status_var.set(f"Deleted item: {item_name}")
 
@@ -364,11 +367,11 @@ class ItemTrackerApp:
         self.status_var.set(f"Sorted by {field} ({order.lower()})")
 
     def load_items(self):
-        if not os.path.isfile(DATA_FILE):
+        if not os.path.isfile(DATA_FILE_PATH):
             self.update_filter()
             return
         try:
-            with open(DATA_FILE, "r", encoding="utf-8") as f:
+            with open(DATA_FILE_PATH, "r", encoding="utf-8") as f:
                 data = json.load(f)
             self.items = [Item.from_dict(d) for d in data]
             self.update_filter()
@@ -379,7 +382,7 @@ class ItemTrackerApp:
     def save_items(self):
         data = [item.to_dict() for item in self.items]
         try:
-            with open(DATA_FILE, "w", encoding="utf-8") as f:
+            with open(DATA_FILE_PATH, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
         except Exception as e:
             messagebox.showerror("Save error", f"Could not save items to {DATA_FILE}:\n{e}")
