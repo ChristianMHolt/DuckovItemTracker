@@ -1,5 +1,12 @@
 [
   {
+    "name": "AP Bullet (AR)",
+    "unit_price": 22.0,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletAR.PNG"
+  },
+  {
     "name": "Metal Fuel Barrel",
     "unit_price": 1860.0,
     "stack_size": 1,
@@ -19,6 +26,13 @@
     "stack_size": 6,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ColdCoreFragment.PNG"
+  },
+  {
+    "name": "Hemostatic Drug Injector",
+    "unit_price": 232.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HemostaticDrugInjector.PNG"
   },
   {
     "name": "Red Barrel",
@@ -42,6 +56,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
   },
   {
+    "name": "Red-Band Cigarette",
+    "unit_price": 54.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
+  },
+  {
     "name": "Headmaster's Office Key",
     "unit_price": 70.0,
     "stack_size": 1,
@@ -49,10 +70,185 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HeadMastersOfficeKey.PNG"
   },
   {
-    "name": "Red-Band Cigarette",
-    "unit_price": 54.0,
+    "name": "Whiskey",
+    "unit_price": 1784.0,
+    "stack_size": 1,
+    "weight_per_item": 0.7,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Whiskey.PNG"
+  },
+  {
+    "name": "Ketchup",
+    "unit_price": 66.0,
+    "stack_size": 3,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ketchup.PNG"
+  },
+  {
+    "name": "Dumpling",
+    "unit_price": 110.0,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Dumpling.PNG"
+  },
+  {
+    "name": "Fire RES Injector",
+    "unit_price": 336.0,
     "stack_size": 3,
     "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
+  },
+  {
+    "name": "Black Market Contact Notes",
+    "unit_price": 1321.0,
+    "stack_size": 5,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlackMarketContactNotes.PNG"
+  },
+  {
+    "name": "Special AP Bullet (L)",
+    "unit_price": 182.0,
+    "stack_size": 240,
+    "weight_per_item": 0.03,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
+  },
+  {
+    "name": "AK-47",
+    "unit_price": 1631.0,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
+  },
+  {
+    "name": "Bottled Water",
+    "unit_price": 195.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG"
+  },
+  {
+    "name": "Duck Egg",
+    "unit_price": 45.0,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DuckEgg.PNG"
+  },
+  {
+    "name": "Encrypted USB Drive",
+    "unit_price": 1282.0,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EncryptedUSBDrive.PNG"
+  },
+  {
+    "name": "Basic AP Arrow",
+    "unit_price": 49.0,
+    "stack_size": 30,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BasicAPArrow.PNG"
+  },
+  {
+    "name": "Marker",
+    "unit_price": 151.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Marker.PNG"
+  },
+  {
+    "name": "Painkiller",
+    "unit_price": 336.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PainKiller.PNG"
+  },
+  {
+    "name": "Abandoned Gas Station Key",
+    "unit_price": 114.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AbandonedGasStationKey.PNG"
+  },
+  {
+    "name": "TOZ-66 Dragon's Breath",
+    "unit_price": 1607.0,
+    "stack_size": 1,
+    "weight_per_item": 3.0,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TOZ-66DragonsBreath.PNG"
+  },
+  {
+    "name": "AP Shotgun Shell",
+    "unit_price": 67.0,
+    "stack_size": 100,
+    "weight_per_item": 0.04,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APShotgunShell.PNG"
+  },
+  {
+    "name": "Crimson Core Fragment",
+    "unit_price": 260.0,
+    "stack_size": 6,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CrimsonCoreFragment.PNG"
+  },
+  {
+    "name": "Red Lantern",
+    "unit_price": 1233.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedLantern.PNG"
+  },
+  {
+    "name": "Toy Fish",
+    "unit_price": 465.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyFish.PNG"
+  },
+  {
+    "name": "Recovery Injector",
+    "unit_price": 454.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RecoveryInjector.PNG"
+  },
+  {
+    "name": "Endurance Injector",
+    "unit_price": 336.0,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EnduranceInjector.PNG"
+  },
+  {
+    "name": "Soda",
+    "unit_price": 53.0,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Soda.PNG"
+  },
+  {
+    "name": "Lv.3 Light Helmet",
+    "unit_price": 469.0,
+    "stack_size": 1,
+    "weight_per_item": 1.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3LightHelmet.PNG"
+  },
+  {
+    "name": "MP-155",
+    "unit_price": 885.0,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
+  },
+  {
+    "name": "Totem: Efficiency II",
+    "unit_price": 520.0,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotelEfficiencyII.PNG"
+  },
+  {
+    "name": "AK-74U",
+    "unit_price": 780.0,
+    "stack_size": 1,
+    "weight_per_item": 2.71,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
   }
 ]
