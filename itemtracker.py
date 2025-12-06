@@ -197,7 +197,10 @@ class ItemTrackerApp:
         self.tree.bind("<<TreeviewSelect>>", self.on_tree_select)
 
         # Info label
+        self.totals_var = tk.StringVar(value="Total items: 0 (showing 0)")
         self.status_var = tk.StringVar(value="Ready")
+        totals_bar = ttk.Label(main_frame, textvariable=self.totals_var, anchor="w")
+        totals_bar.pack(fill="x", pady=(0, 2))
         status_bar = ttk.Label(main_frame, textvariable=self.status_var, anchor="w")
         status_bar.pack(fill="x", pady=(5, 0))
 
@@ -401,12 +404,18 @@ class ItemTrackerApp:
             self.filtered_indices = list(range(len(self.items)))
 
         self.refresh_tree()
+        self.update_totals()
 
         if show_message:
             if query:
                 self.status_var.set(f"Found {len(self.filtered_indices)} item(s) matching '{self.search_var.get().strip()}'")
             else:
                 self.status_var.set("Showing all items")
+
+    def update_totals(self):
+        total_items = len(self.items)
+        showing_items = len(self.filtered_indices)
+        self.totals_var.set(f"Total items: {total_items} (showing {showing_items})")
 
     def on_search_change(self, *args):
         self.update_filter(show_message=True)
