@@ -112,7 +112,8 @@ class ItemTrackerApp:
 
         # Icon selector
         self.icon_label_var = tk.StringVar(value="No icon selected")
-        ttk.Button(form_frame, text="Choose Icon", command=self.choose_icon).grid(row=1, column=2, sticky="w", padx=5)
+        self.choose_icon_btn = ttk.Button(form_frame, text="Choose Icon", command=self.choose_icon)
+        self.choose_icon_btn.grid(row=1, column=2, sticky="w", padx=5)
         ttk.Label(form_frame, textvariable=self.icon_label_var).grid(row=1, column=3, columnspan=3, sticky="w")
 
         # Buttons
@@ -122,8 +123,13 @@ class ItemTrackerApp:
         self.add_update_btn = ttk.Button(btn_frame, text="Add Item", command=self.add_or_update_item)
         self.add_update_btn.pack(side="left")
 
-        ttk.Button(btn_frame, text="Clear Form", command=self.clear_form).pack(side="left", padx=5)
-        ttk.Button(btn_frame, text="Delete Selected", command=self.delete_selected).pack(side="left", padx=5)
+        self.clear_btn = ttk.Button(btn_frame, text="Clear Form", command=self.clear_form)
+        self.clear_btn.pack(side="left", padx=5)
+        self.delete_btn = ttk.Button(btn_frame, text="Delete Selected", command=self.delete_selected)
+        self.delete_btn.pack(side="left", padx=5)
+
+        for button in (self.choose_icon_btn, self.add_update_btn, self.clear_btn, self.delete_btn):
+            self.bind_button_to_enter(button)
 
         # --- Controls row: sorting + search ---
         controls_row = ttk.Frame(main_frame)
@@ -426,6 +432,10 @@ class ItemTrackerApp:
 
     def clear_search(self):
         self.search_var.set("")
+
+    def bind_button_to_enter(self, button):
+        button.bind("<Return>", lambda event: button.invoke())
+        button.bind("<KP_Enter>", lambda event: button.invoke())
 
     def get_selected_index(self):
         sel = self.tree.selection()
