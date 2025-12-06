@@ -77,9 +77,18 @@ class ItemTrackerApp:
         main_frame = ttk.Frame(self.root, padding=10)
         main_frame.pack(fill="both", expand=True)
 
+        # --- Top row: form + totals ---
+        top_row = ttk.Frame(main_frame)
+        top_row.pack(fill="x")
+
         # --- Form frame ---
-        form_frame = ttk.LabelFrame(main_frame, text="Item Details", padding=10)
-        form_frame.pack(fill="x", padx=5, pady=5)
+        form_frame = ttk.LabelFrame(top_row, text="Item Details", padding=10)
+        form_frame.pack(side="left", fill="x", expand=True, padx=5, pady=5)
+
+        # Totals label aligned to the top-right
+        self.totals_var = tk.StringVar(value="Total items: 0 (showing 0)")
+        totals_bar = ttk.Label(top_row, textvariable=self.totals_var, anchor="e")
+        totals_bar.pack(side="right", padx=5, pady=(5, 0))
 
         # Name
         ttk.Label(form_frame, text="Name:").grid(row=0, column=0, sticky="w")
@@ -197,10 +206,7 @@ class ItemTrackerApp:
         self.tree.bind("<<TreeviewSelect>>", self.on_tree_select)
 
         # Info label
-        self.totals_var = tk.StringVar(value="Total items: 0 (showing 0)")
         self.status_var = tk.StringVar(value="Ready")
-        totals_bar = ttk.Label(main_frame, textvariable=self.totals_var, anchor="w")
-        totals_bar.pack(fill="x", pady=(0, 2))
         status_bar = ttk.Label(main_frame, textvariable=self.status_var, anchor="w")
         status_bar.pack(fill="x", pady=(5, 0))
 
