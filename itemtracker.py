@@ -63,7 +63,7 @@ class ItemTrackerApp:
         style.configure("Treeview", rowheight=40)
 
         self.items = []  # list[Item]
-        self.tree_images = {}  # keep references to PhotoImage
+        self.icon_cache = {}  # cache PhotoImage objects by icon path
         self.current_item_index = None
         self.current_icon_path = ""
         self.filtered_indices = []
@@ -318,25 +318,25 @@ class ItemTrackerApp:
 
     def get_photoimage_for_item(self, item_index):
         item = self.items[item_index]
-        key = item_index
-        if key in self.tree_images:
-            return self.tree_images[key]
-
-        if not item.icon_path or not os.path.isfile(item.icon_path):
+        icon_path = item.icon_path
+        if not icon_path or not os.path.isfile(icon_path):
             return None
+
+        if icon_path in self.icon_cache:
+            return self.icon_cache[icon_path]
 
         try:
             if PIL_AVAILABLE:
-                img = Image.open(item.icon_path)
+                img = Image.open(icon_path)
                 img.thumbnail((32, 32), Image.LANCZOS)
                 photo = ImageTk.PhotoImage(img)
             else:
                 # Fallback: Tk's PhotoImage supports only a few formats (e.g. GIF/PGM/PPM)
-                photo = tk.PhotoImage(file=item.icon_path)
+                photo = tk.PhotoImage(file=icon_path)
         except Exception:
             return None
 
-        self.tree_images[key] = photo
+        self.icon_cache[icon_path] = photo
         return photo
 
     def insert_tree_item(self, index):
@@ -352,8 +352,6 @@ class ItemTrackerApp:
         self.tree.insert("", "end", iid=str(index), text=item.name, image=photo, values=values)
 
     def refresh_tree(self):
-        # Clear image cache; will be recreated as needed
-        self.tree_images.clear()
         self.tree.delete(*self.tree.get_children())
         for i in self.filtered_indices:
             self.insert_tree_item(i)
