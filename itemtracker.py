@@ -93,7 +93,8 @@ class ItemTrackerApp:
         # Name
         ttk.Label(form_frame, text="Name:").grid(row=0, column=0, sticky="w")
         self.name_var = tk.StringVar()
-        ttk.Entry(form_frame, textvariable=self.name_var, width=25).grid(row=0, column=1, sticky="w", padx=5)
+        self.name_entry = ttk.Entry(form_frame, textvariable=self.name_var, width=25)
+        self.name_entry.grid(row=0, column=1, sticky="w", padx=5)
 
         # Unit price
         ttk.Label(form_frame, text="Unit Price:").grid(row=0, column=2, sticky="w")
@@ -302,6 +303,7 @@ class ItemTrackerApp:
         self.add_update_btn.config(text="Add Item")
         if not keep_status:
             self.status_var.set("Form cleared")
+        self.name_entry.focus_set()
 
     def on_tree_select(self, event):
         index = self.get_selected_index()
