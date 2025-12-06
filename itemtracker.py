@@ -85,10 +85,16 @@ class ItemTrackerApp:
         form_frame = ttk.LabelFrame(top_row, text="Item Details", padding=10)
         form_frame.pack(side="left", fill="x", expand=True, padx=5, pady=5)
 
-        # Totals label aligned to the top-right
+        # Totals and verification controls aligned to the top-right
+        totals_frame = ttk.Frame(top_row)
+        totals_frame.pack(side="right", padx=5, pady=(5, 0))
+
         self.totals_var = tk.StringVar(value="Total items: 0 (showing 0)")
-        totals_bar = ttk.Label(top_row, textvariable=self.totals_var, anchor="e")
-        totals_bar.pack(side="right", padx=5, pady=(5, 0))
+        totals_bar = ttk.Label(totals_frame, textvariable=self.totals_var, anchor="e")
+        totals_bar.pack(side="top", fill="x")
+
+        self.verify_btn = ttk.Button(totals_frame, text="Verify", command=self.verify_images)
+        self.verify_btn.pack(side="top", pady=(4, 0), fill="x")
 
         # Name
         ttk.Label(form_frame, text="Name:").grid(row=0, column=0, sticky="w")
@@ -131,6 +137,8 @@ class ItemTrackerApp:
 
         for button in (self.choose_icon_btn, self.add_update_btn, self.clear_btn, self.delete_btn):
             self.bind_button_to_enter(button)
+
+        self.bind_button_to_enter(self.verify_btn)
 
         # --- Controls row: sorting + search ---
         controls_row = ttk.Frame(main_frame)
@@ -438,6 +446,41 @@ class ItemTrackerApp:
     def bind_button_to_enter(self, button):
         button.bind("<Return>", lambda event: button.invoke())
         button.bind("<KP_Enter>", lambda event: button.invoke())
+
+    def verify_images(self):
+        """Compare item icons against images in the ItemPNGS directory."""
+        images_dir = os.path.join(BASE_DIR, "ItemPNGS")
+        if not os.path.isdir(images_dir):
+            messagebox.showerror("Missing folder", f"Could not find image folder at {images_dir}")
+            return
+
+        try:
+            folder_files = [
+                name
+                for name in os.listdir(images_dir)
+                if os.path.isfile(os.path.join(images_dir, name))
+            ]
+        except OSError as exc:
+            messagebox.showerror("Verification error", f"Could not read images folder:\n{exc}")
+            return
+
+        used_icons_lower = {
+            os.path.basename(item.icon_path).lower()
+            for item in self.items
+            if item.icon_path
+        }
+
+        unused_images = sorted(
+            [name for name in folder_files if name.lower() not in used_icons_lower]
+        )
+
+        if unused_images:
+            message = "Unused images:\n" + "\n".join(unused_images)
+        else:
+            message = "All images in ItemPNGS are referenced by items.json."
+
+        messagebox.showinfo("Verification results", message)
+        self.status_var.set("Verification complete")
 
     def get_selected_index(self):
         sel = self.tree.selection()
