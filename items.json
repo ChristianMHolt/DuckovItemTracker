@@ -56,20 +56,6 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AirplaneModel.png"
   },
   {
-    "name": "AK-103",
-    "unit_price": 3514.0,
-    "stack_size": 1,
-    "weight_per_item": 3.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
-  },
-  {
-    "name": "AK-103 50%",
-    "unit_price": 1755.0,
-    "stack_size": 1,
-    "weight_per_item": 3.4,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
-  },
-  {
     "name": "AK-47",
     "unit_price": 1631.0,
     "stack_size": 1,
@@ -96,6 +82,20 @@
     "stack_size": 1,
     "weight_per_item": 2.71,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
+  },
+  {
+    "name": "AK-103",
+    "unit_price": 3514.0,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
+  },
+  {
+    "name": "AK-103 50%",
+    "unit_price": 1755.0,
+    "stack_size": 1,
+    "weight_per_item": 3.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
   },
   {
     "name": "Animal Trap",
@@ -819,13 +819,6 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png"
   },
   {
-    "name": "Lv.3 Combat Body Armor 100%",
-    "unit_price": 1228.0,
-    "stack_size": 1,
-    "weight_per_item": 5.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
-  },
-  {
     "name": "Lv.3 Combat Body Armor 75%",
     "unit_price": 856.0,
     "stack_size": 1,
@@ -833,11 +826,11 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
   },
   {
-    "name": "Lv.3 Heavy Body Armor 100%",
-    "unit_price": 1357.0,
+    "name": "Lv.3 Combat Body Armor 100%",
+    "unit_price": 1228.0,
     "stack_size": 1,
-    "weight_per_item": 6.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
+    "weight_per_item": 5.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
   },
   {
     "name": "Lv.3 Heavy Body Armor 50%",
@@ -849,6 +842,13 @@
   {
     "name": "Lv.3 Heavy Body Armor 75%",
     "unit_price": 1103.0,
+    "stack_size": 1,
+    "weight_per_item": 6.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
+  },
+  {
+    "name": "Lv.3 Heavy Body Armor 100%",
+    "unit_price": 1357.0,
     "stack_size": 1,
     "weight_per_item": 6.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
@@ -866,6 +866,13 @@
     "stack_size": 1,
     "weight_per_item": 1.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4BallisticHelmet.png"
+  },
+  {
+    "name": "Lv.4 Combat Body Armor 50%",
+    "unit_price": 1099.0,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
   },
   {
     "name": "Lv.4 Combat Body Armor 75%",
@@ -959,13 +966,6 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MotorcycleHelmet.png"
   },
   {
-    "name": "MP-155",
-    "unit_price": 885.0,
-    "stack_size": 1,
-    "weight_per_item": 3.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
-  },
-  {
     "name": "MP5",
     "unit_price": 2986.0,
     "stack_size": 1,
@@ -978,6 +978,13 @@
     "stack_size": 1,
     "weight_per_item": 1.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP7.png"
+  },
+  {
+    "name": "MP-155",
+    "unit_price": 885.0,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
   },
   {
     "name": "Nail",
@@ -1720,5 +1727,138 @@
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
+  },
+  {
+    "name": "Toy Gun 75%",
+    "unit_price": 654.0,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyGun.png"
+  },
+  {
+    "name": "Thread",
+    "unit_price": 140.0,
+    "stack_size": 10,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Thread.png"
+  },
+  {
+    "name": "MF 75%",
+    "unit_price": 1370.0,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MF.png"
+  },
+  {
+    "name": "PM 100%",
+    "unit_price": 125.0,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PM.png"
+  },
+  {
+    "name": "PP3 Battery",
+    "unit_price": 167.0,
+    "stack_size": 10,
+    "weight_per_item": 0.12,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PP3Battery.png"
+  },
+  {
+    "name": "Mic",
+    "unit_price": 184.0,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Mic.png"
+  },
+  {
+    "name": "Sniper Rifle Suppressor",
+    "unit_price": 260.0,
+    "stack_size": 1,
+    "weight_per_item": 1.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Sniper RIfle Suppressor.png"
+  },
+  {
+    "name": "SMG Quick Magazine",
+    "unit_price": 260.0,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SMGQuickMagazine.png"
+  },
+  {
+    "name": "Lipstick",
+    "unit_price": 3425.0,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lipstick.png"
+  },
+  {
+    "name": "Rifle Extended Magazine I",
+    "unit_price": 260.0,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleExtendedMagazineI.png"
+  },
+  {
+    "name": "Eco-Lamp",
+    "unit_price": 430.0,
+    "stack_size": 20,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Eco-Lamp.png"
+  },
+  {
+    "name": "T.H. Basketball",
+    "unit_price": 260.0,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/THBasketball.png"
+  },
+  {
+    "name": "Peacekeeper Helmet",
+    "unit_price": 640.0,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PeacekeeperHelmet.png"
+  },
+  {
+    "name": "Storage Fence Key",
+    "unit_price": 238.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StorageFenceKey.png"
+  },
+  {
+    "name": "uPhone",
+    "unit_price": 970.0,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/uPhone.png"
+  },
+  {
+    "name": "Expansion Crate (L)",
+    "unit_price": 4460.0,
+    "stack_size": 1,
+    "weight_per_item": 40.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ExpansionCrateL.png"
+  },
+  {
+    "name": "Star of Peace",
+    "unit_price": 5266.0,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StarofPeace.png"
+  },
+  {
+    "name": "Advanced AP Bullet (AR)",
+    "unit_price": 62.4,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletAR.PNG"
+  },
+  {
+    "name": "Balanced Grip",
+    "unit_price": 1248.0,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedGrip.png"
   }
 ]

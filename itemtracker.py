@@ -56,7 +56,6 @@ class Item:
 class ItemTrackerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Game Item Price Tracker")
         self.root.geometry("1000x600")
 
         # Set row height so 32x32 item icons have enough vertical space and do not overlap
