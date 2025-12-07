@@ -11,130 +11,32 @@
         Width="1050"
         Icon="duck.ico"
         MinWidth="900"
-        MinHeight="550"
-        Background="#0F1624">
+        MinHeight="550">
     <Window.Resources>
-        <SolidColorBrush x:Key="CardBackground" Color="#111C2E" />
-        <SolidColorBrush x:Key="AccentBrush" Color="#4FC3F7" />
-        <SolidColorBrush x:Key="SubtleBrush" Color="#8CA5C1" />
-        <SolidColorBrush x:Key="InputBackground" Color="#19263A" />
-        <SolidColorBrush x:Key="BorderBrush" Color="#233553" />
-
-        <Style TargetType="GroupBox">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Margin" Value="0,0,0,0" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="GroupBox">
-                        <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="8" Padding="12">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
-                                <Border Background="{StaticResource CardBackground}" Padding="4" CornerRadius="6" Grid.Row="0">
-                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" Foreground="{StaticResource AccentBrush}" />
-                                </Border>
-                                <ContentPresenter Grid.Row="1" />
-                            </Grid>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="White" />
-        </Style>
-
-        <Style TargetType="TextBox">
-            <Setter Property="Background" Value="{StaticResource InputBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Padding" Value="6,4" />
-        </Style>
-
-        <Style TargetType="ComboBox">
-            <Setter Property="Background" Value="{StaticResource InputBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="Padding" Value="6,2" />
-        </Style>
-
-        <Style TargetType="Button">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Background" Value="{StaticResource AccentBrush}" />
-            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}" />
-            <Setter Property="Padding" Value="10,6" />
-            <Setter Property="Margin" Value="0" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="6" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="SnapsToDevicePixels" Value="True" />
-        </Style>
-
-        <Style TargetType="DataGrid">
-            <Setter Property="Background" Value="{StaticResource CardBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="RowBackground" Value="#142136" />
-            <Setter Property="AlternatingRowBackground" Value="#0E1726" />
-            <Setter Property="HorizontalGridLinesBrush" Value="#20314E" />
-            <Setter Property="VerticalGridLinesBrush" Value="#20314E" />
-        </Style>
-
-        <Style TargetType="StatusBar">
-            <Setter Property="Background" Value="#0A1220" />
-            <Setter Property="Foreground" Value="{StaticResource SubtleBrush}" />
-        </Style>
-
         <conv:IconPathToImageSourceConverter x:Key="IconConverter" />
     </Window.Resources>
-    <Grid Margin="18">
+    <Grid Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Border Grid.RowSpan="5" CornerRadius="16" Background="#0B1322" BorderBrush="#1A2942" BorderThickness="1" />
-
-        <TextBlock Grid.Row="0"
-                   Text="Track, price, and verify your game items"
-                   FontSize="22"
-                   FontWeight="SemiBold"
-                   Margin="6,0,0,12"
-                   Foreground="White" />
-
         <!-- Form and totals -->
-        <DockPanel Grid.Row="1" LastChildFill="True">
-            <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="240" Margin="10,0,0,0" VerticalAlignment="Top">
-                <TextBlock Text="Totals"
-                           FontWeight="Bold"
-                           Foreground="{StaticResource SubtleBrush}" />
-                <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="10" Margin="0,6,0,0">
-                    <TextBlock Text="{Binding TotalsText}" TextWrapping="Wrap" />
-                </Border>
-                <Button Content="Verify" Margin="0,12,0,0" Click="OnVerifyClick" />
+        <DockPanel Grid.Row="0" LastChildFill="True">
+            <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="220" Margin="8,0,0,0" VerticalAlignment="Top">
+                <TextBlock Text="{Binding TotalsText}" HorizontalAlignment="Right" />
+                <Button Content="Verify" Margin="0,6,0,0" Click="OnVerifyClick" />
             </StackPanel>
 
             <GroupBox Header="Item Details" Padding="10">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140" />
-                        <ColumnDefinition Width="220" />
-                        <ColumnDefinition Width="140" />
-                        <ColumnDefinition Width="140" />
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="120" />
                         <ColumnDefinition Width="120" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -143,32 +45,32 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Name" VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Name:" VerticalAlignment="Center" />
                     <TextBox Grid.Row="0" Grid.Column="1" Margin="6,0" Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" />
 
-                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Unit Price" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="120" Text="{Binding UnitPriceText}" />
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Unit Price:" VerticalAlignment="Center" />
+                    <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="100" Text="{Binding UnitPriceText}" />
 
-                    <TextBlock Grid.Row="0" Grid.Column="4" Text="Stack Size" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="4" Margin="60,0,0,0" Width="80" Text="{Binding StackSizeText}" HorizontalAlignment="Left" />
+                    <TextBlock Grid.Row="0" Grid.Column="4" Text="Stack Size:" VerticalAlignment="Center" />
+                    <TextBox Grid.Row="0" Grid.Column="4" Margin="70,0,0,0" Width="80" Text="{Binding StackSizeText}" HorizontalAlignment="Left" />
 
-                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Weight per item (kg)" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="1" Margin="6,4,6,0" Width="160" Text="{Binding WeightText}" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Weight per item (kg):" VerticalAlignment="Center" />
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="6,4,6,0" Width="120" Text="{Binding WeightText}" />
 
                     <Button Grid.Row="1" Grid.Column="2" Margin="6,4,0,0" Content="Choose Icon" Click="OnChooseIcon" />
-                    <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,6,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" />
+                    <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,6,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" />
 
-                    <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,16,0,0">
-                        <Button Content="{Binding AddOrUpdateButtonText}" Width="120" Click="OnAddOrUpdate" />
-                        <Button Content="Clear Form" Width="120" Margin="10,0,0,0" Background="#1F2D44" BorderBrush="#1F2D44" />
-                        <Button Content="Delete Selected" Width="140" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" />
+                    <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,12,0,0">
+                        <Button Content="{Binding AddOrUpdateButtonText}" Width="100" Click="OnAddOrUpdate" />
+                        <Button Content="Clear Form" Width="100" Margin="8,0,0,0" Click="OnClear" />
+                        <Button Content="Delete Selected" Width="120" Margin="8,0,0,0" Click="OnDelete" />
                     </StackPanel>
                 </Grid>
             </GroupBox>
         </DockPanel>
 
         <!-- Sorting and search -->
-        <Grid Grid.Row="2" Margin="0,12,0,0">
+        <Grid Grid.Row="1" Margin="0,8,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -200,7 +102,7 @@
         </Grid>
 
         <!-- Data grid -->
-        <DataGrid Grid.Row="3"
+        <DataGrid Grid.Row="2"
                   ItemsSource="{Binding FilteredItems}"
                   SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                   AutoGenerateColumns="False"
@@ -226,7 +128,7 @@
         </DataGrid>
 
         <!-- Status -->
-        <StatusBar Grid.Row="4">
+        <StatusBar Grid.Row="3">
             <StatusBarItem>
                 <TextBlock Text="{Binding StatusText}" />
             </StatusBarItem>
