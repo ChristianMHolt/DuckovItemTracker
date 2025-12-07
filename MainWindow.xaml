@@ -273,5 +273,6 @@
                 <TextBlock Text="{Binding StatusText}" />
             </StatusBarItem>
         </StatusBar>
+        </Grid>
     </Grid>
 </Window>
