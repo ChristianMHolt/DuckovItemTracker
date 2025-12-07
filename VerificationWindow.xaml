@@ -21,11 +21,11 @@
         </Grid.RowDefinitions>
 
         <Border Background="#111C2F" BorderBrush="#1E3049" BorderThickness="1" CornerRadius="12" Padding="12" Effect="{StaticResource SoftShadow}">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <Border Width="34" Height="34" CornerRadius="8" Background="#35B4E6" VerticalAlignment="Center">
                     <TextBlock Text="✔" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
                 </Border>
-                <TextBlock Text="{Binding HeaderText}" FontWeight="SemiBold" FontSize="16" />
+                <TextBlock Text="{Binding HeaderText}" Margin="8,0,0,0" FontWeight="SemiBold" FontSize="16" />
             </StackPanel>
         </Border>
 
