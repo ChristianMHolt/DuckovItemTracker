@@ -474,13 +474,50 @@ class ItemTrackerApp:
             [name for name in folder_files if name.lower() not in used_icons_lower]
         )
 
-        if unused_images:
-            message = "Unused images:\n" + "\n".join(unused_images)
-        else:
-            message = "All images in ItemPNGS are referenced by items.json."
-
-        messagebox.showinfo("Verification results", message)
+        self.show_verification_results(unused_images)
         self.status_var.set("Verification complete")
+
+    def show_verification_results(self, unused_images):
+        """Display unused images in a grid with a header count."""
+        result_win = tk.Toplevel(self.root)
+        result_win.title("Verification results")
+        result_win.transient(self.root)
+        result_win.grab_set()
+
+        frame = ttk.Frame(result_win, padding=10)
+        frame.pack(fill="both", expand=True)
+
+        header_text = f"Unused images: {len(unused_images)}"
+        ttk.Label(frame, text=header_text, font=("TkDefaultFont", 10, "bold")).pack(
+            anchor="w"
+        )
+
+        if not unused_images:
+            ttk.Label(
+                frame,
+                text="All images in ItemPNGS are referenced by items.json.",
+                padding=(0, 8, 0, 0),
+            ).pack(anchor="w")
+            return
+
+        grid = ttk.Frame(frame)
+        grid.pack(fill="both", expand=True, pady=(8, 0))
+
+        columns = 4
+        for idx, name in enumerate(unused_images):
+            row, col = divmod(idx, columns)
+            label = ttk.Label(
+                grid,
+                text=name,
+                padding=8,
+                relief="solid",
+                borderwidth=1,
+                anchor="center",
+                justify="center",
+                width=25,
+            )
+            label.grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
+            grid.grid_columnconfigure(col, weight=1)
 
     def get_selected_index(self):
         sel = self.tree.selection()
