@@ -1,3 +1,4 @@
+using System;
 using System.Windows;
 
 namespace ItemTracker;
@@ -9,6 +10,11 @@ public partial class App : Application
         // Ensure application resources declared in App.xaml are loaded
         // before we create and show the main window.
         InitializeComponent();
+    }
+
+    public void InitializeComponent()
+    {
+        StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
     }
 
     protected override void OnStartup(StartupEventArgs e)
