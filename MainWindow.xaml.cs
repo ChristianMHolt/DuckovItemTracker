@@ -329,8 +329,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         var ascending = SelectedSortOrder == "Ascending";
         var sorter = new ItemSorter(SelectedSortField, ascending);
         ApplySortToCollection(sorter);
-        _view.SortDescriptions.Clear();
-        _view.CustomSort = sorter;
         _view.Refresh();
         StatusText = $"Sorted by {SelectedSortField} ({SelectedSortOrder.ToLowerInvariant()})";
     }
