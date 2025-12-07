@@ -7,18 +7,27 @@
         xmlns:conv="clr-namespace:ItemTracker.Utilities"
         mc:Ignorable="d"
         Title="Game Item Price Tracker"
-        Height="650"
-        Width="1050"
+        Height="700"
+        Width="1120"
         Icon="duck.ico"
-        MinWidth="900"
-        MinHeight="550"
-        Background="#0F1624">
+        MinWidth="960"
+        MinHeight="600"
+        Background="{StaticResource WindowBackground}">
     <Window.Resources>
+        <LinearGradientBrush x:Key="WindowBackground" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0C1423" Offset="0" />
+            <GradientStop Color="#0F1A2D" Offset="0.45" />
+            <GradientStop Color="#0A1120" Offset="1" />
+        </LinearGradientBrush>
+
         <SolidColorBrush x:Key="CardBackground" Color="#111C2E" />
         <SolidColorBrush x:Key="AccentBrush" Color="#4FC3F7" />
         <SolidColorBrush x:Key="SubtleBrush" Color="#8CA5C1" />
         <SolidColorBrush x:Key="InputBackground" Color="#19263A" />
         <SolidColorBrush x:Key="BorderBrush" Color="#233553" />
+        <SolidColorBrush x:Key="SecondaryAccent" Color="#2ADDBE" />
+
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="12" ShadowDepth="0" Opacity="0.22" />
 
         <Style TargetType="GroupBox">
             <Setter Property="Foreground" Value="White" />
@@ -26,14 +35,19 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="GroupBox">
-                        <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="8" Padding="12">
+                        <Border Background="{StaticResource CardBackground}"
+                                BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="10"
+                                Padding="12"
+                                Effect="{StaticResource CardShadow}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
-                                <Border Background="{StaticResource CardBackground}" Padding="4" CornerRadius="6" Grid.Row="0">
-                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" Foreground="{StaticResource AccentBrush}" />
+                                <Border Background="#152238" Padding="6" CornerRadius="6" Grid.Row="0">
+                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" />
                                 </Border>
                                 <ContentPresenter Grid.Row="1" />
                             </Grid>
@@ -72,13 +86,34 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="6" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="1"
+                                Effect="{StaticResource CardShadow}">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+            <Setter Property="BorderThickness" Value="1.5" />
+            <Setter Property="FontWeight" Value="SemiBold" />
             <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#66D9FF" />
+                    <Setter Property="BorderBrush" Value="#66D9FF" />
+                    <Setter Property="Foreground" Value="#0C1423" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#32B3E3" />
+                    <Setter Property="BorderBrush" Value="#32B3E3" />
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="0.55" />
+                    <Setter Property="Cursor" Value="Arrow" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style TargetType="DataGrid">
@@ -89,6 +124,15 @@
             <Setter Property="AlternatingRowBackground" Value="#0E1726" />
             <Setter Property="HorizontalGridLinesBrush" Value="#20314E" />
             <Setter Property="VerticalGridLinesBrush" Value="#20314E" />
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#152238" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="BorderBrush" Value="#223651" />
+            <Setter Property="BorderThickness" Value="0,0,0,1" />
+            <Setter Property="Padding" Value="10,6" />
         </Style>
 
         <Style TargetType="StatusBar">
@@ -107,35 +151,91 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Border Grid.RowSpan="5" CornerRadius="16" Background="#0B1322" BorderBrush="#1A2942" BorderThickness="1" />
+        <Border Grid.RowSpan="5"
+                CornerRadius="18"
+                Background="#0B1322"
+                BorderBrush="#1A2942"
+                BorderThickness="1"
+                Effect="{StaticResource CardShadow}" />
 
-        <TextBlock Grid.Row="0"
-                   Text="Track, price, and verify your game items"
-                   FontSize="22"
-                   FontWeight="SemiBold"
-                   Margin="6,0,0,12"
-                   Foreground="White" />
+        <Border Grid.Row="0"
+                Padding="16"
+                CornerRadius="14"
+                Background="#101a2c"
+                BorderBrush="#1E2F4A"
+                BorderThickness="1"
+                Effect="{StaticResource CardShadow}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,14,0">
+                    <Ellipse Width="50" Height="50" Fill="{StaticResource AccentBrush}" Opacity="0.2" />
+                    <Image Source="duck.ico" Width="36" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-43,0,0,0" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="Game Item Price Tracker" FontSize="24" FontWeight="Bold" />
+                    <TextBlock Text="Organize your loot, keep pricing consistent, and verify every asset in seconds." Foreground="{StaticResource SubtleBrush}" Margin="0,4,0,0" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
+                    <Border Background="#16253A" Padding="10,6" CornerRadius="10" BorderBrush="#243756" BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock Text="Ready" Foreground="{StaticResource SubtleBrush}" FontSize="12" />
+                            <TextBlock Text="Inventory Workspace" FontWeight="SemiBold" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Border>
 
         <!-- Form and totals -->
-        <DockPanel Grid.Row="1" LastChildFill="True">
-            <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="240" Margin="10,0,0,0" VerticalAlignment="Top">
-                <TextBlock Text="Totals"
+        <DockPanel Grid.Row="1" LastChildFill="True" Margin="0,12,0,0">
+            <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="260" Margin="14,0,0,0" VerticalAlignment="Stretch">
+                <TextBlock Text="Workspace Summary"
                            FontWeight="Bold"
                            Foreground="{StaticResource SubtleBrush}" />
-                <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="10" Margin="0,6,0,0">
-                    <TextBlock Text="{Binding TotalsText}" TextWrapping="Wrap" />
+                <Border Background="{StaticResource CardBackground}"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="12"
+                        Margin="0,8,0,0"
+                        Effect="{StaticResource CardShadow}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding TotalsText}" TextWrapping="Wrap" FontSize="13" />
+                        <Separator Margin="0,8" Background="#223651" />
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Spacing="8">
+                            <Border Background="#13223A" Padding="10" CornerRadius="8" BorderBrush="#203351" BorderThickness="1" Width="110">
+                                <StackPanel>
+                                    <TextBlock Text="Search" Foreground="{StaticResource SubtleBrush}" FontSize="11" />
+                                    <TextBlock Text="Live" FontWeight="SemiBold" />
+                                </StackPanel>
+                            </Border>
+                            <Border Background="#13223A" Padding="10" CornerRadius="8" BorderBrush="#203351" BorderThickness="1" Width="110">
+                                <StackPanel>
+                                    <TextBlock Text="Status" Foreground="{StaticResource SubtleBrush}" FontSize="11" />
+                                    <TextBlock Text="{Binding StatusText}" TextTrimming="CharacterEllipsis" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
                 </Border>
-                <Button Content="Verify" Margin="0,12,0,0" Click="OnVerifyClick" />
+                <Button Content="Verify Assets" Margin="0,12,0,0" Click="OnVerifyClick" Height="40" />
             </StackPanel>
 
-            <GroupBox Header="Item Details" Padding="10">
+            <GroupBox Header="Item Details" Padding="10" Margin="0,0,0,0">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140" />
+                        <ColumnDefinition Width="160" />
                         <ColumnDefinition Width="220" />
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="160" />
                         <ColumnDefinition Width="140" />
-                        <ColumnDefinition Width="140" />
-                        <ColumnDefinition Width="120" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -147,21 +247,21 @@
                     <TextBox Grid.Row="0" Grid.Column="1" Margin="6,0" Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" />
 
                     <TextBlock Grid.Row="0" Grid.Column="2" Text="Unit Price" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="120" Text="{Binding UnitPriceText}" />
+                    <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="140" Text="{Binding UnitPriceText}" />
 
                     <TextBlock Grid.Row="0" Grid.Column="4" Text="Stack Size" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="4" Margin="60,0,0,0" Width="80" Text="{Binding StackSizeText}" HorizontalAlignment="Left" />
+                    <TextBox Grid.Row="0" Grid.Column="4" Margin="70,0,0,0" Width="80" Text="{Binding StackSizeText}" HorizontalAlignment="Left" />
 
                     <TextBlock Grid.Row="1" Grid.Column="0" Text="Weight per item (kg)" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="1" Margin="6,4,6,0" Width="160" Text="{Binding WeightText}" />
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="6,4,6,0" Width="180" Text="{Binding WeightText}" />
 
                     <Button Grid.Row="1" Grid.Column="2" Margin="6,4,0,0" Content="Choose Icon" Click="OnChooseIcon" />
                     <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,6,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" />
 
-                    <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,16,0,0">
-                        <Button Content="{Binding AddOrUpdateButtonText}" Width="120" Click="OnAddOrUpdate" />
-                        <Button Content="Clear Form" Width="120" Margin="10,0,0,0" Background="#1F2D44" BorderBrush="#1F2D44" />
-                        <Button Content="Delete Selected" Width="140" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" />
+                    <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,16,0,0" Spacing="10">
+                        <Button Content="{Binding AddOrUpdateButtonText}" Width="140" Click="OnAddOrUpdate" />
+                        <Button Content="Clear Form" Width="120" Background="#1F2D44" BorderBrush="#1F2D44" Click="OnClear" />
+                        <Button Content="Delete Selected" Width="150" Background="#F6685E" BorderBrush="#F6685E" Click="OnDelete" />
                     </StackPanel>
                 </Grid>
             </GroupBox>
