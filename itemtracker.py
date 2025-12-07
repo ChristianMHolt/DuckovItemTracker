@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import json
 import os
+import re
 
 try:
     from PIL import Image, ImageTk
@@ -379,7 +380,7 @@ class ItemTrackerApp:
         reverse = order == "Descending"
 
         if field == "Name":
-            key_func = lambda it: it.name.lower()
+            key_func = lambda it: self.natural_name_key(it.name)
         elif field == "Unit Price":
             key_func = lambda it: it.unit_price
         elif field == "Price per Stack":
@@ -390,6 +391,12 @@ class ItemTrackerApp:
         self.items.sort(key=key_func, reverse=reverse)
         self.update_filter()
         self.status_var.set(f"Sorted by {field} ({order.lower()})")
+
+    @staticmethod
+    def natural_name_key(name):
+        """Sort item names using a natural order so numeric parts sort numerically."""
+        parts = re.split(r"(\d+)", name)
+        return [int(part) if part.isdigit() else part.lower() for part in parts]
 
     def load_items(self):
         if not os.path.isfile(DATA_FILE_PATH):
