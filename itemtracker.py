@@ -14,6 +14,7 @@ except ImportError:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = "items.json"
 DATA_FILE_PATH = os.path.join(BASE_DIR, DATA_FILE)
+APP_ICON_PATH = os.path.join(BASE_DIR, "duck.ico")
 
 
 class Item:
@@ -65,10 +66,12 @@ class ItemTrackerApp:
 
         self.items = []  # list[Item]
         self.icon_cache = {}  # cache PhotoImage objects by icon path
+        self.window_icon_photo = None  # keep reference if iconphoto is used
         self.current_item_index = None
         self.current_icon_path = ""
         self.filtered_indices = []
 
+        self.set_app_icon()
         self.create_widgets()
         self.load_items()
 
@@ -225,6 +228,29 @@ class ItemTrackerApp:
         self.status_var = tk.StringVar(value="Ready")
         status_bar = ttk.Label(main_frame, textvariable=self.status_var, anchor="w")
         status_bar.pack(fill="x", pady=(5, 0))
+
+    def set_app_icon(self):
+        """Set a custom application icon if duck.ico is available."""
+
+        if not os.path.isfile(APP_ICON_PATH):
+            return
+
+        try:
+            self.root.iconbitmap(APP_ICON_PATH)
+            return
+        except tk.TclError:
+            # On some platforms iconbitmap does not support .ico files; fall back to iconphoto
+            pass
+
+        if not PIL_AVAILABLE:
+            return
+
+        try:
+            image = Image.open(APP_ICON_PATH)
+            self.window_icon_photo = ImageTk.PhotoImage(image)
+            self.root.iconphoto(False, self.window_icon_photo)
+        except Exception:
+            self.window_icon_photo = None
 
     def choose_icon(self):
         filetypes = [
