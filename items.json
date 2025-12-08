@@ -910,6 +910,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png"
   },
   {
+    "name": "Lv.3 Combat Body Armor 65%",
+    "unit_price": 817,
+    "stack_size": 1,
+    "weight_per_item": 5.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
+  },
+  {
     "name": "Lv.3 Combat Body Armor 75%",
     "unit_price": 856,
     "stack_size": 1,
@@ -1979,12 +1986,5 @@
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
-  },
-  {
-    "name": "Lv.3 Combat Body Armor 65%",
-    "unit_price": 817,
-    "stack_size": 1,
-    "weight_per_item": 5.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
   }
 ]
