@@ -14,6 +14,8 @@ public class ItemRepository
         DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     };
 
+    private const string ExternalBasePath = @"X:\\Software\\DuckovItemTrackerCSharp";
+
     private readonly string _dataFilePath;
     public string DefaultImageFolder { get; }
 
@@ -53,6 +55,44 @@ public class ItemRepository
 
         var json = JsonSerializer.Serialize(items, JsonOptions);
         File.WriteAllText(_dataFilePath, json);
+    }
+
+    public void CopyDataFileAndItemIcon(Item item)
+    {
+        CopyDataFile();
+        CopyItemIcon(item);
+    }
+
+    private void CopyDataFile()
+    {
+        if (!File.Exists(_dataFilePath))
+        {
+            return;
+        }
+
+        Directory.CreateDirectory(ExternalBasePath);
+        var destinationPath = Path.Combine(ExternalBasePath, "items.json");
+        File.Copy(_dataFilePath, destinationPath, overwrite: true);
+    }
+
+    private void CopyItemIcon(Item item)
+    {
+        if (string.IsNullOrWhiteSpace(item.IconPath))
+        {
+            return;
+        }
+
+        var sourceImagePath = item.IconPath;
+        if (!File.Exists(sourceImagePath))
+        {
+            return;
+        }
+
+        var destinationFolder = Path.Combine(ExternalBasePath, "ItemPNGS");
+        Directory.CreateDirectory(destinationFolder);
+
+        var destinationPath = Path.Combine(destinationFolder, Path.GetFileName(sourceImagePath));
+        File.Copy(sourceImagePath, destinationPath, overwrite: true);
     }
 
     public IReadOnlyList<string> FindUnusedImages(IEnumerable<Item> items)

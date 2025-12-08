@@ -243,7 +243,9 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return;
         }
 
-        if (SelectedItem is null)
+        var isNewItem = SelectedItem is null;
+
+        if (isNewItem)
         {
             _items.Add(newItem);
             StatusText = $"Added item: {newItem.Name}";
@@ -259,6 +261,10 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         }
 
         SaveItems();
+        if (isNewItem)
+        {
+            _repository.CopyDataFileAndItemIcon(newItem);
+        }
         RefreshView();
         ClearForm(keepStatus: true);
         FocusNameTextBox();
