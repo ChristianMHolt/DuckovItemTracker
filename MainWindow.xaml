@@ -309,7 +309,7 @@
                         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,18,0,0" HorizontalAlignment="Left">
                             <Button Content="{Binding AddOrUpdateButtonText}" Width="140" Click="OnAddOrUpdate" />
                             <Button Content="Clear Form" Width="130" Margin="10,0,0,0" Background="#23334D" BorderBrush="#23334D" />
-                            <Button Content="Delete Selected" Width="150" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" />
+                            <Button Content="Delete Selected" Width="150" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" Click="OnDelete" />
                         </StackPanel>
                     </Grid>
                 </GroupBox>
