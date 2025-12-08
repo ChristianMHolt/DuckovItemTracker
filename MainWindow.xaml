@@ -260,12 +260,12 @@
 
             <!-- Form and totals -->
             <DockPanel Grid.Row="1" Margin="0,12,0,0" LastChildFill="True">
-                <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="260" Margin="14,0,0,0" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="220" Margin="14,0,0,0" VerticalAlignment="Top">
                     <TextBlock Text="Collection health" FontWeight="Bold" Foreground="{StaticResource SubtleBrush}" />
-                    <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="12" Padding="12" Margin="0,6,0,0" Effect="{StaticResource SoftShadow}">
+                    <Border Width="220" Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="12" Padding="12" Margin="0,6,0,0" Effect="{StaticResource SoftShadow}">
                         <TextBlock Text="{Binding TotalsText}" TextWrapping="Wrap" />
                     </Border>
-                    <Button Content="Verify" Margin="0,12,0,0" Click="OnVerifyClick" />
+                    <Button Content="Verify" Width="220" Margin="0,12,0,0" Click="OnVerifyClick" />
                 </StackPanel>
 
                 <GroupBox Header="Item Details" Padding="12">
