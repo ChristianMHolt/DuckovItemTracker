@@ -1,42 +1,49 @@
 [
   {
     "name": "0.2 BTC",
-    "unit_price": 8128.0,
+    "unit_price": 8128,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/0.2BTC.png"
   },
   {
     "name": "Abandoned Gas Station Key",
-    "unit_price": 114.0,
+    "unit_price": 114,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AbandonedGasStationKey.PNG"
   },
   {
     "name": "ADAR 2-15 25%",
-    "unit_price": 343.0,
+    "unit_price": 343,
     "stack_size": 1,
     "weight_per_item": 2.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ADAR2-15.png"
   },
   {
     "name": "ADAR 2-15 50%",
-    "unit_price": 516.0,
+    "unit_price": 516,
     "stack_size": 1,
     "weight_per_item": 2.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ADAR2-15.png"
   },
   {
+    "name": "Advanced AP Bullet (AR)",
+    "unit_price": 62.4,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletAR.PNG"
+  },
+  {
     "name": "Advanced AP Bullet (L)",
-    "unit_price": 109.0,
+    "unit_price": 109,
     "stack_size": 240,
     "weight_per_item": 0.03,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletL.PNG"
   },
   {
     "name": "Advanced AP Bullet (S)",
-    "unit_price": 43.0,
+    "unit_price": 43,
     "stack_size": 320,
     "weight_per_item": 0.01,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletS.PNG"
@@ -50,1200 +57,1354 @@
   },
   {
     "name": "Airplane Model",
-    "unit_price": 518.0,
+    "unit_price": 518,
     "stack_size": 1,
     "weight_per_item": 0.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AirplaneModel.png"
   },
   {
     "name": "AK-47",
-    "unit_price": 1631.0,
+    "unit_price": 1631,
     "stack_size": 1,
     "weight_per_item": 4.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
   },
   {
     "name": "AK-47 50%",
-    "unit_price": 901.0,
+    "unit_price": 901,
     "stack_size": 1,
     "weight_per_item": 4.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
   },
   {
     "name": "AK-47 75%",
-    "unit_price": 1274.0,
+    "unit_price": 1274,
     "stack_size": 1,
     "weight_per_item": 4.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
   },
   {
     "name": "AK-74U",
-    "unit_price": 780.0,
+    "unit_price": 780,
     "stack_size": 1,
     "weight_per_item": 2.71,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
   },
   {
     "name": "AK-103",
-    "unit_price": 3514.0,
+    "unit_price": 3514,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
   },
   {
     "name": "AK-103 50%",
-    "unit_price": 1755.0,
+    "unit_price": 1755,
     "stack_size": 1,
     "weight_per_item": 3.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png"
   },
   {
     "name": "Animal Trap",
-    "unit_price": 106.0,
+    "unit_price": 106,
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AnimalTrap.png"
   },
   {
     "name": "AP Bullet (AR)",
-    "unit_price": 22.0,
+    "unit_price": 22,
     "stack_size": 240,
     "weight_per_item": 0.02,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletAR.PNG"
   },
   {
     "name": "AP Bullet (L)",
-    "unit_price": 39.0,
+    "unit_price": 39,
     "stack_size": 240,
     "weight_per_item": 0.03,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletL.png"
   },
   {
     "name": "AP Bullet (MAG)",
-    "unit_price": 87.0,
+    "unit_price": 87,
     "stack_size": 32,
     "weight_per_item": 0.06,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletMAG.png"
   },
   {
     "name": "AP Bullet (S)",
-    "unit_price": 15.0,
+    "unit_price": 15,
     "stack_size": 320,
     "weight_per_item": 0.01,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APBulletS.PNG"
   },
   {
     "name": "AP Shotgun Shell",
-    "unit_price": 67.0,
+    "unit_price": 67,
     "stack_size": 100,
     "weight_per_item": 0.04,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/APShotgunShell.PNG"
   },
   {
     "name": "Apple",
-    "unit_price": 173.0,
+    "unit_price": 173,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Apple.PNG"
   },
   {
     "name": "Aspirin",
-    "unit_price": 49.0,
+    "unit_price": 49,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Aspirin.png"
   },
   {
+    "name": "Balanced Grip",
+    "unit_price": 1248,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedGrip.png"
+  },
+  {
     "name": "Balanced Stock II",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedStockII.png"
   },
   {
     "name": "Bandage",
-    "unit_price": 124.0,
+    "unit_price": 124,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Bandage.png"
   },
   {
     "name": "Basic AP Arrow",
-    "unit_price": 49.0,
+    "unit_price": 49,
     "stack_size": 30,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BasicAPArrow.PNG"
   },
   {
+    "name": "Basket",
+    "unit_price": 91,
+    "stack_size": 1,
+    "weight_per_item": 1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Basket.png"
+  },
+  {
     "name": "Bike Model",
-    "unit_price": 755.0,
+    "unit_price": 755,
     "stack_size": 1,
     "weight_per_item": 0.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BikeModel.png"
   },
   {
     "name": "Black Injector",
-    "unit_price": 17.0,
+    "unit_price": 17,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlackInjector.png"
   },
   {
     "name": "Black Market Contact Notes",
-    "unit_price": 1321.0,
+    "unit_price": 1321,
     "stack_size": 5,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlackMarketContactNotes.PNG"
   },
   {
     "name": "Bleach",
-    "unit_price": 72.0,
+    "unit_price": 72,
     "stack_size": 1,
     "weight_per_item": 0.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Bleach.png"
   },
   {
     "name": "Blue Barrel",
-    "unit_price": 663.0,
+    "unit_price": 663,
     "stack_size": 1,
     "weight_per_item": 2.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BlueBarrel.png"
   },
   {
+    "name": "Blueprint: MF-Venom",
+    "unit_price": 520,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BlueprintMF-Venom.png"
+  },
+  {
     "name": "Bolt",
-    "unit_price": 100.0,
+    "unit_price": 100,
     "stack_size": 50,
     "weight_per_item": 0.15,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Bolt.png"
   },
   {
     "name": "Bone Toy",
-    "unit_price": 405.0,
+    "unit_price": 405,
     "stack_size": 20,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BoneToy.png"
   },
   {
     "name": "Book",
-    "unit_price": 233.0,
+    "unit_price": 233,
     "stack_size": 5,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Book.png"
   },
   {
     "name": "Bottled Water",
-    "unit_price": 195.0,
+    "unit_price": 195,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG"
   },
   {
+    "name": "BR Extended Drum Magazine II",
+    "unit_price": 572,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BRExtendedDrugMagazineII.png"
+  },
+  {
     "name": "BR Quick Magazine I",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BRQuickMagazineI.png"
   },
   {
     "name": "Broken Eggshell",
-    "unit_price": 7.0,
+    "unit_price": 7,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BrokenEggshell.png"
   },
   {
     "name": "Bulb",
-    "unit_price": 132.0,
+    "unit_price": 132,
     "stack_size": 20,
     "weight_per_item": 0.11,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Bulb.png"
   },
   {
     "name": "Butcher Knife",
-    "unit_price": 91.0,
+    "unit_price": 91,
     "stack_size": 1,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ButcherKnife.png"
   },
   {
     "name": "Cables",
-    "unit_price": 78.0,
+    "unit_price": 78,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Cables.png"
   },
   {
     "name": "Cake",
-    "unit_price": 211.0,
+    "unit_price": 211,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Cake.png"
   },
   {
     "name": "Canned Baked Beans",
-    "unit_price": 53.0,
+    "unit_price": 53,
     "stack_size": 3,
     "weight_per_item": 0.39,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CannedBakedBeans.png"
   },
   {
+    "name": "Canned Tuna in Oil",
+    "unit_price": 195,
+    "stack_size": 3,
+    "weight_per_item": 0.36,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CannedTunaInOil.png"
+  },
+  {
     "name": "Canned Tuna in Water",
-    "unit_price": 89.0,
+    "unit_price": 89,
     "stack_size": 3,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CannedTunaInWater.png"
   },
   {
     "name": "Car Wrench",
-    "unit_price": 552.0,
+    "unit_price": 552,
     "stack_size": 1,
     "weight_per_item": 1.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CarWrench.png"
   },
   {
     "name": "Cardboard Box",
-    "unit_price": 293.0,
+    "unit_price": 293,
     "stack_size": 4,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CardboardBox.png"
   },
   {
     "name": "Carrot",
-    "unit_price": 62.0,
+    "unit_price": 62,
     "stack_size": 3,
     "weight_per_item": 0.12,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Carrot.png"
   },
   {
     "name": "CD Drive",
-    "unit_price": 301.0,
+    "unit_price": 301,
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CDDrive.png"
   },
   {
     "name": "Chinese Knot",
-    "unit_price": 2020.0,
+    "unit_price": 2020,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ChineseKnot.png"
   },
   {
     "name": "Chocolate",
-    "unit_price": 225.0,
+    "unit_price": 225,
     "stack_size": 3,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Chocolate.png"
   },
   {
     "name": "Cippo",
-    "unit_price": 125.0,
+    "unit_price": 125,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Cippo.png"
   },
   {
     "name": "Circuit Board",
-    "unit_price": 257.0,
+    "unit_price": 257,
     "stack_size": 5,
     "weight_per_item": 0.41,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CircuitBoard.png"
   },
   {
     "name": "Clock",
-    "unit_price": 346.0,
+    "unit_price": 346,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Clock.png"
   },
   {
     "name": "Cocoa Milk",
-    "unit_price": 64.0,
+    "unit_price": 64,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CocoaMilk.png"
   },
   {
+    "name": "Cola",
+    "unit_price": 1037,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Cola.png"
+  },
+  {
     "name": "Cold Core Fragment",
-    "unit_price": 130.0,
+    "unit_price": 130,
     "stack_size": 6,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ColdCoreFragment.PNG"
   },
   {
     "name": "Compass",
-    "unit_price": 1596.0,
+    "unit_price": 1596,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Compass.PNG"
   },
   {
     "name": "Computing Core",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 5,
     "weight_per_item": 1.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ComputingCore.png"
   },
   {
     "name": "Contaminated Weapon Parts",
-    "unit_price": 790.0,
+    "unit_price": 790,
     "stack_size": 20,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ContaminatedWeaponParts.png"
   },
   {
     "name": "Cosmetic Pouch",
-    "unit_price": 45.0,
+    "unit_price": 45,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CosmeticPouch.png"
   },
   {
     "name": "Crimson Core Fragment",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 6,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CrimsonCoreFragment.PNG"
   },
   {
     "name": "Crowbar",
-    "unit_price": 146.0,
+    "unit_price": 146,
     "stack_size": 1,
     "weight_per_item": 1.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Crowbar.png"
   },
   {
     "name": "Crystal Booster",
-    "unit_price": 323.0,
+    "unit_price": 323,
     "stack_size": 1,
     "weight_per_item": 1.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CrystalBooster.png"
   },
   {
     "name": "Cup",
-    "unit_price": 92.0,
+    "unit_price": 92,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Cup.png"
   },
   {
     "name": "Dog Tag",
-    "unit_price": 520.0,
+    "unit_price": 520,
     "stack_size": 10,
     "weight_per_item": 0.15,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DogTag.png"
   },
   {
     "name": "Dorm Room 103 Key",
-    "unit_price": 182.0,
+    "unit_price": 182,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DormRoom103Key.png"
   },
   {
     "name": "Dorm Room 106 Key",
-    "unit_price": 300.0,
+    "unit_price": 300,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DormRoom106Key.png"
   },
   {
+    "name": "DT MDR-556 50%",
+    "unit_price": 2160,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DTMDR-556.png"
+  },
+  {
     "name": "Duck Egg",
-    "unit_price": 45.0,
+    "unit_price": 45,
     "stack_size": 4,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DuckEgg.PNG"
   },
   {
     "name": "Dumpling",
-    "unit_price": 110.0,
+    "unit_price": 110,
     "stack_size": 3,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Dumpling.PNG"
   },
   {
     "name": "Dynamite",
-    "unit_price": 72.0,
+    "unit_price": 72,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Dynamite.png"
   },
   {
     "name": "Dynamite Cluster",
-    "unit_price": 157.0,
+    "unit_price": 157,
     "stack_size": 1,
     "weight_per_item": 1.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DynamiteCluster.png"
   },
   {
+    "name": "Eco-Lamp",
+    "unit_price": 430,
+    "stack_size": 20,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Eco-Lamp.png"
+  },
+  {
     "name": "Electric Grenade",
-    "unit_price": 405.0,
+    "unit_price": 405,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ElectricGrenade.png"
   },
   {
     "name": "Electronic Parts",
-    "unit_price": 122.0,
+    "unit_price": 122,
     "stack_size": 50,
     "weight_per_item": 0.07,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ElectronicParts.png"
   },
   {
     "name": "Encrypted USB Drive",
-    "unit_price": 1282.0,
+    "unit_price": 1282,
     "stack_size": 3,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EncryptedUSBDrive.PNG"
   },
   {
     "name": "Endurance Injector",
-    "unit_price": 336.0,
+    "unit_price": 336,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/EnduranceInjector.PNG"
   },
   {
+    "name": "Expansion Crate (L)",
+    "unit_price": 4460,
+    "stack_size": 1,
+    "weight_per_item": 40.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ExpansionCrateL.png"
+  },
+  {
     "name": "Expansion Crate (M)",
-    "unit_price": 2450.0,
+    "unit_price": 2450,
     "stack_size": 1,
     "weight_per_item": 25.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ExpansionCrateM.png"
   },
   {
     "name": "Explosive Arrow",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 8,
     "weight_per_item": 0.25,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ExplosiveArrow.png"
   },
   {
     "name": "Fading Feather",
-    "unit_price": 104.0,
+    "unit_price": 104,
     "stack_size": 15,
     "weight_per_item": 0.01,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FadingFeather.PNG"
   },
   {
+    "name": "Ferry Ticket",
+    "unit_price": 2600,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FerryTicket.png"
+  },
+  {
     "name": "Fire RES Injector",
-    "unit_price": 336.0,
+    "unit_price": 336,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
   },
   {
     "name": "First Aid Kit (L)",
-    "unit_price": 687.0,
+    "unit_price": 687,
     "stack_size": 1,
     "weight_per_item": 1.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FirstAidKitL.png"
   },
   {
     "name": "First Aid Kit (S)",
-    "unit_price": 107.0,
+    "unit_price": 107,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FirstAidKitS.png"
   },
   {
     "name": "Flashlight",
-    "unit_price": 291.0,
+    "unit_price": 291,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Flashlight.png"
   },
   {
     "name": "Flathead Screwdriver",
-    "unit_price": 123.0,
+    "unit_price": 123,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Flathead Screwdriver.png"
   },
   {
     "name": "Flower Ring",
-    "unit_price": 872.0,
+    "unit_price": 872,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FlowerRing.png"
   },
   {
     "name": "Fly Goggles",
-    "unit_price": 300.0,
+    "unit_price": 300,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FlyGoggles.png"
   },
   {
     "name": "Fly Wings",
-    "unit_price": 642.0,
+    "unit_price": 642,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FlyWings.png"
   },
   {
     "name": "Football",
-    "unit_price": 439.0,
+    "unit_price": 439,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Football.png"
   },
   {
     "name": "Glick",
-    "unit_price": 535.0,
+    "unit_price": 535,
     "stack_size": 1,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Glick.png"
   },
   {
     "name": "Glick 50%",
-    "unit_price": 322.0,
+    "unit_price": 322,
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Glick.png"
   },
   {
     "name": "Golf Club",
-    "unit_price": 1180.0,
+    "unit_price": 1180,
     "stack_size": 1,
     "weight_per_item": 1.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/GolfClub.png"
   },
   {
     "name": "Graphics Card",
-    "unit_price": 11146.0,
+    "unit_price": 11146,
     "stack_size": 1,
     "weight_per_item": 1.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/GraphicsCard.png"
   },
   {
     "name": "Grenade",
-    "unit_price": 156.0,
+    "unit_price": 156,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Grenade.png"
   },
   {
     "name": "Hammer",
-    "unit_price": 238.0,
+    "unit_price": 238,
     "stack_size": 1,
     "weight_per_item": 1.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Hammer.png"
   },
   {
     "name": "Headlamp",
-    "unit_price": 123.0,
+    "unit_price": 123,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Headlamp.png"
   },
   {
-    "name": "Headmaster's Office Key",
-    "unit_price": 70.0,
+    "name": "Headmaster\u0027s Office Key",
+    "unit_price": 70,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HeadMastersOfficeKey.PNG"
   },
   {
     "name": "Heart",
-    "unit_price": 1327.0,
+    "unit_price": 1327,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Heart.png"
   },
   {
     "name": "Hemostatic Drug Injector",
-    "unit_price": 232.0,
+    "unit_price": 232,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HemostaticDrugInjector.PNG"
   },
   {
+    "name": "Hip-Fire Stock I",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hip-FireStockI.png"
+  },
+  {
     "name": "Homemade Shotgun 75%",
-    "unit_price": 113.0,
+    "unit_price": 113,
     "stack_size": 1,
     "weight_per_item": 2.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HomemadeShotgun.png"
   },
   {
     "name": "Honey",
-    "unit_price": 166.0,
+    "unit_price": 166,
     "stack_size": 3,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Honey.png"
   },
   {
     "name": "Horizontal Grip II",
-    "unit_price": 1248.0,
+    "unit_price": 1248,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HorizontalGripII.png"
   },
   {
     "name": "Incendiary Bullet",
-    "unit_price": 353.0,
+    "unit_price": 353,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/IncendiaryBullet.png"
   },
   {
     "name": "Injection Case",
-    "unit_price": 15477.0,
+    "unit_price": 15477,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/InjectionCase.png"
   },
   {
     "name": "Ink",
-    "unit_price": 139.0,
+    "unit_price": 139,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ink.png"
   },
   {
     "name": "Intelligent Robot",
-    "unit_price": 3007.0,
+    "unit_price": 3007,
     "stack_size": 1,
     "weight_per_item": 2.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/IntelligentRobot.png"
   },
   {
     "name": "Intermediate Weapon Parts",
-    "unit_price": 128.0,
+    "unit_price": 128,
     "stack_size": 50,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/IntermediateWeaponParts.png"
   },
   {
     "name": "IV Medicine",
-    "unit_price": 99.0,
+    "unit_price": 99,
     "stack_size": 20,
     "weight_per_item": 0.48,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/IVMedicine.png"
   },
   {
     "name": "J-Lab Access Card (Blue)",
-    "unit_price": 70304.0,
+    "unit_price": 70304,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/J-LabAccessCardBlue.PNG"
   },
   {
     "name": "J-Lab Floppy Disk",
-    "unit_price": 624.0,
+    "unit_price": 624,
     "stack_size": 3,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/J-LabFloppyDisk.png"
   },
   {
     "name": "Kazoo",
-    "unit_price": 1397.0,
+    "unit_price": 1397,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Kazoo.png"
   },
   {
     "name": "Ketchup",
-    "unit_price": 66.0,
+    "unit_price": 66,
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ketchup.PNG"
   },
   {
     "name": "Key Case",
-    "unit_price": 7261.0,
+    "unit_price": 7261,
     "stack_size": 1,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/KeyCase.png"
   },
   {
     "name": "Laser (Basic)",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LaserBasic.png"
   },
   {
     "name": "Laser (Calibration)",
-    "unit_price": 1248.0,
+    "unit_price": 1248,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LaserCalibration.png"
   },
   {
     "name": "LEDX Skin Transilluminator",
-    "unit_price": 16907.0,
+    "unit_price": 16907,
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LEDXSkinTransilluminator.png"
   },
   {
     "name": "Letter",
-    "unit_price": 125.0,
+    "unit_price": 125,
     "stack_size": 10,
     "weight_per_item": 0.07,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Letter.png"
   },
   {
+    "name": "Lipstick",
+    "unit_price": 3425,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lipstick.png"
+  },
+  {
     "name": "Lollipop",
-    "unit_price": 52.0,
+    "unit_price": 52,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lollipop.png"
   },
   {
     "name": "Lv.1 Body Armor",
-    "unit_price": 148.0,
+    "unit_price": 148,
     "stack_size": 1,
-    "weight_per_item": 2.0,
+    "weight_per_item": 2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv1BodyArmor.png"
   },
   {
     "name": "Lv.1 J-Lab Certificate",
-    "unit_price": 1040.0,
+    "unit_price": 1040,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv1J-LabCertificate.png"
   },
   {
     "name": "Lv.2 Light Helmet 50%",
-    "unit_price": 102.0,
+    "unit_price": 102,
     "stack_size": 1,
     "weight_per_item": 1.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv2LightHelmet.png"
   },
   {
     "name": "Lv.3 Body Armor 100%",
-    "unit_price": 915.0,
+    "unit_price": 915,
     "stack_size": 1,
     "weight_per_item": 3.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png"
   },
   {
     "name": "Lv.3 Combat Body Armor 75%",
-    "unit_price": 856.0,
+    "unit_price": 856,
     "stack_size": 1,
     "weight_per_item": 5.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
   },
   {
     "name": "Lv.3 Combat Body Armor 100%",
-    "unit_price": 1228.0,
+    "unit_price": 1228,
     "stack_size": 1,
     "weight_per_item": 5.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
   },
   {
     "name": "Lv.3 Heavy Body Armor 50%",
-    "unit_price": 712.0,
+    "unit_price": 712,
     "stack_size": 1,
     "weight_per_item": 6.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
   },
   {
     "name": "Lv.3 Heavy Body Armor 75%",
-    "unit_price": 1103.0,
+    "unit_price": 1103,
     "stack_size": 1,
     "weight_per_item": 6.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
   },
   {
     "name": "Lv.3 Heavy Body Armor 100%",
-    "unit_price": 1357.0,
+    "unit_price": 1357,
     "stack_size": 1,
     "weight_per_item": 6.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
   },
   {
     "name": "Lv.3 Light Helmet",
-    "unit_price": 469.0,
+    "unit_price": 469,
     "stack_size": 1,
     "weight_per_item": 1.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3LightHelmet.PNG"
   },
   {
     "name": "Lv.4 Ballistic Helmet 50%",
-    "unit_price": 1109.0,
+    "unit_price": 1109,
     "stack_size": 1,
     "weight_per_item": 1.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4BallisticHelmet.png"
   },
   {
     "name": "Lv.4 Combat Body Armor 50%",
-    "unit_price": 1099.0,
+    "unit_price": 1099,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
   },
   {
     "name": "Lv.4 Combat Body Armor 75%",
-    "unit_price": 1490.0,
+    "unit_price": 1490,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
   },
   {
     "name": "Lv.5 Body Armor",
-    "unit_price": 2201.0,
+    "unit_price": 2201,
     "stack_size": 1,
     "weight_per_item": 5.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv5BodyArmor.png"
   },
   {
     "name": "Lv.5 Combat Body Armor",
-    "unit_price": 3224.0,
+    "unit_price": 3224,
     "stack_size": 1,
     "weight_per_item": 7.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv5CombatBodyArmor.png"
   },
   {
     "name": "M1A",
-    "unit_price": 4090.0,
+    "unit_price": 4090,
     "stack_size": 1,
     "weight_per_item": 4.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png"
   },
   {
     "name": "Marker",
-    "unit_price": 151.0,
+    "unit_price": 151,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Marker.PNG"
   },
   {
     "name": "MD40",
-    "unit_price": 112.0,
+    "unit_price": 112,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MD40.png"
   },
   {
     "name": "Mechanical Key",
-    "unit_price": 114.0,
+    "unit_price": 114,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MechanicalKey.png"
   },
   {
     "name": "Metal Barrel",
-    "unit_price": 1591.0,
+    "unit_price": 1591,
     "stack_size": 1,
-    "weight_per_item": 6.0,
+    "weight_per_item": 6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalBarrel.png"
   },
   {
     "name": "Metal Fuel Drum",
-    "unit_price": 1860.0,
+    "unit_price": 1860,
     "stack_size": 1,
     "weight_per_item": 4.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalFuelBarrel.PNG"
   },
   {
     "name": "Metal Plate",
-    "unit_price": 46.0,
+    "unit_price": 46,
     "stack_size": 50,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalPlate.png"
   },
   {
+    "name": "MF 75%",
+    "unit_price": 1370,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MF.png"
+  },
+  {
+    "name": "Mic",
+    "unit_price": 184,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Mic.png"
+  },
+  {
     "name": "Military Backpack MAX",
-    "unit_price": 2447.0,
+    "unit_price": 2447,
     "stack_size": 1,
     "weight_per_item": 3.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MilitaryBackpackMAX.PNG"
   },
   {
-    "name": "Mine Manager's Iris Data",
-    "unit_price": 156.0,
+    "name": "Military Handheld Radio",
+    "unit_price": 1202,
+    "stack_size": 1,
+    "weight_per_item": 0.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MilitaryHandheldRadio.png"
+  },
+  {
+    "name": "Mine Manager\u0027s Iris Data",
+    "unit_price": 156,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MineManagersIrisData.PNG"
   },
   {
     "name": "Motorcycle Helmet",
-    "unit_price": 50.0,
+    "unit_price": 50,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MotorcycleHelmet.png"
   },
   {
     "name": "MP5",
-    "unit_price": 2986.0,
+    "unit_price": 2986,
     "stack_size": 1,
     "weight_per_item": 2.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP5.png"
   },
   {
     "name": "MP7 75%",
-    "unit_price": 1427.0,
+    "unit_price": 1427,
     "stack_size": 1,
     "weight_per_item": 1.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP7.png"
   },
   {
     "name": "MP-155",
-    "unit_price": 885.0,
+    "unit_price": 885,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
   },
   {
     "name": "Nail",
-    "unit_price": 77.0,
+    "unit_price": 77,
     "stack_size": 50,
     "weight_per_item": 0.05,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Nail.png"
   },
   {
     "name": "Newspaper",
-    "unit_price": 180.0,
+    "unit_price": 180,
     "stack_size": 10,
     "weight_per_item": 0.25,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Newspaper.png"
   },
   {
     "name": "Normal Die",
-    "unit_price": 621.0,
+    "unit_price": 621,
     "stack_size": 10,
     "weight_per_item": 0.05,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DieNormal.png"
   },
   {
     "name": "Notes",
-    "unit_price": 395.0,
+    "unit_price": 395,
     "stack_size": 5,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Notes.png"
   },
   {
     "name": "Nut",
-    "unit_price": 115.0,
+    "unit_price": 115,
     "stack_size": 50,
     "weight_per_item": 0.14,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Nut.png"
   },
   {
     "name": "Painkiller",
-    "unit_price": 336.0,
+    "unit_price": 336,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PainKiller.PNG"
   },
   {
     "name": "Pan",
-    "unit_price": 241.0,
+    "unit_price": 241,
     "stack_size": 1,
     "weight_per_item": 1.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Pan.png"
   },
   {
     "name": "Paper Roll",
-    "unit_price": 28.0,
+    "unit_price": 28,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PaperRoll.png"
   },
   {
+    "name": "Peacekeeper Helmet",
+    "unit_price": 640,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PeacekeeperHelmet.png"
+  },
+  {
     "name": "Pen",
-    "unit_price": 711.0,
+    "unit_price": 711,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Pen.png"
   },
   {
     "name": "Pile of Medicine",
-    "unit_price": 66.0,
+    "unit_price": 66,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PileOfMedicine.png"
   },
   {
     "name": "Pistol DMG-Boosting Muzzle",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PistolDMG-BoostingMuzzle.png"
   },
   {
     "name": "Pistol Extended Magazine I",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PistolExtendedMagazineI.png"
   },
   {
+    "name": "PM 100%",
+    "unit_price": 125,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PM.png"
+  },
+  {
     "name": "Poison Gas Grenade",
-    "unit_price": 353.0,
+    "unit_price": 353,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PoisonGasGrenade.PNG"
   },
   {
     "name": "Police Baton",
-    "unit_price": 91.0,
+    "unit_price": 91,
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PoliceBaton.png"
   },
   {
     "name": "Portable Hard Drive",
-    "unit_price": 124.0,
+    "unit_price": 124,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PortableHardDrive.PNG"
   },
   {
     "name": "Potato",
-    "unit_price": 119.0,
+    "unit_price": 119,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Potato.png"
   },
   {
     "name": "Power Bank",
-    "unit_price": 421.0,
+    "unit_price": 421,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PowerBank.png"
   },
   {
+    "name": "Power Cord",
+    "unit_price": 267,
+    "stack_size": 5,
+    "weight_per_item": 0.29,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\PowerCord.png"
+  },
+  {
     "name": "Power of Wishlist",
-    "unit_price": 2381.0,
+    "unit_price": 2381,
     "stack_size": 1,
-    "weight_per_item": 2.0,
+    "weight_per_item": 2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PowerofWishlist.png"
   },
   {
+    "name": "PP3 Battery",
+    "unit_price": 167,
+    "stack_size": 10,
+    "weight_per_item": 0.12,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PP3Battery.png"
+  },
+  {
     "name": "PPSh",
-    "unit_price": 1151.0,
+    "unit_price": 1151,
     "stack_size": 1,
     "weight_per_item": 3.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PPSh.png"
   },
   {
     "name": "Pressure Sensor",
-    "unit_price": 281.0,
+    "unit_price": 281,
     "stack_size": 1,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PressureSensor.png"
   },
   {
     "name": "Protein Powder",
-    "unit_price": 244.0,
+    "unit_price": 244,
     "stack_size": 1,
-    "weight_per_item": 1.0,
+    "weight_per_item": 1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ProteinPowder.png"
   },
   {
     "name": "Quick Sight",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/QuickSight.png"
   },
   {
     "name": "R6 Battery",
-    "unit_price": 100.0,
+    "unit_price": 100,
     "stack_size": 20,
     "weight_per_item": 0.08,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/R6Battery.PNG"
   },
   {
     "name": "Radio",
-    "unit_price": 250.0,
+    "unit_price": 250,
     "stack_size": 1,
-    "weight_per_item": 1.0,
+    "weight_per_item": 1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Radio.png"
   },
   {
     "name": "Recovery Injector",
-    "unit_price": 454.0,
+    "unit_price": 454,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RecoveryInjector.PNG"
   },
   {
     "name": "Red Barrel",
-    "unit_price": 664.0,
+    "unit_price": 664,
     "stack_size": 1,
     "weight_per_item": 2.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedBarrel.png"
   },
   {
     "name": "Red Lantern",
-    "unit_price": 1233.0,
+    "unit_price": 1233,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RedLantern.PNG"
   },
   {
     "name": "Red-Band Cigarette",
-    "unit_price": 54.0,
+    "unit_price": 54,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Red-BandCigarette.PNG"
   },
   {
     "name": "Rifle 4x Scope",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Rifle4xScope.png"
   },
   {
+    "name": "Rifle Extended Magazine I",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleExtendedMagazineI.png"
+  },
+  {
     "name": "Rifle Extended Muzzle",
     "unit_price": 0.6,
     "stack_size": 1,
-    "weight_per_item": 572.0,
+    "weight_per_item": 572,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleExtendedMuzzle.png"
   },
   {
     "name": "Rifle Muzzle Brake (Spread)",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleMuzzleBreakSpread.png"
   },
   {
     "name": "Rifle Quick Magazine II",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleQuickMagazineII.png"
   },
   {
     "name": "Rifle Suppressor",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleSuppressor.png"
   },
   {
     "name": "Rifle Vertical Muzzle Brake",
-    "unit_price": 1248.0,
+    "unit_price": 1248,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleVerticalMuzzleBrake.png"
   },
   {
     "name": "Rocket Lv.1",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 6,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RocketLv1.png"
   },
   {
     "name": "Rope",
-    "unit_price": 104.0,
+    "unit_price": 104,
     "stack_size": 1,
-    "weight_per_item": 1.0,
+    "weight_per_item": 1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Rope.png"
   },
   {
     "name": "RPG-7",
-    "unit_price": 3150.0,
+    "unit_price": 3150,
     "stack_size": 1,
     "weight_per_item": 6.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RPG-7.png"
+  },
+  {
+    "name": "RPK 70%",
+    "unit_price": 4674,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png"
+  },
+  {
+    "name": "RPK 100%",
+    "unit_price": 6334,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png"
   },
   {
     "name": "Rusty Bullet (AR)",
@@ -1261,154 +1422,175 @@
   },
   {
     "name": "Sanatorium Machine Room Key",
-    "unit_price": 116.0,
+    "unit_price": 116,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SanatoriumMachineRoomKey.png"
   },
   {
     "name": "Sanatorium Room Key 1",
-    "unit_price": 111.0,
+    "unit_price": 111,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SanatoriumRoomKey1.png"
   },
   {
     "name": "School Bag",
-    "unit_price": 175.0,
+    "unit_price": 175,
     "stack_size": 1,
     "weight_per_item": 1.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SchoolBag.png"
   },
   {
     "name": "Scissors",
-    "unit_price": 66.0,
+    "unit_price": 66,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Scissors.png"
   },
   {
     "name": "Shoddy Bow 75%",
-    "unit_price": 81.0,
+    "unit_price": 81,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ShoddyBow.png"
   },
   {
     "name": "Shotgun DMG-Boosting Muzzle",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ShotgunDMG-BoostingMuzzle.png"
   },
   {
     "name": "Small Compartment Key",
-    "unit_price": 114.0,
+    "unit_price": 114,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SmallCompartmentKey.png"
   },
   {
     "name": "Small Stone",
-    "unit_price": 4.0,
+    "unit_price": 4,
     "stack_size": 12,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SmallStone.png"
   },
   {
+    "name": "SMG Extended Magazine III",
+    "unit_price": 1248,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SMGExtendedMagazineIII.png"
+  },
+  {
+    "name": "SMG Quick Magazine",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SMGQuickMagazine.png"
+  },
+  {
     "name": "SMG Vertical Muzzle Break",
-    "unit_price": 1248.0,
+    "unit_price": 1248,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SMGVerticalMuzzleBreak.png"
   },
   {
     "name": "Sniper Rifle Extended Magazine",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SniperRifleExtendedMagazineI.png"
   },
   {
     "name": "Sniper Rifle Extended Magazine II",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SniperRifleExtendedMagazineII.png"
   },
   {
     "name": "Sniper Rifle Extended Muzzle",
-    "unit_price": 572.0,
+    "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 1.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SniperRifleExtendedMuzzle.png"
   },
   {
     "name": "Sniper Rifle Muzzle Brake (Spread)",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SniperRifleMuzzleBrakeSpread.png"
   },
   {
     "name": "Sniper Rifle Quick Magazine I",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SniperRifleQuickMagazineI.png"
   },
   {
+    "name": "Sniper Rifle Suppressor",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 1.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Sniper RIfle Suppressor.png"
+  },
+  {
     "name": "Soda",
-    "unit_price": 53.0,
+    "unit_price": 53,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Soda.PNG"
   },
   {
     "name": "Soda Cracker",
-    "unit_price": 26.0,
+    "unit_price": 26,
     "stack_size": 3,
     "weight_per_item": 0.05,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SodaCrackers.png"
   },
   {
     "name": "Soul Moonshine",
-    "unit_price": 6494.0,
+    "unit_price": 6494,
     "stack_size": 1,
     "weight_per_item": 0.78,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SoulMoonshine.png"
   },
   {
     "name": "Space Crystal",
-    "unit_price": 624.0,
+    "unit_price": 624,
     "stack_size": 10,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpaceCrystal.png"
   },
   {
     "name": "Space Protection Helmet",
-    "unit_price": 1700.0,
+    "unit_price": 1700,
     "stack_size": 1,
     "weight_per_item": 3.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpaceProtectionHelmet.png"
   },
   {
     "name": "Space RES Injector",
-    "unit_price": 336.0,
+    "unit_price": 336,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpaceRESInjector.png"
   },
   {
     "name": "Special AP Bullet (AR)",
-    "unit_price": 104.0,
+    "unit_price": 104,
     "stack_size": 240,
     "weight_per_item": 0.02,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletAR.png"
   },
   {
     "name": "Special AP Bullet (L)",
-    "unit_price": 182.0,
+    "unit_price": 182,
     "stack_size": 240,
     "weight_per_item": 0.03,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
@@ -1429,259 +1611,329 @@
   },
   {
     "name": "Standard Sniper Bullet",
-    "unit_price": 18.0,
+    "unit_price": 18,
     "stack_size": 1,
     "weight_per_item": 0.05,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StandardSniperBullet.png"
   },
   {
+    "name": "Star of Peace",
+    "unit_price": 5266,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StarofPeace.png"
+  },
+  {
     "name": "Steel Helmet",
-    "unit_price": 196.0,
+    "unit_price": 196,
     "stack_size": 1,
     "weight_per_item": 0.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SteelHelmet.PNG"
   },
   {
     "name": "StG 77",
-    "unit_price": 1600.0,
+    "unit_price": 1600,
     "stack_size": 1,
     "weight_per_item": 3.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StG77.png"
   },
   {
     "name": "StG 77 75%",
-    "unit_price": 1360.0,
+    "unit_price": 1360,
     "stack_size": 1,
     "weight_per_item": 3.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StG77.png"
   },
   {
+    "name": "Storage Fence Key",
+    "unit_price": 238,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StorageFenceKey.png"
+  },
+  {
     "name": "Strong Wing Injector",
-    "unit_price": 3550.0,
+    "unit_price": 3550,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StrongWingInjector.png"
   },
   {
     "name": "Super Glue A",
-    "unit_price": 438.0,
+    "unit_price": 438,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SuperGlueA.png"
   },
   {
     "name": "Super Glue B",
-    "unit_price": 429.0,
+    "unit_price": 429,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SuperGlueB.png"
   },
   {
     "name": "Syringe",
-    "unit_price": 153.0,
+    "unit_price": 153,
     "stack_size": 20,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Syringe.png"
   },
   {
+    "name": "T.H. Basketball",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/THBasketball.png"
+  },
+  {
     "name": "Tactical Flashlight",
-    "unit_price": 260.0,
+    "unit_price": 260,
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TacticalFlashlight.png"
   },
   {
     "name": "Tambourine",
-    "unit_price": 657.0,
+    "unit_price": 657,
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Tambourine.png"
   },
   {
     "name": "Tank Helmet",
-    "unit_price": 50.0,
+    "unit_price": 50,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TankHelmet.png"
   },
   {
     "name": "Tape",
-    "unit_price": 43.0,
+    "unit_price": 43,
     "stack_size": 5,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Tape.png"
   },
   {
+    "name": "Thread",
+    "unit_price": 140,
+    "stack_size": 10,
+    "weight_per_item": 0.2,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Thread.png"
+  },
+  {
     "name": "Tire",
-    "unit_price": 251.0,
+    "unit_price": 251,
     "stack_size": 1,
     "weight_per_item": 2.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Tire.png"
   },
   {
     "name": "Toilet Cleaner",
-    "unit_price": 53.0,
+    "unit_price": 53,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToiletCleaner.png"
   },
   {
     "name": "TOMSUNG Phone",
-    "unit_price": 552.0,
+    "unit_price": 552,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TOMSUNGPhone.png"
   },
   {
     "name": "Top Organic Fiber",
-    "unit_price": 670.0,
+    "unit_price": 670,
     "stack_size": 30,
     "weight_per_item": 0.28,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TopOrganicFiber.png"
   },
   {
     "name": "Tote Bag",
-    "unit_price": 3466.0,
+    "unit_price": 3466,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToteBag.png"
   },
   {
     "name": "Totem: Efficiency II",
-    "unit_price": 520.0,
+    "unit_price": 520,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotelEfficiencyII.PNG"
   },
   {
     "name": "Totem: Gun Control I",
-    "unit_price": 182.0,
+    "unit_price": 182,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotemGunControlI.PNG"
   },
   {
+    "name": "Totem: HP I",
+    "unit_price": 182,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemHPI.png"
+  },
+  {
     "name": "Totem: Perception II",
-    "unit_price": 520.0,
+    "unit_price": 520,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotemPerceptionII.PNG"
   },
   {
     "name": "Totem: Warrior I",
-    "unit_price": 520.0,
+    "unit_price": 520,
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TotemWarriorI.PNG"
   },
   {
     "name": "Toy Fish",
-    "unit_price": 465.0,
+    "unit_price": 465,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyFish.PNG"
   },
   {
-    "name": "TOZ-66 Dragon's Breath",
-    "unit_price": 1607.0,
+    "name": "Toy Gun 75%",
+    "unit_price": 654,
     "stack_size": 1,
-    "weight_per_item": 3.0,
+    "weight_per_item": 0.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyGun.png"
+  },
+  {
+    "name": "Toy Rocket",
+    "unit_price": 454,
+    "stack_size": 1,
+    "weight_per_item": 0.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ToyRocket.png"
+  },
+  {
+    "name": "TOZ-66 Dragon\u0027s Breath",
+    "unit_price": 1607,
+    "stack_size": 1,
+    "weight_per_item": 3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TOZ-66DragonsBreath.PNG"
   },
   {
     "name": "Travel Bag",
-    "unit_price": 517.0,
+    "unit_price": 517,
     "stack_size": 1,
     "weight_per_item": 2.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/TravelBag.png"
   },
   {
+    "name": "Trophy",
+    "unit_price": 1475,
+    "stack_size": 1,
+    "weight_per_item": 2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Trophy.png"
+  },
+  {
     "name": "UP-45 50%",
-    "unit_price": 508.0,
+    "unit_price": 508,
     "stack_size": 1,
     "weight_per_item": 3.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/UP-45.png"
   },
   {
+    "name": "uPhone",
+    "unit_price": 970,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/uPhone.png"
+  },
+  {
     "name": "UV Light",
-    "unit_price": 395.0,
+    "unit_price": 395,
     "stack_size": 20,
     "weight_per_item": 0.36,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/UVLight.png"
   },
   {
     "name": "Vector",
-    "unit_price": 1335.0,
+    "unit_price": 1335,
     "stack_size": 1,
     "weight_per_item": 2.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Vector.png"
   },
   {
+    "name": "Vida\u0027s Helmet 75%",
+    "unit_price": 1797,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+  },
+  {
     "name": "Vodka",
-    "unit_price": 469.0,
+    "unit_price": 469,
     "stack_size": 1,
     "weight_per_item": 0.68,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Vodka.PNG"
   },
   {
     "name": "VSS",
-    "unit_price": 8705.0,
+    "unit_price": 8705,
     "stack_size": 1,
     "weight_per_item": 3.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/VSS.png"
   },
   {
     "name": "Walkie-Talkie",
-    "unit_price": 196.0,
+    "unit_price": 196,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/WalkieTalkie.png"
   },
   {
     "name": "Water Bottle",
-    "unit_price": 451.0,
+    "unit_price": 451,
     "stack_size": 1,
-    "weight_per_item": 1.0,
+    "weight_per_item": 1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/WaterBottle.PNG"
   },
   {
     "name": "Weak Space Storm Protection Injector",
-    "unit_price": 1226.0,
+    "unit_price": 1226,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/WeakSpaceStormInjector.png"
   },
   {
     "name": "Weapon Parts",
-    "unit_price": 66.0,
+    "unit_price": 66,
     "stack_size": 50,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/WeaponParts.png"
   },
   {
     "name": "Weight-Bearing Injector",
-    "unit_price": 336.0,
+    "unit_price": 336,
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Weight-BearingInjector.png"
   },
   {
     "name": "Weighted Die",
-    "unit_price": 816.0,
+    "unit_price": 816,
     "stack_size": 10,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DieWeighted.png"
   },
   {
     "name": "Whiskey",
-    "unit_price": 1784.0,
+    "unit_price": 1784,
     "stack_size": 1,
     "weight_per_item": 0.7,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Whiskey.PNG"
   },
   {
     "name": "Wood",
-    "unit_price": 53.0,
+    "unit_price": 53,
     "stack_size": 50,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Wood.PNG"
@@ -1695,170 +1947,44 @@
   },
   {
     "name": "Wooden Stick",
-    "unit_price": 5.0,
+    "unit_price": 5,
     "stack_size": 1,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/WoodenStick.png"
   },
   {
     "name": "Wrench",
-    "unit_price": 133.0,
+    "unit_price": 133,
     "stack_size": 1,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Wrench.png"
   },
   {
     "name": "Xylophone",
-    "unit_price": 511.0,
+    "unit_price": 511,
     "stack_size": 1,
-    "weight_per_item": 2.0,
+    "weight_per_item": 2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Xylophone.png"
   },
   {
     "name": "Yellow Barrel",
-    "unit_price": 643.0,
+    "unit_price": 643,
     "stack_size": 1,
     "weight_per_item": 2.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/YellowBarrel.png"
   },
   {
     "name": "Yogurt",
-    "unit_price": 168.0,
+    "unit_price": 168,
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
   },
   {
-    "name": "Toy Gun 75%",
-    "unit_price": 654.0,
+    "name": "Lv.3 Combat Body Armor 65%",
+    "unit_price": 817,
     "stack_size": 1,
-    "weight_per_item": 0.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyGun.png"
-  },
-  {
-    "name": "Thread",
-    "unit_price": 140.0,
-    "stack_size": 10,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Thread.png"
-  },
-  {
-    "name": "MF 75%",
-    "unit_price": 1370.0,
-    "stack_size": 1,
-    "weight_per_item": 2.9,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MF.png"
-  },
-  {
-    "name": "PM 100%",
-    "unit_price": 125.0,
-    "stack_size": 1,
-    "weight_per_item": 0.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PM.png"
-  },
-  {
-    "name": "PP3 Battery",
-    "unit_price": 167.0,
-    "stack_size": 10,
-    "weight_per_item": 0.12,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PP3Battery.png"
-  },
-  {
-    "name": "Mic",
-    "unit_price": 184.0,
-    "stack_size": 1,
-    "weight_per_item": 0.4,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Mic.png"
-  },
-  {
-    "name": "Sniper Rifle Suppressor",
-    "unit_price": 260.0,
-    "stack_size": 1,
-    "weight_per_item": 1.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Sniper RIfle Suppressor.png"
-  },
-  {
-    "name": "SMG Quick Magazine",
-    "unit_price": 260.0,
-    "stack_size": 1,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SMGQuickMagazine.png"
-  },
-  {
-    "name": "Lipstick",
-    "unit_price": 3425.0,
-    "stack_size": 1,
-    "weight_per_item": 0.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lipstick.png"
-  },
-  {
-    "name": "Rifle Extended Magazine I",
-    "unit_price": 260.0,
-    "stack_size": 1,
-    "weight_per_item": 0.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleExtendedMagazineI.png"
-  },
-  {
-    "name": "Eco-Lamp",
-    "unit_price": 430.0,
-    "stack_size": 20,
-    "weight_per_item": 0.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Eco-Lamp.png"
-  },
-  {
-    "name": "T.H. Basketball",
-    "unit_price": 260.0,
-    "stack_size": 1,
-    "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/THBasketball.png"
-  },
-  {
-    "name": "Peacekeeper Helmet",
-    "unit_price": 640.0,
-    "stack_size": 1,
-    "weight_per_item": 1.4,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/PeacekeeperHelmet.png"
-  },
-  {
-    "name": "Storage Fence Key",
-    "unit_price": 238.0,
-    "stack_size": 1,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StorageFenceKey.png"
-  },
-  {
-    "name": "uPhone",
-    "unit_price": 970.0,
-    "stack_size": 1,
-    "weight_per_item": 0.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/uPhone.png"
-  },
-  {
-    "name": "Expansion Crate (L)",
-    "unit_price": 4460.0,
-    "stack_size": 1,
-    "weight_per_item": 40.4,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ExpansionCrateL.png"
-  },
-  {
-    "name": "Star of Peace",
-    "unit_price": 5266.0,
-    "stack_size": 1,
-    "weight_per_item": 0.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StarofPeace.png"
-  },
-  {
-    "name": "Advanced AP Bullet (AR)",
-    "unit_price": 62.4,
-    "stack_size": 240,
-    "weight_per_item": 0.02,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AdvancedAPBulletAR.PNG"
-  },
-  {
-    "name": "Balanced Grip",
-    "unit_price": 1248.0,
-    "stack_size": 1,
-    "weight_per_item": 0.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedGrip.png"
+    "weight_per_item": 5.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
   }
 ]
