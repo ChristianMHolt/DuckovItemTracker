@@ -16,13 +16,4 @@ public partial class App : Application
     {
         StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
     }
-
-    protected override void OnStartup(StartupEventArgs e)
-    {
-        base.OnStartup(e);
-
-        var mainWindow = new MainWindow();
-        MainWindow = mainWindow;
-        mainWindow.Show();
-    }
 }
