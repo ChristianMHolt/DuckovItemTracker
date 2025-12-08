@@ -15,6 +15,8 @@
         Background="Transparent"
         AllowsTransparency="False">
     <Window.Resources>
+        <DropShadowEffect x:Key="SoftShadow" BlurRadius="12" ShadowDepth="2" Direction="270" Opacity="0.35" Color="#000000" />
+
         <LinearGradientBrush x:Key="WindowBackground" StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#0E1526" Offset="0" />
             <GradientStop Color="#0B172F" Offset="1" />
@@ -130,8 +132,6 @@
             <Setter Property="Foreground" Value="{StaticResource SubtleBrush}" />
             <Setter Property="Padding" Value="10,4" />
         </Style>
-
-        <DropShadowEffect x:Key="SoftShadow" BlurRadius="12" ShadowDepth="2" Direction="270" Opacity="0.35" Color="#000000" />
 
         <conv:IconPathToImageSourceConverter x:Key="IconConverter" />
     </Window.Resources>
