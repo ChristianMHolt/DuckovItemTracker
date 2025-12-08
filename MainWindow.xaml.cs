@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Data;
+using System.Windows.Input;
 using Microsoft.Win32;
 using ItemTracker.Models;
 using ItemTracker.Services;
@@ -260,6 +261,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         SaveItems();
         RefreshView();
         ClearForm(keepStatus: true);
+        FocusNameTextBox();
     }
 
     private void OnDelete(object sender, RoutedEventArgs e)
@@ -285,6 +287,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private void OnClear(object sender, RoutedEventArgs e)
     {
         ClearForm();
+        FocusNameTextBox();
     }
 
     private void ClearForm(bool keepStatus = false)
@@ -301,6 +304,15 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             StatusText = "Form cleared";
         }
         OnPropertyChanged(nameof(AddOrUpdateButtonText));
+    }
+
+    private void FocusNameTextBox()
+    {
+        if (NameTextBox.IsVisible)
+        {
+            NameTextBox.Focus();
+            NameTextBox.SelectAll();
+        }
     }
 
     private void OnChooseIcon(object sender, RoutedEventArgs e)
@@ -369,6 +381,20 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private void SaveItems()
     {
         _repository.Save(_items);
+    }
+
+    private void OnWeightTextBoxGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+    {
+        WeightTextBox.SelectAll();
+    }
+
+    private void OnWeightTextBoxPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        if (!WeightTextBox.IsKeyboardFocusWithin)
+        {
+            WeightTextBox.Focus();
+            e.Handled = true;
+        }
     }
 
     protected override void OnClosing(CancelEventArgs e)
