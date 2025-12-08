@@ -397,6 +397,20 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         }
     }
 
+    private void OnStackSizeTextBoxGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+    {
+        StackSizeTextBox.SelectAll();
+    }
+
+    private void OnStackSizeTextBoxPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        if (!StackSizeTextBox.IsKeyboardFocusWithin)
+        {
+            StackSizeTextBox.Focus();
+            e.Handled = true;
+        }
+    }
+
     protected override void OnClosing(CancelEventArgs e)
     {
         base.OnClosing(e);
