@@ -63,7 +63,7 @@ public class ItemRepository
         CopyItemIcon(item);
     }
 
-    private void CopyDataFile()
+    public void CopyDataFile()
     {
         if (!File.Exists(_dataFilePath))
         {

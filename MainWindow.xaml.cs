@@ -421,6 +421,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     {
         base.OnClosing(e);
         SaveItems();
+        _repository.CopyDataFile();
     }
 
     private void OnPropertyChanged(string propertyName)
