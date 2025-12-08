@@ -284,7 +284,7 @@
                         </Grid.RowDefinitions>
 
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Name" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="0" Grid.Column="1" Margin="6,0" Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1" Margin="6,0" Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" />
 
                         <TextBlock Grid.Row="0" Grid.Column="2" Text="Unit Price" VerticalAlignment="Center" />
                         <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="140" Text="{Binding UnitPriceText}" />
@@ -293,7 +293,7 @@
                         <TextBox Grid.Row="0" Grid.Column="4" Margin="74,0,0,0" Width="90" Text="{Binding StackSizeText}" HorizontalAlignment="Left" />
 
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Weight per item (kg)" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="1" Grid.Column="1" Margin="6,6,6,0" Width="180" Text="{Binding WeightText}" />
+                        <TextBox x:Name="WeightTextBox" Grid.Row="1" Grid.Column="1" Margin="6,6,6,0" Width="180" Text="{Binding WeightText}" GotKeyboardFocus="OnWeightTextBoxGotKeyboardFocus" PreviewMouseLeftButtonDown="OnWeightTextBoxPreviewMouseLeftButtonDown" />
 
                         <Button Grid.Row="1" Grid.Column="2" Margin="6,6,0,0" Content="Choose Icon" Click="OnChooseIcon" />
                         <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,8,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" />
