@@ -72,26 +72,11 @@
         </Style>
 
         <Style TargetType="ComboBox">
-            <Setter Property="Background" Value="{StaticResource AccentBrush}" />
+            <Setter Property="Background" Value="{StaticResource InputBackground}" />
             <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
             <Setter Property="Padding" Value="8,2" />
             <Setter Property="FontFamily" Value="Segoe UI" />
-        </Style>
-
-        <Style TargetType="ComboBoxItem">
-            <Setter Property="Background" Value="{StaticResource AccentBrush}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Padding" Value="8,4" />
-            <Setter Property="HorizontalContentAlignment" Value="Left" />
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="{StaticResource AccentBrushDeep}" />
-                </Trigger>
-                <Trigger Property="IsSelected" Value="True">
-                    <Setter Property="Background" Value="{StaticResource AccentBrushDeep}" />
-                </Trigger>
-            </Style.Triggers>
         </Style>
 
         <Style TargetType="Button">
