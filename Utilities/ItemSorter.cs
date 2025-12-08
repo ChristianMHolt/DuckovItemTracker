@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using ItemTracker.Models;
@@ -9,6 +10,8 @@ public class ItemSorter : IComparer, IComparer<Item>
 {
     private readonly string _field;
     private readonly bool _ascending;
+    private static readonly Regex NaturalRegex = new("(\\d+)", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+    private static readonly ConcurrentDictionary<string, string[]> NaturalPartsCache = new(StringComparer.OrdinalIgnoreCase);
 
     public ItemSorter(string field, bool ascending)
     {
@@ -38,9 +41,8 @@ public class ItemSorter : IComparer, IComparer<Item>
 
     private static int NaturalCompare(string a, string b)
     {
-        var regex = new Regex("(\\d+)", RegexOptions.Compiled);
-        var partsA = regex.Split(a);
-        var partsB = regex.Split(b);
+        var partsA = NaturalPartsCache.GetOrAdd(a, key => NaturalRegex.Split(key));
+        var partsB = NaturalPartsCache.GetOrAdd(b, key => NaturalRegex.Split(key));
 
         for (var i = 0; i < Math.Max(partsA.Length, partsB.Length); i++)
         {
