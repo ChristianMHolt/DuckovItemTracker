@@ -15,36 +15,49 @@
         Background="Transparent"
         AllowsTransparency="False">
     <Window.Resources>
-        <DropShadowEffect x:Key="SoftShadow" BlurRadius="12" ShadowDepth="2" Direction="270" Opacity="0.35" Color="#000000" />
+        <DropShadowEffect x:Key="SoftShadow" BlurRadius="22" ShadowDepth="-6" Direction="145" Opacity="0.8" Color="#FF00FF" />
 
         <LinearGradientBrush x:Key="WindowBackground" StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#0E1526" Offset="0" />
-            <GradientStop Color="#0B172F" Offset="1" />
+            <GradientStop Color="#FF00FF" Offset="0" />
+            <GradientStop Color="#FFFD00" Offset="0.25" />
+            <GradientStop Color="#00FFFF" Offset="0.5" />
+            <GradientStop Color="#FF6F00" Offset="0.75" />
+            <GradientStop Color="#00FF00" Offset="1" />
         </LinearGradientBrush>
 
-        <SolidColorBrush x:Key="CardBackground" Color="#101A2D" />
-        <SolidColorBrush x:Key="CardSecondary" Color="#0C1423" />
-        <SolidColorBrush x:Key="AccentBrush" Color="#5FD7FF" />
-        <SolidColorBrush x:Key="AccentBrushDeep" Color="#35B4E6" />
-        <SolidColorBrush x:Key="SubtleBrush" Color="#8CA5C1" />
-        <SolidColorBrush x:Key="InputBackground" Color="#162337" />
-        <SolidColorBrush x:Key="BorderBrush" Color="#21324B" />
-        <SolidColorBrush x:Key="HeaderTextBrush" Color="#E6ECF5" />
+        <LinearGradientBrush x:Key="CardBackground" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#200000" Offset="0" />
+            <GradientStop Color="#FF0066" Offset="0.2" />
+            <GradientStop Color="#001122" Offset="0.4" />
+            <GradientStop Color="#66FF00" Offset="0.6" />
+            <GradientStop Color="#110011" Offset="0.8" />
+            <GradientStop Color="#FF00FF" Offset="1" />
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="CardSecondary" Color="#55FFFF00" />
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF00AA" />
+        <SolidColorBrush x:Key="AccentBrushDeep" Color="#00FFCC" />
+        <SolidColorBrush x:Key="SubtleBrush" Color="#FFF200" />
+        <SolidColorBrush x:Key="InputBackground" Color="#552244AA" />
+        <SolidColorBrush x:Key="BorderBrush" Color="#FF00FF" />
+        <SolidColorBrush x:Key="HeaderTextBrush" Color="#000000" />
 
         <Style TargetType="GroupBox">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="Margin" Value="4" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="FontWeight" Value="Black" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="GroupBox">
-                        <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="12" Effect="{StaticResource SoftShadow}">
+                        <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="6" CornerRadius="2" Padding="12" Effect="{StaticResource SoftShadow}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
-                                <Border Background="{StaticResource CardSecondary}" Padding="4,6" CornerRadius="6" Grid.Row="0">
-                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" Foreground="{StaticResource AccentBrush}" />
+                                <Border Background="{StaticResource CardSecondary}" Padding="4,6" CornerRadius="2" Grid.Row="0" BorderBrush="#FF00FF" BorderThickness="3">
+                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="Black" FontSize="18" Foreground="#0000FF" />
                                 </Border>
                                 <ContentPresenter Grid.Row="1" />
                             </Grid>
@@ -55,43 +68,52 @@
         </Style>
 
         <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Foreground" Value="#00FF00" />
             <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />
             <Setter Property="TextOptions.TextRenderingMode" Value="Auto" />
-            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontFamily" Value="Papyrus" />
+            <Setter Property="FontWeight" Value="Bold" />
         </Style>
 
         <Style TargetType="TextBox">
             <Setter Property="Background" Value="{StaticResource InputBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Padding" Value="8,6" />
-            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="Foreground" Value="#FFFF00" />
+            <Setter Property="BorderBrush" Value="#0000FF" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Padding" Value="4,2" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="FontSize" Value="16" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
 
         <Style TargetType="ComboBox">
-            <Setter Property="Background" Value="{StaticResource InputBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+            <Setter Property="Background" Value="#FF8800" />
+            <Setter Property="Foreground" Value="#000000" />
+            <Setter Property="BorderBrush" Value="#00FF00" />
+            <Setter Property="BorderThickness" Value="4" />
             <Setter Property="Padding" Value="8,2" />
-            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontFamily" Value="Impact" />
+            <Setter Property="FontSize" Value="16" />
         </Style>
 
         <Style TargetType="Button">
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
             <Setter Property="Background" Value="{StaticResource AccentBrush}" />
-            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}" />
-            <Setter Property="Padding" Value="12,8" />
-            <Setter Property="Margin" Value="0" />
+            <Setter Property="BorderBrush" Value="#00FF00" />
+            <Setter Property="BorderThickness" Value="4" />
+            <Setter Property="Padding" Value="18,12" />
+            <Setter Property="Margin" Value="3" />
             <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="FontWeight" Value="SemiBold" />
-            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontWeight" Value="Black" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="FontSize" Value="16" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="0" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="4" RenderTransformOrigin="0.5,0.5">
+                            <Border.RenderTransform>
+                                <RotateTransform Angle="-4" />
+                            </Border.RenderTransform>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                     </ControlTemplate>
@@ -101,36 +123,46 @@
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="{StaticResource AccentBrushDeep}" />
-                    <Setter Property="BorderBrush" Value="{StaticResource AccentBrushDeep}" />
+                    <Setter Property="BorderBrush" Value="#FF0000" />
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.1" ScaleY="1.1" />
+                        </Setter.Value>
+                    </Setter>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
         <Style TargetType="DataGrid">
-            <Setter Property="Background" Value="{StaticResource CardBackground}" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="RowBackground" Value="#132036" />
-            <Setter Property="AlternatingRowBackground" Value="#0E1728" />
-            <Setter Property="HorizontalGridLinesBrush" Value="#20314E" />
-            <Setter Property="VerticalGridLinesBrush" Value="#20314E" />
-            <Setter Property="Padding" Value="6" />
+            <Setter Property="Background" Value="#550000" />
+            <Setter Property="Foreground" Value="#00FFFF" />
+            <Setter Property="BorderBrush" Value="#FF00FF" />
+            <Setter Property="RowBackground" Value="#FF00FF" />
+            <Setter Property="AlternatingRowBackground" Value="#00FFFF" />
+            <Setter Property="HorizontalGridLinesBrush" Value="#FFFF00" />
+            <Setter Property="VerticalGridLinesBrush" Value="#00FF00" />
+            <Setter Property="Padding" Value="16" />
             <Setter Property="Effect" Value="{StaticResource SoftShadow}" />
+            <Setter Property="FontFamily" Value="Impact" />
+            <Setter Property="FontSize" Value="18" />
         </Style>
 
         <Style TargetType="DataGridColumnHeader">
-            <Setter Property="Background" Value="#12253B" />
-            <Setter Property="Foreground" Value="#E6ECF5" />
-            <Setter Property="BorderBrush" Value="#1D3553" />
-            <Setter Property="BorderThickness" Value="0,0,1,1" />
-            <Setter Property="Padding" Value="8,6" />
-            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Background" Value="#000000" />
+            <Setter Property="Foreground" Value="#FF00FF" />
+            <Setter Property="BorderBrush" Value="#00FF00" />
+            <Setter Property="BorderThickness" Value="5,0,5,5" />
+            <Setter Property="Padding" Value="12,10" />
+            <Setter Property="FontWeight" Value="Black" />
+            <Setter Property="FontFamily" Value="Jokerman" />
         </Style>
 
         <Style TargetType="StatusBar">
-            <Setter Property="Background" Value="#0A1220" />
-            <Setter Property="Foreground" Value="{StaticResource SubtleBrush}" />
-            <Setter Property="Padding" Value="10,4" />
+            <Setter Property="Background" Value="#FF0000" />
+            <Setter Property="Foreground" Value="#00FFFF" />
+            <Setter Property="Padding" Value="14,10" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="FontSize" Value="16" />
         </Style>
 
         <conv:IconPathToImageSourceConverter x:Key="IconConverter" />
@@ -145,17 +177,17 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Border Grid.RowSpan="5" CornerRadius="18" Background="#0B1322" BorderBrush="#1A2942" BorderThickness="1" Padding="14" Effect="{StaticResource SoftShadow}" />
+            <Border Grid.RowSpan="5" CornerRadius="0" Background="#22000000" BorderBrush="#00FF00" BorderThickness="8" Padding="14" Effect="{StaticResource SoftShadow}" />
 
-            <Border Grid.Row="0" Padding="12" CornerRadius="12" Background="#111C2F" BorderBrush="#1E3049" BorderThickness="1" Effect="{StaticResource SoftShadow}">
+            <Border Grid.Row="0" Padding="18" CornerRadius="0" Background="#FF00FF" BorderBrush="#FFFF00" BorderThickness="6" Effect="{StaticResource SoftShadow}">
                 <DockPanel>
-                    <Grid Width="46" Height="46" Margin="0,0,12,0">
-                        <Ellipse Fill="{StaticResource AccentBrush}" />
-                        <TextBlock Text="🎯" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <Grid Width="64" Height="64" Margin="0,0,12,0">
+                        <Ellipse Fill="#00FFFF" />
+                        <TextBlock Text="☣" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00FF" />
                     </Grid>
                     <StackPanel>
-                        <TextBlock Text="Track, price, and verify your game items" FontSize="24" FontWeight="SemiBold" Foreground="{StaticResource HeaderTextBrush}" />
-                        <TextBlock Text="Organize every drop with clean pricing, fast search, and instant verification." Foreground="{StaticResource SubtleBrush}" Margin="0,4,0,0" />
+                        <TextBlock Text="Track, price, and verify your game items" FontSize="30" FontWeight="Black" Foreground="{StaticResource HeaderTextBrush}" />
+                        <TextBlock Text="Organize every drop with clashing colors, confusing highlights, and dizzying gradients." Foreground="{StaticResource SubtleBrush}" Margin="0,6,0,0" />
                     </StackPanel>
                 </DockPanel>
             </Border>
@@ -163,14 +195,14 @@
             <!-- Form and totals -->
             <DockPanel Grid.Row="1" Margin="0,12,0,0" LastChildFill="True">
                 <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="260" Margin="14,0,0,0" VerticalAlignment="Top">
-                    <TextBlock Text="Collection health" FontWeight="Bold" Foreground="{StaticResource SubtleBrush}" />
-                    <Border Background="{StaticResource CardBackground}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="12" Padding="12" Margin="0,6,0,0" Effect="{StaticResource SoftShadow}">
+                    <TextBlock Text="Collection health" FontWeight="Black" Foreground="#00FF00" />
+                    <Border Background="{StaticResource CardBackground}" BorderBrush="#FF0000" BorderThickness="5" CornerRadius="1" Padding="18" Margin="0,6,0,0" Effect="{StaticResource SoftShadow}">
                         <TextBlock Text="{Binding TotalsText}" TextWrapping="Wrap" />
                     </Border>
-                    <Button Content="Verify" Margin="0,12,0,0" Click="OnVerifyClick" />
+                    <Button Content="Verify" Margin="0,12,0,0" Click="OnVerifyClick" Background="#FF6600" />
                 </StackPanel>
 
-                <GroupBox Header="Item Details" Padding="12">
+                <GroupBox Header="Item Details" Padding="18">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="150" />
@@ -198,12 +230,12 @@
                         <TextBox Grid.Row="1" Grid.Column="1" Margin="6,6,6,0" Width="180" Text="{Binding WeightText}" />
 
                         <Button Grid.Row="1" Grid.Column="2" Margin="6,6,0,0" Content="Choose Icon" Click="OnChooseIcon" />
-                        <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,8,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" />
+                        <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="8,8,0,0" Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="#000000" />
 
                         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,18,0,0" HorizontalAlignment="Left">
-                            <Button Content="{Binding AddOrUpdateButtonText}" Width="140" Click="OnAddOrUpdate" />
-                            <Button Content="Clear Form" Width="130" Margin="10,0,0,0" Background="#23334D" BorderBrush="#23334D" />
-                            <Button Content="Delete Selected" Width="150" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" />
+                            <Button Content="{Binding AddOrUpdateButtonText}" Width="160" Click="OnAddOrUpdate" Background="#3300FF" />
+                            <Button Content="Clear Form" Width="150" Margin="10,0,0,0" Background="#99FF00" BorderBrush="#000000" />
+                            <Button Content="Delete Selected" Width="170" Margin="10,0,0,0" Background="#FF00FF" BorderBrush="#000000" />
                         </StackPanel>
                     </Grid>
                 </GroupBox>
@@ -216,7 +248,7 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <GroupBox Header="Sorting" Padding="12" Margin="0,0,12,0">
+                <GroupBox Header="Sorting" Padding="18" Margin="0,0,12,0">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBlock Text="Sort by:" VerticalAlignment="Center" />
                         <ComboBox Width="150"
@@ -228,15 +260,15 @@
                                   Margin="6,0,0,0"
                                   ItemsSource="{Binding SortOrders}"
                                   SelectedItem="{Binding SelectedSortOrder}" />
-                        <Button Content="Apply Sort" Margin="12,0,0,0" Click="OnApplySort" />
+                        <Button Content="Apply Sort" Margin="12,0,0,0" Click="OnApplySort" Background="#FF4444" />
                     </StackPanel>
                 </GroupBox>
 
-                <GroupBox Grid.Column="1" Header="Search" Padding="12">
+                <GroupBox Grid.Column="1" Header="Search" Padding="18">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBlock Text="Search items:" VerticalAlignment="Center" />
                         <TextBox Width="280" Margin="6,0,0,0" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
-                        <Button Content="Clear Search" Margin="8,0,0,0" Click="OnClearSearch" />
+                        <Button Content="Clear Search" Margin="8,0,0,0" Click="OnClearSearch" Background="#FF9900" />
                     </StackPanel>
                 </GroupBox>
             </Grid>
@@ -247,28 +279,31 @@
                   SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                   AutoGenerateColumns="False"
                   Margin="0,8,0,8"
-                  RowHeight="40"
+                  RowHeight="48"
                   CanUserAddRows="False"
-                  IsReadOnly="True">
+                  IsReadOnly="True"
+                  BorderThickness="8">
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Icon" Width="60">
+                <DataGridTemplateColumn Header="Icon" Width="80">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Width="32" Height="32" Stretch="Uniform" Source="{Binding IconPath, Converter={StaticResource IconConverter}}" />
+                            <Border BorderBrush="#FFFF00" BorderThickness="3" Background="#5500FF00" Padding="4">
+                                <Image Width="40" Height="40" Stretch="Uniform" Source="{Binding IconPath, Converter={StaticResource IconConverter}}" />
+                            </Border>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Item" Binding="{Binding Name}" Width="*" />
-                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat=F2}" Width="100" />
-                <DataGridTextColumn Header="Stack Size" Binding="{Binding StackSize}" Width="90" />
-                <DataGridTextColumn Header="Price/Stack" Binding="{Binding PricePerStack, StringFormat=F2}" Width="110" />
-                <DataGridTextColumn Header="Weight/Item (kg)" Binding="{Binding WeightPerItem, StringFormat=F3}" Width="140" />
-                <DataGridTextColumn Header="Price/kg" Binding="{Binding PricePerKg, StringFormat=F2}" Width="100" />
+                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat=F2}" Width="150" />
+                <DataGridTextColumn Header="Stack Size" Binding="{Binding StackSize}" Width="120" />
+                <DataGridTextColumn Header="Price/Stack" Binding="{Binding PricePerStack, StringFormat=F2}" Width="140" />
+                <DataGridTextColumn Header="Weight/Item (kg)" Binding="{Binding WeightPerItem, StringFormat=F3}" Width="180" />
+                <DataGridTextColumn Header="Price/kg" Binding="{Binding PricePerKg, StringFormat=F2}" Width="140" />
             </DataGrid.Columns>
         </DataGrid>
 
         <!-- Status -->
-        <StatusBar Grid.Row="4">
+        <StatusBar Grid.Row="4" BorderBrush="#000000" BorderThickness="6">
             <StatusBarItem>
                 <TextBlock Text="{Binding StatusText}" />
             </StatusBarItem>
