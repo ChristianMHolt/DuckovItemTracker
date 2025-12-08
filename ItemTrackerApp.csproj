@@ -5,6 +5,7 @@
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<ApplicationIcon>duck.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Include="items.json">
