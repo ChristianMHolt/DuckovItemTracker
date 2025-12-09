@@ -173,7 +173,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
         if (!TryGetDurabilityPercentage(item.Name, out var durability))
         {
-            return false;
+            return true;
         }
 
         return SelectedDurabilityRange switch
