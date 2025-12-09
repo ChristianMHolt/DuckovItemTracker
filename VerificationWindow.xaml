@@ -10,7 +10,7 @@
     <Window.Resources>
         <DropShadowEffect x:Key="SoftShadow" BlurRadius="12" ShadowDepth="2" Direction="270" Opacity="0.35" Color="#000000" />
         <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="Foreground" Value="#E6ECF5" />
             <Setter Property="FontFamily" Value="Segoe UI" />
         </Style>
     </Window.Resources>
@@ -34,7 +34,7 @@
                 <ItemsControl ItemsSource="{Binding UnusedImages}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <UniformGrid Columns="5" />
+                            <UniformGrid Columns="1" />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
