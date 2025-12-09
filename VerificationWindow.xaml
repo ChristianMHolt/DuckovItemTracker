@@ -12,7 +12,6 @@
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="#E6ECF5" />
             <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="10" />
         </Style>
     </Window.Resources>
     <Grid Margin="14">
@@ -26,7 +25,7 @@
                 <Border Width="34" Height="34" CornerRadius="8" Background="#35B4E6" VerticalAlignment="Center">
                     <TextBlock Text="✔" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
                 </Border>
-                <TextBlock Text="{Binding HeaderText}" Margin="8,0,0,0" FontWeight="SemiBold" FontSize="14" Foreground="White" />
+                <TextBlock Text="{Binding HeaderText}" Margin="8,0,0,0" FontWeight="SemiBold" FontSize="16" Foreground="White" />
             </StackPanel>
         </Border>
 
@@ -41,9 +40,7 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Border Padding="8" Margin="4" Background="#0D1522" CornerRadius="8">
-                                <Viewbox Stretch="Uniform" StretchDirection="DownOnly">
-                                    <TextBlock Text="{Binding}" Foreground="White" TextAlignment="Center" TextWrapping="Wrap" />
-                                </Viewbox>
+                                <TextBlock Text="{Binding}" Foreground="White" />
                             </Border>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
