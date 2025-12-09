@@ -546,6 +546,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ElectricGrenade.png"
   },
   {
+    "name": "Electric RES Injector",
+    "unit_price": 336,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectricRESInjector.png"
+  },
+  {
     "name": "Electronic Parts",
     "unit_price": 122,
     "stack_size": 50,
@@ -693,6 +700,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/GraphicsCard.png"
   },
   {
+    "name": "Gray House Key",
+    "unit_price": 197,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\GrayHouseKey.png"
+  },
+  {
     "name": "Grenade",
     "unit_price": 156,
     "stack_size": 1,
@@ -742,6 +756,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hip-FireStockI.png"
   },
   {
+    "name": "Holographic Sight",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HolographicSight.png"
+  },
+  {
     "name": "Homemade Shotgun 75%",
     "unit_price": 113,
     "stack_size": 1,
@@ -761,6 +782,13 @@
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/HorizontalGripII.png"
+  },
+  {
+    "name": "Hot-Blood Injector",
+    "unit_price": 1491,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hot-BloodInjector.png"
   },
   {
     "name": "Incendiary Bullet",
@@ -817,6 +845,13 @@
     "stack_size": 3,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/J-LabFloppyDisk.png"
+  },
+  {
+    "name": "J-Lab Screening Room Key",
+    "unit_price": 1393,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\J-LabScreeningRoomKey.png"
   },
   {
     "name": "Kazoo",
@@ -910,6 +945,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png"
   },
   {
+    "name": "Lv.3 Combat Body Armor 60%",
+    "unit_price": 788,
+    "stack_size": 1,
+    "weight_per_item": 5.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
+  },
+  {
     "name": "Lv.3 Combat Body Armor 65%",
     "unit_price": 817,
     "stack_size": 1,
@@ -918,7 +960,7 @@
   },
   {
     "name": "Lv.3 Combat Body Armor 75%",
-    "unit_price": 856,
+    "unit_price": 970,
     "stack_size": 1,
     "weight_per_item": 5.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
@@ -952,18 +994,32 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3HeavyBodyArmor.png"
   },
   {
-    "name": "Lv.3 Light Helmet",
-    "unit_price": 469,
+    "name": "Lv.3 Light Helmet 65%",
+    "unit_price": 500,
     "stack_size": 1,
     "weight_per_item": 1.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/LV3LightHelmet.PNG"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\LV3LightHelmet.PNG"
   },
   {
-    "name": "Lv.4 Ballistic Helmet 50%",
-    "unit_price": 1109,
+    "name": "Lv.3 Light Helmet 70%",
+    "unit_price": 535,
+    "stack_size": 1,
+    "weight_per_item": 1.5,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\LV3LightHelmet.PNG"
+  },
+  {
+    "name": "Lv.4 Ballistic Helmet 55%",
+    "unit_price": 1020,
     "stack_size": 1,
     "weight_per_item": 1.7,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4BallisticHelmet.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BallisticHelmet.png"
+  },
+  {
+    "name": "Lv.4 Ballistic Helmet 90%",
+    "unit_price": 1626,
+    "stack_size": 1,
+    "weight_per_item": 1.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BallisticHelmet.png"
   },
   {
     "name": "Lv.4 Combat Body Armor 50%",
@@ -973,11 +1029,32 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
   },
   {
+    "name": "Lv.4 Combat Body Armor 70%",
+    "unit_price": 1389,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
+  },
+  {
     "name": "Lv.4 Combat Body Armor 75%",
-    "unit_price": 1490,
+    "unit_price": 1469,
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
+  },
+  {
+    "name": "Lv.4 Combat Body Armor 80%",
+    "unit_price": 1576,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
+  },
+  {
+    "name": "Lv.4 Combat Body Armor 85%",
+    "unit_price": 1690,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
   },
   {
     "name": "Lv.5 Body Armor",
@@ -992,6 +1069,13 @@
     "stack_size": 1,
     "weight_per_item": 7.9,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv5CombatBodyArmor.png"
+  },
+  {
+    "name": "Lv.5 Heavy Body Armor 35%",
+    "unit_price": 1730,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png"
   },
   {
     "name": "M1A",
@@ -1043,6 +1127,20 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalPlate.png"
   },
   {
+    "name": "MF 55%",
+    "unit_price": 1137,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png"
+  },
+  {
+    "name": "MF 60%",
+    "unit_price": 1221,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png"
+  },
+  {
     "name": "MF 75%",
     "unit_price": 1370,
     "stack_size": 1,
@@ -1090,6 +1188,20 @@
     "stack_size": 1,
     "weight_per_item": 2.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP5.png"
+  },
+  {
+    "name": "MP7 55%",
+    "unit_price": 1141,
+    "stack_size": 1,
+    "weight_per_item": 1.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
+  },
+  {
+    "name": "MP7 60%",
+    "unit_price": 1250,
+    "stack_size": 1,
+    "weight_per_item": 1.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
   },
   {
     "name": "MP7 75%",
@@ -1358,6 +1470,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleMuzzleBreakSpread.png"
   },
   {
+    "name": "Rifle Muzzle Break (Balanced B)",
+    "unit_price": 572,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleMuzzleBrakeBalancedB.png"
+  },
+  {
     "name": "Rifle Quick Magazine II",
     "unit_price": 572,
     "stack_size": 1,
@@ -1449,6 +1568,27 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SchoolBag.png"
   },
   {
+    "name": "SCIFI Mask 65%",
+    "unit_price": 1623,
+    "stack_size": 1,
+    "weight_per_item": 2.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SCIFIMask.png"
+  },
+  {
+    "name": "SCIFI Mask 75%",
+    "unit_price": 1895,
+    "stack_size": 1,
+    "weight_per_item": 2.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SCIFIMask.png"
+  },
+  {
+    "name": "SCIFI Mask 100%",
+    "unit_price": 2524,
+    "stack_size": 1,
+    "weight_per_item": 2.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SCIFIMask.png"
+  },
+  {
     "name": "Scissors",
     "unit_price": 66,
     "stack_size": 1,
@@ -1468,6 +1608,27 @@
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ShotgunDMG-BoostingMuzzle.png"
+  },
+  {
+    "name": "SightPRO Helmet 60%",
+    "unit_price": 805,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png"
+  },
+  {
+    "name": "SightPRO Helmet 70%",
+    "unit_price": 928,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png"
+  },
+  {
+    "name": "SightPRO Helmet 90%",
+    "unit_price": 915,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png"
   },
   {
     "name": "Small Compartment Key",
@@ -1603,6 +1764,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
   },
   {
+    "name": "Standard Bullet (AR)",
+    "unit_price": 36,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StandardBulletAR.png"
+  },
+  {
     "name": "Standard Bullet (S)",
     "unit_price": 2.6,
     "stack_size": 320,
@@ -1638,11 +1806,11 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SteelHelmet.PNG"
   },
   {
-    "name": "StG 77",
-    "unit_price": 1600,
+    "name": "StG 77 55%",
+    "unit_price": 1020,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StG77.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png"
   },
   {
     "name": "StG 77 75%",
@@ -1650,6 +1818,13 @@
     "stack_size": 1,
     "weight_per_item": 3.6,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StG77.png"
+  },
+  {
+    "name": "StG 77 85%",
+    "unit_price": 1897,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png"
   },
   {
     "name": "Storage Fence Key",
@@ -1869,6 +2044,20 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Vector.png"
   },
   {
+    "name": "Vida\u0027s Helmet 40%",
+    "unit_price": 897,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+  },
+  {
+    "name": "Vida\u0027s Helmet 70%",
+    "unit_price": 1571,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+  },
+  {
     "name": "Vida\u0027s Helmet 75%",
     "unit_price": 1797,
     "stack_size": 1,
@@ -1988,59 +2177,87 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
   },
   {
-    "name": "Lv.5 Heavy Body Armor 35%",
-    "unit_price": 1730,
+    "name": "VPO-101 100%",
+    "unit_price": 2644,
     "stack_size": 1,
-    "weight_per_item": 8.6,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png"
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VPO-101.png"
   },
   {
-    "name": "J-Lab Screening Room Key",
-    "unit_price": 1393,
+    "name": "Safe House Compartment Key",
+    "unit_price": 52,
     "stack_size": 1,
     "weight_per_item": 0.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\J-LabScreeningRoomKey.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SafeHouseCompartmentKey.png"
   },
   {
-    "name": "Electric RES Injector",
-    "unit_price": 336,
-    "stack_size": 3,
+    "name": "BR Extended Magazine I",
+    "unit_price": 260,
+    "stack_size": 1,
     "weight_per_item": 0.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectricRESInjector.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BRExtendedMagazineI.png"
   },
   {
-    "name": "Hot-Blood Injector",
-    "unit_price": 1491,
-    "stack_size": 3,
-    "weight_per_item": 0.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hot-BloodInjector.png"
+    "name": "Totem: Recovery I",
+    "unit_price": 520,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemRecoveryI.png"
   },
   {
-    "name": "Standard Bullet (AR)",
-    "unit_price": 36,
-    "stack_size": 240,
-    "weight_per_item": 0.02,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StandardBulletAR.png"
+    "name": "Totem: Physical RES II",
+    "unit_price": 1819,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemPhysicalRESII.png"
   },
   {
-    "name": "Rifle Muzzle Break (Balanced B)",
+    "name": "Rifle Spiral Muzzle Brake",
     "unit_price": 572,
     "stack_size": 1,
     "weight_per_item": 0.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleMuzzleBrakeBalancedB.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleSpiralMuzzleBrake.png"
   },
   {
-    "name": "Vida\u0027s Helmet 40%",
-    "unit_price": 897,
+    "name": "UZI 100%",
+    "unit_price": 1805,
     "stack_size": 1,
-    "weight_per_item": 2.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+    "weight_per_item": 3.5,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\UZI.png"
   },
   {
-    "name": "Vida\u0027s Helmet 70%",
-    "unit_price": 1571,
+    "name": "Sniper Rifle Quick Magazine II",
+    "unit_price": 572,
     "stack_size": 1,
-    "weight_per_item": 2.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SniperRifleQuickMagazineII.png"
+  },
+  {
+    "name": "Pocket Watch",
+    "unit_price": 2453,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\PocketWatch.png"
+  },
+  {
+    "name": "Energy Bar",
+    "unit_price": 192,
+    "stack_size": 3,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\EnergyBar.png"
+  },
+  {
+    "name": "Plastic Barrel",
+    "unit_price": 935,
+    "stack_size": 1,
+    "weight_per_item": 3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\PlasticBarrel.png"
+  },
+  {
+    "name": "Blueprint Graphics Card SLI",
+    "unit_price": 26,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BlueprintGraphicsCardSLI.png"
   }
 ]
