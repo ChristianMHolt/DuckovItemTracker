@@ -323,18 +323,27 @@
                 </Grid.ColumnDefinitions>
 
                 <GroupBox Header="Sorting" Padding="12" Margin="0,0,12,0">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <TextBlock Text="Sort by:" VerticalAlignment="Center" />
-                        <ComboBox Width="180"
-                                  Margin="6,0,0,0"
-                                  ItemsSource="{Binding SortFields}"
-                                  SelectedItem="{Binding SelectedSortField}" />
-                        <TextBlock Text="Order:" Margin="12,0,0,0" VerticalAlignment="Center" />
-                        <ComboBox Width="140"
-                                  Margin="6,0,0,0"
-                                  ItemsSource="{Binding SortOrders}"
-                                  SelectedItem="{Binding SelectedSortOrder}" />
-                        <Button Content="Apply Sort" Width="120" Margin="14,0,0,0" Click="OnApplySort" />
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Sort by:" VerticalAlignment="Center" />
+                            <ComboBox Width="180"
+                                      Margin="6,0,0,0"
+                                      ItemsSource="{Binding SortFields}"
+                                      SelectedItem="{Binding SelectedSortField}" />
+                            <TextBlock Text="Order:" Margin="12,0,0,0" VerticalAlignment="Center" />
+                            <ComboBox Width="140"
+                                      Margin="6,0,0,0"
+                                      ItemsSource="{Binding SortOrders}"
+                                      SelectedItem="{Binding SelectedSortOrder}" />
+                            <Button Content="Apply Sort" Width="120" Margin="14,0,0,0" Click="OnApplySort" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,6,0,0">
+                            <TextBlock Text="Durability range:" VerticalAlignment="Center" />
+                            <ComboBox Width="180"
+                                      Margin="10,0,0,0"
+                                      ItemsSource="{Binding DurabilityRanges}"
+                                      SelectedItem="{Binding SelectedDurabilityRange}" />
+                        </StackPanel>
                     </StackPanel>
                 </GroupBox>
 

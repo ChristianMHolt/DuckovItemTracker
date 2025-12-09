@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
+using System.Text.RegularExpressions;
 using Microsoft.Win32;
 using ItemTracker.Models;
 using ItemTracker.Services;
@@ -27,6 +28,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private string _searchText = string.Empty;
     private string _statusText = "Ready";
     private string _totalsText = "Total items: 0 (showing 0)";
+    private string _selectedDurabilityRange = string.Empty;
     private Item? _selectedItem;
 
     public event PropertyChangedEventHandler? PropertyChanged;
@@ -42,8 +44,10 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
         SortFields = new[] { "Name", "Unit Price", "Price per Stack", "Price per kg" };
         SortOrders = new[] { "Ascending", "Descending" };
+        DurabilityRanges = new[] { "All", "1-25%", "26-50%", "51-75%", "76-100%", "100%" };
         SelectedSortField = SortFields.First();
         SelectedSortOrder = SortOrders.First();
+        _selectedDurabilityRange = DurabilityRanges.First();
 
         LoadItems();
         RefreshView();
@@ -51,6 +55,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     public IEnumerable<string> SortFields { get; }
     public IEnumerable<string> SortOrders { get; }
+    public IEnumerable<string> DurabilityRanges { get; }
 
     public ObservableCollection<Item> FilteredItems => _items;
 
@@ -107,6 +112,18 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         }
     }
 
+    public string SelectedDurabilityRange
+    {
+        get => _selectedDurabilityRange;
+        set
+        {
+            if (_selectedDurabilityRange == value) return;
+            _selectedDurabilityRange = value;
+            OnPropertyChanged(nameof(SelectedDurabilityRange));
+            RefreshView(showMessage: true);
+        }
+    }
+
     public string StatusText
     {
         get => _statusText;
@@ -137,8 +154,49 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private bool FilterItem(object obj)
     {
         if (obj is not Item item) return false;
-        if (string.IsNullOrWhiteSpace(SearchText)) return true;
-        return item.Name.Contains(SearchText, StringComparison.OrdinalIgnoreCase);
+
+        if (!string.IsNullOrWhiteSpace(SearchText) &&
+            !item.Name.Contains(SearchText, StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        return MatchesDurabilityFilter(item);
+    }
+
+    private bool MatchesDurabilityFilter(Item item)
+    {
+        if (SelectedDurabilityRange == "All")
+        {
+            return true;
+        }
+
+        if (!TryGetDurabilityPercentage(item.Name, out var durability))
+        {
+            return false;
+        }
+
+        return SelectedDurabilityRange switch
+        {
+            "1-25%" => durability is >= 1 and <= 25,
+            "26-50%" => durability is >= 26 and <= 50,
+            "51-75%" => durability is >= 51 and <= 75,
+            "76-100%" => durability is >= 76 and <= 100,
+            "100%" => durability == 100,
+            _ => true,
+        };
+    }
+
+    private bool TryGetDurabilityPercentage(string name, out int percentage)
+    {
+        var match = Regex.Match(name, @"(\d+)%");
+        if (match.Success && int.TryParse(match.Groups[1].Value, out percentage))
+        {
+            return true;
+        }
+
+        percentage = 0;
+        return false;
     }
 
     private void RefreshView(bool showMessage = false)
