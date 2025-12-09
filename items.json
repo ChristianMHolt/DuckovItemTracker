@@ -84,8 +84,8 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG"
   },
   {
-    "name": "AK-74U",
-    "unit_price": 780,
+    "name": "AK-74U 100%",
+    "unit_price": 785,
     "stack_size": 1,
     "weight_per_item": 2.71,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
@@ -1986,5 +1986,61 @@
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
+  },
+  {
+    "name": "Lv.5 Heavy Body Armor 35%",
+    "unit_price": 1730,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png"
+  },
+  {
+    "name": "J-Lab Screening Room Key",
+    "unit_price": 1393,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\J-LabScreeningRoomKey.png"
+  },
+  {
+    "name": "Electric RES Injector",
+    "unit_price": 336,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectricRESInjector.png"
+  },
+  {
+    "name": "Hot-Blood Injector",
+    "unit_price": 1491,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hot-BloodInjector.png"
+  },
+  {
+    "name": "Standard Bullet (AR)",
+    "unit_price": 36,
+    "stack_size": 240,
+    "weight_per_item": 0.02,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StandardBulletAR.png"
+  },
+  {
+    "name": "Rifle Muzzle Break (Balanced B)",
+    "unit_price": 572,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleMuzzleBrakeBalancedB.png"
+  },
+  {
+    "name": "Vida\u0027s Helmet 40%",
+    "unit_price": 897,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+  },
+  {
+    "name": "Vida\u0027s Helmet 70%",
+    "unit_price": 1571,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
   }
 ]
