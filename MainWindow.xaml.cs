@@ -425,13 +425,11 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     private void RefreshNameSuggestions()
     {
-        var previousSelection = NameSuggestionsListBox.SelectedItem as string;
         _filteredNameSuggestions.Clear();
 
         if (string.IsNullOrWhiteSpace(NameText))
         {
             IsNameSuggestionVisible = false;
-            NameSuggestionsListBox.SelectedIndex = -1;
             return;
         }
 
@@ -445,24 +443,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _filteredNameSuggestions.Add(match);
         }
 
-        var hasSuggestions = _filteredNameSuggestions.Count > 0;
-        IsNameSuggestionVisible = hasSuggestions;
-
-        if (!hasSuggestions)
-        {
-            NameSuggestionsListBox.SelectedIndex = -1;
-            return;
-        }
-
-        var previouslySelectedIndex = previousSelection is not null
-            ? _filteredNameSuggestions.IndexOf(previousSelection)
-            : -1;
-
-        NameSuggestionsListBox.SelectedIndex = previouslySelectedIndex >= 0
-            ? previouslySelectedIndex
-            : 0;
-
-        NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
+        IsNameSuggestionVisible = _filteredNameSuggestions.Count > 0;
     }
 
     private bool TryParseForm(out Item item)
@@ -710,15 +691,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         if (e.Key == Key.Down)
         {
             NameSuggestionsListBox.Focus();
-            if (NameSuggestionsListBox.SelectedIndex == -1)
-            {
-                NameSuggestionsListBox.SelectedIndex = 0;
-            }
-            else if (NameSuggestionsListBox.SelectedIndex < NameSuggestionsListBox.Items.Count - 1)
-            {
-                NameSuggestionsListBox.SelectedIndex++;
-            }
-            NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
+            NameSuggestionsListBox.SelectedIndex = 0;
             e.Handled = true;
         }
     }
