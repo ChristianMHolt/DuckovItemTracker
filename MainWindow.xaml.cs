@@ -25,6 +25,11 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private readonly ObservableCollection<string> _filteredNameSuggestions = new();
     private readonly Dictionary<string, string> _suggestionToImagePath = new(StringComparer.OrdinalIgnoreCase);
 
+    public static RoutedUICommand AddOrUpdateCommand { get; } = new(
+        "Add or Update Item",
+        nameof(AddOrUpdateCommand),
+        typeof(MainWindow));
+
     private string _nameText = string.Empty;
     private string _unitPriceText = string.Empty;
     private string _stackSizeText = "1";
@@ -603,6 +608,18 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         priceAdjustmentPercent = roundingDifference * 3;
 
         return true;
+    }
+
+    private void OnAddOrUpdateCommandExecuted(object sender, ExecutedRoutedEventArgs e)
+    {
+        OnAddOrUpdate(sender, e);
+        e.Handled = true;
+    }
+
+    private void OnAddOrUpdateCommandCanExecute(object sender, CanExecuteRoutedEventArgs e)
+    {
+        e.CanExecute = true;
+        e.Handled = true;
     }
 
     private void OnAddOrUpdate(object sender, RoutedEventArgs e)
