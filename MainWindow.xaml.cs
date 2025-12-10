@@ -1,9 +1,11 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Text.RegularExpressions;
@@ -19,6 +21,8 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private readonly ItemRepository _repository;
     private readonly ObservableCollection<Item> _items = new();
     private readonly ICollectionView _view;
+    private readonly List<string> _allNameSuggestions = new();
+    private readonly ObservableCollection<string> _filteredNameSuggestions = new();
 
     private string _nameText = string.Empty;
     private string _unitPriceText = string.Empty;
@@ -54,6 +58,8 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         SelectedSortOrder = SortOrders.First();
         _selectedDurabilityRange = DurabilityRanges.First();
 
+        LoadNameSuggestions();
+
         LoadItems();
         RefreshView();
     }
@@ -63,6 +69,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     public IEnumerable<string> DurabilityRanges { get; }
 
     public ObservableCollection<Item> FilteredItems => _items;
+    public ObservableCollection<string> FilteredNameSuggestions => _filteredNameSuggestions;
 
     public Item? SelectedItem
     {
@@ -81,9 +88,15 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         get => _nameText;
         set
         {
+            if (_nameText == value)
+            {
+                return;
+            }
+
             _nameText = value;
             OnPropertyChanged(nameof(NameText));
             UpdateDurabilitySummary();
+            RefreshNameSuggestions();
         }
     }
 
@@ -181,9 +194,24 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     }
 
     public string AddOrUpdateButtonText => SelectedItem is null ? "Add Item" : "Update Item";
+    public bool IsNameSuggestionVisible
+    {
+        get => _isNameSuggestionVisible;
+        private set
+        {
+            if (_isNameSuggestionVisible == value)
+            {
+                return;
+            }
+
+            _isNameSuggestionVisible = value;
+            OnPropertyChanged(nameof(IsNameSuggestionVisible));
+        }
+    }
 
     public string SelectedSortField { get; set; }
     public string SelectedSortOrder { get; set; }
+    private bool _isNameSuggestionVisible;
 
     private void LoadItems()
     {
@@ -193,6 +221,27 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _items.Add(item);
         }
         StatusText = _items.Count > 0 ? $"Loaded {_items.Count} items from items.json" : "Ready";
+    }
+
+    private void LoadNameSuggestions()
+    {
+        if (!Directory.Exists(_repository.DefaultImageFolder))
+        {
+            return;
+        }
+
+        var formatted = Directory
+            .EnumerateFiles(_repository.DefaultImageFolder)
+            .Select(Path.GetFileNameWithoutExtension)
+            .Where(name => !string.IsNullOrWhiteSpace(name))
+            .Select(FormatSuggestionName)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(name => name, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        _allNameSuggestions.Clear();
+        _allNameSuggestions.AddRange(formatted);
+        RefreshNameSuggestions();
     }
 
     private bool FilterItem(object obj)
@@ -292,6 +341,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         IconLabel = string.IsNullOrWhiteSpace(_currentIconPath) ? "No icon selected" : Path.GetFileName(_currentIconPath);
         StatusText = $"Editing item: {SelectedItem.Name}";
         OnPropertyChanged(nameof(AddOrUpdateButtonText));
+        IsNameSuggestionVisible = false;
     }
 
     private void UpdateDurabilitySummary()
@@ -345,6 +395,55 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         NameAvailabilityText = duplicateExists
             ? $"Name already exists: {finalName}"
             : $"Final name: {finalName} (available)";
+    }
+
+    private static string FormatSuggestionName(string? rawName)
+    {
+        if (string.IsNullOrWhiteSpace(rawName))
+        {
+            return string.Empty;
+        }
+
+        var normalized = rawName.Replace('-', ' ');
+        normalized = Regex.Replace(normalized, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
+        normalized = Regex.Replace(normalized, "\\s+", " ").Trim();
+
+        var prefixes = new[] { "Totem", "Blueprint", "Recipe" };
+        foreach (var prefix in prefixes)
+        {
+            if (normalized.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+            {
+                var suffix = normalized[prefix.Length..].TrimStart();
+                return string.IsNullOrWhiteSpace(suffix)
+                    ? $"{prefix}:"
+                    : $"{prefix}: {suffix}";
+            }
+        }
+
+        return normalized;
+    }
+
+    private void RefreshNameSuggestions()
+    {
+        _filteredNameSuggestions.Clear();
+
+        if (string.IsNullOrWhiteSpace(NameText))
+        {
+            IsNameSuggestionVisible = false;
+            return;
+        }
+
+        var matches = _allNameSuggestions
+            .Where(name => name.Contains(NameText, StringComparison.OrdinalIgnoreCase))
+            .Take(12)
+            .ToList();
+
+        foreach (var match in matches)
+        {
+            _filteredNameSuggestions.Add(match);
+        }
+
+        IsNameSuggestionVisible = _filteredNameSuggestions.Count > 0;
     }
 
     private bool TryParseForm(out Item item)
@@ -580,6 +679,53 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         ApplySortToCollection(sorter);
         _view.Refresh();
         StatusText = $"Sorted by {SelectedSortField} ({SelectedSortOrder.ToLowerInvariant()})";
+    }
+
+    private void OnNameTextBoxPreviewKeyDown(object sender, KeyEventArgs e)
+    {
+        if (!IsNameSuggestionVisible || _filteredNameSuggestions.Count == 0)
+        {
+            return;
+        }
+
+        if (e.Key == Key.Down)
+        {
+            NameSuggestionsListBox.Focus();
+            NameSuggestionsListBox.SelectedIndex = 0;
+            e.Handled = true;
+        }
+    }
+
+    private void OnNameSuggestionKeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter && NameSuggestionsListBox.SelectedItem is string suggestion)
+        {
+            ApplyNameSuggestion(suggestion);
+            e.Handled = true;
+        }
+        else if (e.Key == Key.Escape)
+        {
+            IsNameSuggestionVisible = false;
+            NameTextBox.Focus();
+            e.Handled = true;
+        }
+    }
+
+    private void OnNameSuggestionClicked(object sender, MouseButtonEventArgs e)
+    {
+        if (NameSuggestionsListBox.SelectedItem is string suggestion)
+        {
+            ApplyNameSuggestion(suggestion);
+            e.Handled = true;
+        }
+    }
+
+    private void ApplyNameSuggestion(string suggestion)
+    {
+        NameText = suggestion;
+        IsNameSuggestionVisible = false;
+        NameTextBox.CaretIndex = NameText.Length;
+        NameTextBox.Focus();
     }
 
     private void ApplySortToCollection(ItemSorter sorter)

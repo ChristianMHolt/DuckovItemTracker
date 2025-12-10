@@ -30,6 +30,7 @@
         <SolidColorBrush x:Key="InputBackground" Color="#162337" />
         <SolidColorBrush x:Key="BorderBrush" Color="#21324B" />
         <SolidColorBrush x:Key="HeaderTextBrush" Color="#E6ECF5" />
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
 
         <Style TargetType="GroupBox">
             <Setter Property="Foreground" Value="White" />
@@ -285,7 +286,20 @@
                         </Grid.RowDefinitions>
 
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Name" VerticalAlignment="Center" />
-                        <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1" Margin="6,0" Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}" />
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="6,0">
+                            <TextBox x:Name="NameTextBox"
+                                     Text="{Binding NameText, UpdateSourceTrigger=PropertyChanged}"
+                                     PreviewKeyDown="OnNameTextBoxPreviewKeyDown" />
+                            <ListBox x:Name="NameSuggestionsListBox"
+                                     Margin="0,4,0,0"
+                                     ItemsSource="{Binding FilteredNameSuggestions}"
+                                     Visibility="{Binding IsNameSuggestionVisible, Converter={StaticResource BoolToVisibilityConverter}}"
+                                     MaxHeight="160"
+                                     Background="{StaticResource CardSecondary}"
+                                     BorderBrush="{StaticResource BorderBrush}"
+                                     PreviewMouseLeftButtonUp="OnNameSuggestionClicked"
+                                     PreviewKeyDown="OnNameSuggestionKeyDown" />
+                        </StackPanel>
 
                         <TextBlock Grid.Row="0" Grid.Column="2" Text="Unit Price" VerticalAlignment="Center" />
                         <TextBox Grid.Row="0" Grid.Column="3" Margin="6,0" Width="140" Text="{Binding UnitPriceText}" />
