@@ -425,11 +425,13 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     private void RefreshNameSuggestions()
     {
+        var previousSelection = NameSuggestionsListBox.SelectedItem as string;
         _filteredNameSuggestions.Clear();
 
         if (string.IsNullOrWhiteSpace(NameText))
         {
             IsNameSuggestionVisible = false;
+            NameSuggestionsListBox.SelectedIndex = -1;
             return;
         }
 
@@ -443,7 +445,24 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _filteredNameSuggestions.Add(match);
         }
 
-        IsNameSuggestionVisible = _filteredNameSuggestions.Count > 0;
+        var hasSuggestions = _filteredNameSuggestions.Count > 0;
+        IsNameSuggestionVisible = hasSuggestions;
+
+        if (!hasSuggestions)
+        {
+            NameSuggestionsListBox.SelectedIndex = -1;
+            return;
+        }
+
+        var previouslySelectedIndex = previousSelection is not null
+            ? _filteredNameSuggestions.IndexOf(previousSelection)
+            : -1;
+
+        NameSuggestionsListBox.SelectedIndex = previouslySelectedIndex >= 0
+            ? previouslySelectedIndex
+            : 0;
+
+        NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
     }
 
     private bool TryParseForm(out Item item)
@@ -691,14 +710,46 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         if (e.Key == Key.Down)
         {
             NameSuggestionsListBox.Focus();
-            NameSuggestionsListBox.SelectedIndex = 0;
+            if (NameSuggestionsListBox.SelectedIndex == -1)
+            {
+                NameSuggestionsListBox.SelectedIndex = 0;
+            }
+            else if (NameSuggestionsListBox.SelectedIndex < NameSuggestionsListBox.Items.Count - 1)
+            {
+                NameSuggestionsListBox.SelectedIndex++;
+            }
+            NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
             e.Handled = true;
         }
     }
 
     private void OnNameSuggestionKeyDown(object sender, KeyEventArgs e)
     {
-        if (e.Key == Key.Enter && NameSuggestionsListBox.SelectedItem is string suggestion)
+        if (e.Key == Key.Down)
+        {
+            var lastIndex = NameSuggestionsListBox.Items.Count - 1;
+            if (NameSuggestionsListBox.SelectedIndex < lastIndex)
+            {
+                NameSuggestionsListBox.SelectedIndex++;
+            }
+            NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
+            e.Handled = true;
+        }
+        else if (e.Key == Key.Up)
+        {
+            if (NameSuggestionsListBox.SelectedIndex > 0)
+            {
+                NameSuggestionsListBox.SelectedIndex--;
+                NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
+            }
+            else
+            {
+                NameTextBox.Focus();
+                NameTextBox.CaretIndex = NameText.Length;
+            }
+            e.Handled = true;
+        }
+        else if (e.Key == Key.Enter && NameSuggestionsListBox.SelectedItem is string suggestion)
         {
             ApplyNameSuggestion(suggestion);
             e.Handled = true;
