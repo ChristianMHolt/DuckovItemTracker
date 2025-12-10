@@ -427,8 +427,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return string.Empty;
         }
 
-        var normalized = rawName.Replace('-', ' ');
-        normalized = Regex.Replace(normalized, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
+        var normalized = Regex.Replace(rawName, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
         normalized = Regex.Replace(normalized, "\\s+", " ").Trim();
 
         var prefixes = new[] { "Totem", "Blueprint", "Recipe" };
