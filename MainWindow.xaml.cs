@@ -817,14 +817,16 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         var normalizedSuggestion = FormatSuggestionName(suggestion);
 
         var matchingItem = _items
-            .Where(item => item.Durability.HasValue && item.MaxDurability.HasValue)
             .Select(item => new
             {
                 Item = item,
-                Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name))
+                Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name)),
+                DurabilityScore = GetDurabilityScore(item)
             })
-            .FirstOrDefault(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
-            ?.Item;
+            .Where(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(entry => entry.DurabilityScore)
+            .Select(entry => entry.Item)
+            .FirstOrDefault();
 
         if (matchingItem is null)
         {
@@ -838,6 +840,21 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         IconLabel = string.IsNullOrWhiteSpace(_currentIconPath)
             ? "No icon selected"
             : Path.GetFileName(_currentIconPath);
+    }
+
+    private double GetDurabilityScore(Item item)
+    {
+        if (item.RoundedDurabilityPercentage is double rounded)
+        {
+            return rounded;
+        }
+
+        if (TryGetDurabilityPercentage(item.Name, out var parsed))
+        {
+            return parsed;
+        }
+
+        return 100;
     }
 
     private void ApplySortToCollection(ItemSorter sorter)
