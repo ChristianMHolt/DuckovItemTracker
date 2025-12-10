@@ -23,6 +23,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private readonly ICollectionView _view;
     private readonly List<string> _allNameSuggestions = new();
     private readonly ObservableCollection<string> _filteredNameSuggestions = new();
+    private readonly Dictionary<string, string> _suggestionToImagePath = new(StringComparer.OrdinalIgnoreCase);
 
     private string _nameText = string.Empty;
     private string _unitPriceText = string.Empty;
@@ -230,17 +231,39 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return;
         }
 
+        _suggestionToImagePath.Clear();
+
         var formatted = Directory
             .EnumerateFiles(_repository.DefaultImageFolder)
-            .Select(Path.GetFileNameWithoutExtension)
-            .Where(name => !string.IsNullOrWhiteSpace(name))
-            .Select(FormatSuggestionName)
-            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Select(file => new
+            {
+                FilePath = file,
+                Name = Path.GetFileNameWithoutExtension(file)
+            })
+            .Where(entry => !string.IsNullOrWhiteSpace(entry.Name))
+            .Select(entry => new
+            {
+                entry.FilePath,
+                FormattedName = FormatSuggestionName(entry.Name)
+            })
+            .Where(entry => !string.IsNullOrWhiteSpace(entry.FormattedName))
+            .ToList();
+
+        foreach (var entry in formatted)
+        {
+            if (!_suggestionToImagePath.ContainsKey(entry.FormattedName))
+            {
+                _suggestionToImagePath[entry.FormattedName] = entry.FilePath;
+            }
+        }
+
+        var formattedNames = _suggestionToImagePath
+            .Keys
             .OrderBy(name => name, StringComparer.OrdinalIgnoreCase)
             .ToList();
 
         _allNameSuggestions.Clear();
-        _allNameSuggestions.AddRange(formatted);
+        _allNameSuggestions.AddRange(formattedNames);
         RefreshNameSuggestions();
     }
 
@@ -775,8 +798,18 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     {
         NameText = suggestion;
         IsNameSuggestionVisible = false;
+        ApplyIconForSuggestion(suggestion);
         NameTextBox.CaretIndex = NameText.Length;
         NameTextBox.Focus();
+    }
+
+    private void ApplyIconForSuggestion(string suggestion)
+    {
+        if (_suggestionToImagePath.TryGetValue(suggestion, out var imagePath) && File.Exists(imagePath))
+        {
+            _currentIconPath = imagePath;
+            IconLabel = Path.GetFileName(imagePath);
+        }
     }
 
     private void ApplySortToCollection(ItemSorter sorter)
