@@ -427,8 +427,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return string.Empty;
         }
 
-        var normalized = rawName.Replace('-', ' ');
-        normalized = Regex.Replace(normalized, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
+        var normalized = Regex.Replace(rawName, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
         normalized = Regex.Replace(normalized, "\\s+", " ").Trim();
 
         var prefixes = new[] { "Totem", "Blueprint", "Recipe" };
@@ -799,6 +798,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         NameText = suggestion;
         IsNameSuggestionVisible = false;
         ApplyIconForSuggestion(suggestion);
+        ApplyExistingItemDetailsIfAvailable(suggestion);
         NameTextBox.CaretIndex = NameText.Length;
         NameTextBox.Focus();
     }
@@ -810,6 +810,36 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _currentIconPath = imagePath;
             IconLabel = Path.GetFileName(imagePath);
         }
+    }
+
+    private void ApplyExistingItemDetailsIfAvailable(string suggestion)
+    {
+        var normalizedSuggestion = FormatSuggestionName(suggestion);
+
+        var matchingItem = _items
+            .Select(item => new
+            {
+                Item = item,
+                Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name))
+            })
+            .Where(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(entry => entry.Item.MaxDurability.HasValue)
+            .ThenByDescending(entry => entry.Item.Durability.HasValue)
+            .Select(entry => entry.Item)
+            .FirstOrDefault();
+
+        if (matchingItem is null)
+        {
+            return;
+        }
+
+        StackSizeText = matchingItem.StackSize.ToString();
+        WeightText = matchingItem.WeightPerItem.ToString("F3");
+        MaxDurabilityText = matchingItem.MaxDurability?.ToString() ?? string.Empty;
+        _currentIconPath = matchingItem.IconPath ?? string.Empty;
+        IconLabel = string.IsNullOrWhiteSpace(_currentIconPath)
+            ? "No icon selected"
+            : Path.GetFileName(_currentIconPath);
     }
 
     private void ApplySortToCollection(ItemSorter sorter)
