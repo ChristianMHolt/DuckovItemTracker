@@ -799,7 +799,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         NameText = suggestion;
         IsNameSuggestionVisible = false;
         ApplyIconForSuggestion(suggestion);
-        ApplyExistingItemDetailsIfAvailable(suggestion);
         NameTextBox.CaretIndex = NameText.Length;
         NameTextBox.Focus();
     }
@@ -811,34 +810,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _currentIconPath = imagePath;
             IconLabel = Path.GetFileName(imagePath);
         }
-    }
-
-    private void ApplyExistingItemDetailsIfAvailable(string suggestion)
-    {
-        var normalizedSuggestion = FormatSuggestionName(suggestion);
-
-        var matchingItem = _items
-            .Where(item => item.Durability.HasValue && item.MaxDurability.HasValue)
-            .Select(item => new
-            {
-                Item = item,
-                Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name))
-            })
-            .FirstOrDefault(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
-            ?.Item;
-
-        if (matchingItem is null)
-        {
-            return;
-        }
-
-        StackSizeText = matchingItem.StackSize.ToString();
-        WeightText = matchingItem.WeightPerItem.ToString("F3");
-        MaxDurabilityText = matchingItem.MaxDurability?.ToString() ?? string.Empty;
-        _currentIconPath = matchingItem.IconPath ?? string.Empty;
-        IconLabel = string.IsNullOrWhiteSpace(_currentIconPath)
-            ? "No icon selected"
-            : Path.GetFileName(_currentIconPath);
     }
 
     private void ApplySortToCollection(ItemSorter sorter)
