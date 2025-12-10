@@ -279,7 +279,7 @@
     "unit_price": 26,
     "stack_size": 1,
     "weight_per_item": 0.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BlueprintElectrifiedMP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Blueprint_Electrified_MP7_.png"
   },
   {
     "name": "Blueprint: Lv.5 Combat Body Armor",
@@ -587,14 +587,14 @@
     "unit_price": 2160,
     "stack_size": 1,
     "weight_per_item": 4.4,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DTMDR-556.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png"
   },
   {
     "name": "DT MDR-556 75%",
     "unit_price": 2855,
     "stack_size": 1,
     "weight_per_item": 4.4,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DTMDR-556.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png"
   },
   {
     "name": "Duck Egg",
@@ -657,28 +657,28 @@
     "unit_price": 1400,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectrifiedMP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
   },
   {
     "name": "Electrified MP7 85%",
     "unit_price": 2870,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectrifiedMP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
   },
   {
     "name": "Electrified MP7 90%",
     "unit_price": 3046,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectrifiedMP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
   },
   {
     "name": "Electrified MP7 100%",
     "unit_price": 3400,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectrifiedMP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
   },
   {
     "name": "Electronic Parts",
@@ -1484,35 +1484,35 @@
     "unit_price": 2986,
     "stack_size": 1,
     "weight_per_item": 2.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP5.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP5_.png"
   },
   {
     "name": "MP7 40%",
     "unit_price": 865,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
   },
   {
     "name": "MP7 55%",
     "unit_price": 1141,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
   },
   {
     "name": "MP7 60%",
     "unit_price": 1250,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
   },
   {
     "name": "MP7 65%",
     "unit_price": 1376.08,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png",
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
     "durability": 64,
     "max_durability": 100
   },
@@ -1521,14 +1521,7 @@
     "unit_price": 1491,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
-  },
-  {
-    "name": "MP7 75%",
-    "unit_price": 1427,
-    "stack_size": 1,
-    "weight_per_item": 1.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP7.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
   },
   {
     "name": "MP-155",
@@ -2873,5 +2866,40 @@
     "stack_size": 3,
     "weight_per_item": 0.2,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HardeningInjector.png"
+  },
+  {
+    "name": "Rifle Extended Magazine II",
+    "unit_price": 572,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleExtendedMagazineII.png"
+  },
+  {
+    "name": "House Key 01",
+    "unit_price": 104,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HouseKey01.png"
+  },
+  {
+    "name": "Cellar Crossroad Key",
+    "unit_price": 1015,
+    "stack_size": 1,
+    "weight_per_item": 2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CellarCrossroadKey.png"
+  },
+  {
+    "name": "Factory Access Card",
+    "unit_price": 1136,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FactoryAccessCard.png"
+  },
+  {
+    "name": "Organic Fiber",
+    "unit_price": 100,
+    "stack_size": 30,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\OrganicFiber.png"
   }
 ]
