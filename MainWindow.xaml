@@ -311,12 +311,13 @@
 
                         <TextBlock Grid.Row="2" Grid.Column="0" Text="Weight per item (kg)" VerticalAlignment="Center" />
                         <TextBox x:Name="WeightTextBox" Grid.Row="2" Grid.Column="1" Margin="6,6,6,0" Width="180" Text="{Binding WeightText}" GotKeyboardFocus="OnWeightTextBoxGotKeyboardFocus" PreviewMouseLeftButtonDown="OnWeightTextBoxPreviewMouseLeftButtonDown" />
+                        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Margin="6,6,0,0" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" Text="{Binding NameAvailabilityText}" />
 
                         <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal" Margin="0,18,0,0" HorizontalAlignment="Left">
                             <Button Content="Choose Icon" Width="140" Margin="0,0,10,0" Click="OnChooseIcon" />
                             <TextBlock Text="{Binding IconLabel}" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" Margin="0,0,12,0" />
                             <Button Content="{Binding AddOrUpdateButtonText}" Width="140" Background="#4CAF50" BorderBrush="#4CAF50" Click="OnAddOrUpdate" />
-                            <Button Content="Clear Form" Width="130" Margin="10,0,0,0" Background="#23334D" BorderBrush="#23334D" />
+                            <Button Content="Clear Form" Width="130" Margin="10,0,0,0" Background="#23334D" BorderBrush="#23334D" Click="OnClear" />
                             <Button Content="Delete Selected" Width="150" Margin="10,0,0,0" Background="#F44336" BorderBrush="#F44336" Click="OnDelete" />
                         </StackPanel>
                     </Grid>
