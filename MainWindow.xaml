@@ -297,6 +297,7 @@
                                      MaxHeight="160"
                                      Background="{StaticResource CardSecondary}"
                                      BorderBrush="{StaticResource BorderBrush}"
+                                     Foreground="White"
                                      PreviewMouseLeftButtonUp="OnNameSuggestionClicked"
                                      PreviewKeyDown="OnNameSuggestionKeyDown" />
                         </StackPanel>
