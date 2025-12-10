@@ -814,19 +814,24 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     private void ApplyExistingItemDetailsIfAvailable(string suggestion)
     {
-        var normalizedSuggestion = FormatSuggestionName(suggestion);
+        Item? matchingItem = FindItemByIconPath();
 
-        var matchingItem = _items
-            .Select(item => new
-            {
-                Item = item,
-                Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name)),
-                DurabilityScore = GetDurabilityScore(item)
-            })
-            .Where(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
-            .OrderByDescending(entry => entry.DurabilityScore)
-            .Select(entry => entry.Item)
-            .FirstOrDefault();
+        if (matchingItem is null)
+        {
+            var normalizedSuggestion = FormatSuggestionName(suggestion);
+
+            matchingItem = _items
+                .Select(item => new
+                {
+                    Item = item,
+                    Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name)),
+                    DurabilityScore = GetDurabilityScore(item)
+                })
+                .Where(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
+                .OrderByDescending(entry => entry.DurabilityScore)
+                .Select(entry => entry.Item)
+                .FirstOrDefault();
+        }
 
         if (matchingItem is null)
         {
@@ -840,6 +845,31 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         IconLabel = string.IsNullOrWhiteSpace(_currentIconPath)
             ? "No icon selected"
             : Path.GetFileName(_currentIconPath);
+    }
+
+    private Item? FindItemByIconPath()
+    {
+        if (string.IsNullOrWhiteSpace(_currentIconPath))
+        {
+            return null;
+        }
+
+        var currentFileName = Path.GetFileName(_currentIconPath);
+        if (string.IsNullOrWhiteSpace(currentFileName))
+        {
+            return null;
+        }
+
+        return _items.FirstOrDefault(item =>
+        {
+            if (string.IsNullOrWhiteSpace(item.IconPath))
+            {
+                return false;
+            }
+
+            var itemFileName = Path.GetFileName(item.IconPath);
+            return currentFileName.Equals(itemFileName, StringComparison.OrdinalIgnoreCase);
+        });
     }
 
     private double GetDurabilityScore(Item item)
