@@ -691,7 +691,15 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         if (e.Key == Key.Down)
         {
             NameSuggestionsListBox.Focus();
-            NameSuggestionsListBox.SelectedIndex = 0;
+            if (NameSuggestionsListBox.SelectedIndex == -1)
+            {
+                NameSuggestionsListBox.SelectedIndex = 0;
+            }
+            else if (NameSuggestionsListBox.SelectedIndex < NameSuggestionsListBox.Items.Count - 1)
+            {
+                NameSuggestionsListBox.SelectedIndex++;
+            }
+            NameSuggestionsListBox.ScrollIntoView(NameSuggestionsListBox.SelectedItem);
             e.Handled = true;
         }
     }
