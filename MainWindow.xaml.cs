@@ -231,6 +231,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         return false;
     }
 
+    private string RemoveDurabilitySuffix(string name)
+    {
+        var cleaned = Regex.Replace(name, @"\s+\d+%$", string.Empty);
+        return cleaned.TrimEnd();
+    }
+
     private void RefreshView(bool showMessage = false)
     {
         _view.Refresh();
@@ -325,7 +331,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return false;
         }
 
-        if (!TryParseDurability(out var durability, out var maxDurability, out var priceAdjustmentPercent))
+        if (!TryParseDurability(out var durability, out var maxDurability, out var priceAdjustmentPercent, out var roundedDurability))
         {
             return false;
         }
@@ -335,9 +341,17 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             unitPrice *= 1 + priceAdjustmentPercent / 100.0;
         }
 
+        var baseName = NameText.Trim();
+
+        if (roundedDurability is int rounded)
+        {
+            baseName = RemoveDurabilitySuffix(baseName);
+            baseName = string.IsNullOrWhiteSpace(baseName) ? $"{rounded}%" : $"{baseName} {rounded}%";
+        }
+
         item = new Item
         {
-            Name = NameText.Trim(),
+            Name = baseName,
             UnitPrice = unitPrice,
             StackSize = stackSize,
             WeightPerItem = weight,
@@ -349,11 +363,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         return true;
     }
 
-    private bool TryParseDurability(out int? durability, out int? maxDurability, out double priceAdjustmentPercent)
+    private bool TryParseDurability(out int? durability, out int? maxDurability, out double priceAdjustmentPercent, out int? roundedDurability)
     {
         durability = null;
         maxDurability = null;
         priceAdjustmentPercent = 0;
+        roundedDurability = null;
 
         var hasDurability = !string.IsNullOrWhiteSpace(DurabilityText);
         var hasMax = !string.IsNullOrWhiteSpace(MaxDurabilityText);
@@ -385,9 +400,9 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         maxDurability = maxDurabilityValue;
 
         var percentage = Math.Clamp(durabilityValue / (double)maxDurabilityValue * 100.0, 0, 100);
-        var roundedDurability = Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
+        roundedDurability = (int)Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
 
-        var roundingDifference = roundedDurability - percentage;
+        var roundingDifference = roundedDurability.Value - percentage;
         priceAdjustmentPercent = roundingDifference * 3;
 
         return true;
