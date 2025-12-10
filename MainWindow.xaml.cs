@@ -427,6 +427,17 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return string.Empty;
         }
 
+        if (rawName.Contains('_'))
+        {
+            var underscoreCount = rawName.Count(ch => ch == '_');
+            if (underscoreCount == 1 && rawName.EndsWith("_", StringComparison.Ordinal))
+            {
+                return rawName[..^1];
+            }
+
+            return rawName.Replace('_', ' ');
+        }
+
         var normalized = Regex.Replace(rawName, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
         normalized = Regex.Replace(normalized, "\\s+", " ").Trim();
 
