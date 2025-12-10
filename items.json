@@ -2811,5 +2811,67 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\WhiteLabCoat.png",
     "durability": 49,
     "max_durability": 50
+  },
+  {
+    "name": "StG 77 70%",
+    "unit_price": 1327,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png",
+    "durability": 70,
+    "max_durability": 100
+  },
+  {
+    "name": "RPK 80%",
+    "unit_price": 4954.76,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png",
+    "durability": 81,
+    "max_durability": 100
+  },
+  {
+    "name": "ADAR 2-15 70%",
+    "unit_price": 600.49,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ADAR2-15.png",
+    "durability": 69,
+    "max_durability": 100
+  },
+  {
+    "name": "Totem: Perception I",
+    "unit_price": 182,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemPerceptionI.PNG"
+  },
+  {
+    "name": "Advanced Organic Fiber",
+    "unit_price": 222,
+    "stack_size": 30,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\AdvancedOrganicFiber.png"
+  },
+  {
+    "name": "Shining Glasses",
+    "unit_price": 624,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ShiningGlasses.png"
+  },
+  {
+    "name": "Recipe: Hot-Blood Injector",
+    "unit_price": 131,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RecipeHot-BloodInjector.png"
+  },
+  {
+    "name": "Hardening Injector",
+    "unit_price": 336,
+    "stack_size": 3,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HardeningInjector.png"
   }
 ]
