@@ -27,6 +27,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private string _durabilityText = string.Empty;
     private string _maxDurabilityText = string.Empty;
     private string _durabilityPercentText = string.Empty;
+    private string _nameAvailabilityText = string.Empty;
     private string _iconLabel = "No icon selected";
     private string _currentIconPath = string.Empty;
     private string _searchText = string.Empty;
@@ -78,7 +79,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     public string NameText
     {
         get => _nameText;
-        set { _nameText = value; OnPropertyChanged(nameof(NameText)); }
+        set
+        {
+            _nameText = value;
+            OnPropertyChanged(nameof(NameText));
+            UpdateDurabilitySummary();
+        }
     }
 
     public string UnitPriceText
@@ -125,6 +131,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     {
         get => _durabilityPercentText;
         private set { _durabilityPercentText = value; OnPropertyChanged(nameof(DurabilityPercentText)); }
+    }
+
+    public string NameAvailabilityText
+    {
+        get => _nameAvailabilityText;
+        private set { _nameAvailabilityText = value; OnPropertyChanged(nameof(NameAvailabilityText)); }
     }
 
     public string IconLabel
@@ -284,6 +296,23 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     private void UpdateDurabilitySummary()
     {
+        if (TryCalculateRoundedDurability(out var percentageText, out var roundedPercentage))
+        {
+            DurabilityPercentText = percentageText;
+            UpdateNameAvailability(roundedPercentage);
+        }
+        else
+        {
+            DurabilityPercentText = string.Empty;
+            NameAvailabilityText = string.Empty;
+        }
+    }
+
+    private bool TryCalculateRoundedDurability(out string percentageText, out int roundedPercentage)
+    {
+        percentageText = string.Empty;
+        roundedPercentage = 0;
+
         if (int.TryParse(DurabilityText, out var durability) &&
             int.TryParse(MaxDurabilityText, out var maxDurability) &&
             maxDurability > 0 &&
@@ -293,12 +322,29 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             var rounded = Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
             var roundedText = $"{rounded:0}%";
             var suffix = Math.Abs(rounded - percentage) > 0.001 ? $" (from {percentage:0.0}%)" : string.Empty;
-            DurabilityPercentText = $"{roundedText}{suffix}";
+            percentageText = $"{roundedText}{suffix}";
+            roundedPercentage = (int)rounded;
+            return true;
         }
-        else
-        {
-            DurabilityPercentText = string.Empty;
-        }
+
+        return false;
+    }
+
+    private void UpdateNameAvailability(int roundedPercentage)
+    {
+        var baseName = NameText.Trim();
+        var cleanedName = RemoveDurabilitySuffix(baseName);
+        var finalName = string.IsNullOrWhiteSpace(cleanedName)
+            ? $"{roundedPercentage}%"
+            : $"{cleanedName} {roundedPercentage}%";
+
+        var duplicateExists = _items.Any(item =>
+            !ReferenceEquals(item, SelectedItem) &&
+            item.Name.Equals(finalName, StringComparison.OrdinalIgnoreCase));
+
+        NameAvailabilityText = duplicateExists
+            ? $"Name already exists: {finalName}"
+            : $"Final name: {finalName} (available)";
     }
 
     private bool TryParseForm(out Item item)
@@ -488,6 +534,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         MaxDurabilityText = string.Empty;
         _currentIconPath = string.Empty;
         IconLabel = "No icon selected";
+        NameAvailabilityText = string.Empty;
         SelectedItem = null;
         if (!keepStatus)
         {
