@@ -21,6 +21,15 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ADAR2-15.png"
   },
   {
+    "name": "ADAR 2-15 40%",
+    "unit_price": 340,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ADAR2-15.png",
+    "durability": 40,
+    "max_durability": 100
+  },
+  {
     "name": "ADAR 2-15 50%",
     "unit_price": 516,
     "stack_size": 1,
@@ -1253,6 +1262,24 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
   },
   {
+    "name": "Lv.4 Heavy Body Armor 25%",
+    "unit_price": 638.4,
+    "stack_size": 1,
+    "weight_per_item": 6.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4HeavyBodyArmor.png",
+    "durability": 40,
+    "max_durability": 150
+  },
+  {
+    "name": "Lv.4 Heavy Body Armor 70%",
+    "unit_price": 1809.42,
+    "stack_size": 1,
+    "weight_per_item": 6.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4HeavyBodyArmor.png",
+    "durability": 102,
+    "max_durability": 150
+  },
+  {
     "name": "Lv.5 Body Armor 20%",
     "unit_price": 610,
     "stack_size": 1,
@@ -1295,11 +1322,29 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5CombatHelmet.png"
   },
   {
+    "name": "Lv.5 Heavy Body Armor 15%",
+    "unit_price": 684.6,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png",
+    "durability": 24,
+    "max_durability": 180
+  },
+  {
     "name": "Lv.5 Heavy Body Armor 35%",
     "unit_price": 1730,
     "stack_size": 1,
     "weight_per_item": 8.6,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png"
+  },
+  {
+    "name": "Lv.5 Heavy Body Armor 40%",
+    "unit_price": 1931,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5BodyArmor.png",
+    "durability": 72,
+    "max_durability": 180
   },
   {
     "name": "Lv.5 Light Helmet 70%",
@@ -1461,6 +1506,15 @@
     "stack_size": 1,
     "weight_per_item": 1.8,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png"
+  },
+  {
+    "name": "MP7 65%",
+    "unit_price": 1376.08,
+    "stack_size": 1,
+    "weight_per_item": 1.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7.png",
+    "durability": 64,
+    "max_durability": 100
   },
   {
     "name": "MP7 70%",
@@ -1834,6 +1888,33 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RPG-7.png"
   },
   {
+    "name": "RPG-7 25%",
+    "unit_price": 1086.5,
+    "stack_size": 1,
+    "weight_per_item": 6.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPG-7.png",
+    "durability": 23,
+    "max_durability": 100
+  },
+  {
+    "name": "RPG-7 55%",
+    "unit_price": 2496.3,
+    "stack_size": 1,
+    "weight_per_item": 6.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPG-7.png",
+    "durability": 53,
+    "max_durability": 100
+  },
+  {
+    "name": "RPK 40%",
+    "unit_price": 2507.45,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png",
+    "durability": 41,
+    "max_durability": 100
+  },
+  {
     "name": "RPK 70%",
     "unit_price": 4674,
     "stack_size": 1,
@@ -1953,11 +2034,29 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ShotgunMuzzleBrakeMobility.png"
   },
   {
+    "name": "SightPRO Helmet 50%",
+    "unit_price": 646.8846153846152,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png",
+    "durability": 34,
+    "max_durability": 65
+  },
+  {
     "name": "SightPRO Helmet 60%",
     "unit_price": 805,
     "stack_size": 1,
     "weight_per_item": 1.4,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png"
+  },
+  {
+    "name": "SightPRO Helmet 65%",
+    "unit_price": 878.9358846153846,
+    "stack_size": 1,
+    "weight_per_item": 1.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SightPROHelmet.png",
+    "durability": 42,
+    "max_durability": 65
   },
   {
     "name": "SightPRO Helmet 70%",
@@ -2170,6 +2269,15 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SteelHelmet.PNG"
   },
   {
+    "name": "StG 77 50%",
+    "unit_price": 975.2,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png",
+    "durability": 48,
+    "max_durability": 100
+  },
+  {
     "name": "StG 77 55%",
     "unit_price": 1020,
     "stack_size": 1,
@@ -2191,11 +2299,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png"
   },
   {
-    "name": "StG 77A3",
-    "unit_price": 2360,
+    "name": "StG 77A3 80%",
+    "unit_price": 1916.8300000000002,
     "stack_size": 1,
     "weight_per_item": 3.7,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77A3.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77A3.png",
+    "durability": 79,
+    "max_durability": 100
   },
   {
     "name": "Storage Fence Key",
@@ -2506,6 +2616,15 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
   },
   {
+    "name": "Vida\u0027s Helmet 50%",
+    "unit_price": 1158.6142857142859,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 34,
+    "max_durability": 70
+  },
+  {
     "name": "Vida\u0027s Helmet 70%",
     "unit_price": 1571,
     "stack_size": 1,
@@ -2518,6 +2637,15 @@
     "stack_size": 1,
     "weight_per_item": 2.1,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+  },
+  {
+    "name": "Vida\u0027s Helmet 80%",
+    "unit_price": 1887.5714285714287,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 55,
+    "max_durability": 70
   },
   {
     "name": "Vodka",
@@ -2611,6 +2739,15 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Whiskey.PNG"
   },
   {
+    "name": "White Lab Coat 85%",
+    "unit_price": 42.68,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\WhiteLabCoat.png",
+    "durability": 43,
+    "max_durability": 50
+  },
+  {
     "name": "Wood",
     "unit_price": 53,
     "stack_size": 50,
@@ -2665,5 +2802,14 @@
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
+  },
+  {
+    "name": "White Lab Coat 100%",
+    "unit_price": 53,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\WhiteLabCoat.png",
+    "durability": 49,
+    "max_durability": 50
   }
 ]
