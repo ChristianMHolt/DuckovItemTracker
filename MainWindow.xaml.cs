@@ -622,7 +622,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         roundedDurability = (int)Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
 
         var roundingDifference = roundedDurability.Value - percentage;
-        priceAdjustmentPercent = roundingDifference * 3;
+        priceAdjustmentPercent = roundingDifference * 2.5;
 
         return true;
     }
