@@ -817,16 +817,14 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         var normalizedSuggestion = FormatSuggestionName(suggestion);
 
         var matchingItem = _items
+            .Where(item => item.Durability.HasValue && item.MaxDurability.HasValue)
             .Select(item => new
             {
                 Item = item,
                 Normalized = FormatSuggestionName(RemoveDurabilitySuffix(item.Name))
             })
-            .Where(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
-            .OrderByDescending(entry => entry.Item.MaxDurability.HasValue)
-            .ThenByDescending(entry => entry.Item.Durability.HasValue)
-            .Select(entry => entry.Item)
-            .FirstOrDefault();
+            .FirstOrDefault(entry => entry.Normalized.Equals(normalizedSuggestion, StringComparison.OrdinalIgnoreCase))
+            ?.Item;
 
         if (matchingItem is null)
         {
