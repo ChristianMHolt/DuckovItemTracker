@@ -302,10 +302,10 @@
                                  PreviewMouseLeftButtonDown="OnStackSizeTextBoxPreviewMouseLeftButtonDown" />
 
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Durability" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="1" Grid.Column="1" Margin="6,6,6,0" Width="120" Text="{Binding DurabilityText, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox Grid.Row="1" Grid.Column="1" Margin="6,6,6,0" Text="{Binding DurabilityText, UpdateSourceTrigger=PropertyChanged}" />
 
                         <TextBlock Grid.Row="1" Grid.Column="2" Text="Max Durability" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="1" Grid.Column="3" Margin="6,6,6,0" Width="120" Text="{Binding MaxDurabilityText, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox Grid.Row="1" Grid.Column="3" Margin="6,6,6,0" Width="140" Text="{Binding MaxDurabilityText, UpdateSourceTrigger=PropertyChanged}" />
 
                         <TextBlock Grid.Row="1" Grid.Column="4" Margin="0,6,0,0" VerticalAlignment="Center" Foreground="{StaticResource SubtleBrush}" Text="{Binding DurabilityPercentText}" />
 
@@ -386,7 +386,6 @@
                 <DataGridTextColumn Header="Stack Size" Binding="{Binding StackSize}" Width="90" />
                 <DataGridTextColumn Header="Price/Stack" Binding="{Binding PricePerStack, StringFormat=F2}" Width="110" />
                 <DataGridTextColumn Header="Weight/Item (kg)" Binding="{Binding WeightPerItem, StringFormat=F3}" Width="140" />
-                <DataGridTextColumn Header="Durability" Binding="{Binding RoundedDurabilityPercentage, StringFormat={}{0:F0}%}" Width="110" />
                 <DataGridTextColumn Header="Price/kg" Binding="{Binding PricePerKg, StringFormat=F2}" Width="100" />
             </DataGrid.Columns>
         </DataGrid>
