@@ -777,7 +777,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         if (e.Key == Key.Down)
         {
             NameSuggestionsListBox.Focus();
-            if (NameSuggestionsListBox.SelectedIndex == -1)
+            if (NameSuggestionsListBox.SelectedIndex <= 0)
             {
                 NameSuggestionsListBox.SelectedIndex = 0;
             }
