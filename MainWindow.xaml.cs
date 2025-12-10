@@ -1,3 +1,4 @@
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
@@ -23,6 +24,9 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private string _unitPriceText = string.Empty;
     private string _stackSizeText = "1";
     private string _weightText = "1.0";
+    private string _durabilityText = string.Empty;
+    private string _maxDurabilityText = string.Empty;
+    private string _durabilityPercentText = string.Empty;
     private string _iconLabel = "No icon selected";
     private string _currentIconPath = string.Empty;
     private string _searchText = string.Empty;
@@ -93,6 +97,34 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     {
         get => _weightText;
         set { _weightText = value; OnPropertyChanged(nameof(WeightText)); }
+    }
+
+    public string DurabilityText
+    {
+        get => _durabilityText;
+        set
+        {
+            _durabilityText = value;
+            OnPropertyChanged(nameof(DurabilityText));
+            UpdateDurabilitySummary();
+        }
+    }
+
+    public string MaxDurabilityText
+    {
+        get => _maxDurabilityText;
+        set
+        {
+            _maxDurabilityText = value;
+            OnPropertyChanged(nameof(MaxDurabilityText));
+            UpdateDurabilitySummary();
+        }
+    }
+
+    public string DurabilityPercentText
+    {
+        get => _durabilityPercentText;
+        private set { _durabilityPercentText = value; OnPropertyChanged(nameof(DurabilityPercentText)); }
     }
 
     public string IconLabel
@@ -236,10 +268,31 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         UnitPriceText = SelectedItem.UnitPrice.ToString("F2");
         StackSizeText = SelectedItem.StackSize.ToString();
         WeightText = SelectedItem.WeightPerItem.ToString("F3");
+        DurabilityText = SelectedItem.Durability?.ToString() ?? string.Empty;
+        MaxDurabilityText = SelectedItem.MaxDurability?.ToString() ?? string.Empty;
         _currentIconPath = SelectedItem.IconPath ?? string.Empty;
         IconLabel = string.IsNullOrWhiteSpace(_currentIconPath) ? "No icon selected" : Path.GetFileName(_currentIconPath);
         StatusText = $"Editing item: {SelectedItem.Name}";
         OnPropertyChanged(nameof(AddOrUpdateButtonText));
+    }
+
+    private void UpdateDurabilitySummary()
+    {
+        if (int.TryParse(DurabilityText, out var durability) &&
+            int.TryParse(MaxDurabilityText, out var maxDurability) &&
+            maxDurability > 0 &&
+            durability >= 0)
+        {
+            var percentage = Math.Clamp(durability / (double)maxDurability * 100.0, 0, 100);
+            var rounded = Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
+            var roundedText = $"{rounded:0}%";
+            var suffix = Math.Abs(rounded - percentage) > 0.001 ? $" (from {percentage:0.0}%)" : string.Empty;
+            DurabilityPercentText = $"{roundedText}{suffix}";
+        }
+        else
+        {
+            DurabilityPercentText = string.Empty;
+        }
     }
 
     private bool TryParseForm(out Item item)
@@ -272,14 +325,70 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return false;
         }
 
+        if (!TryParseDurability(out var durability, out var maxDurability, out var priceAdjustmentPercent))
+        {
+            return false;
+        }
+
+        if (Math.Abs(priceAdjustmentPercent) > 0.001)
+        {
+            unitPrice *= 1 + priceAdjustmentPercent / 100.0;
+        }
+
         item = new Item
         {
             Name = NameText.Trim(),
             UnitPrice = unitPrice,
             StackSize = stackSize,
             WeightPerItem = weight,
+            Durability = durability,
+            MaxDurability = maxDurability,
             IconPath = _currentIconPath,
         };
+
+        return true;
+    }
+
+    private bool TryParseDurability(out int? durability, out int? maxDurability, out double priceAdjustmentPercent)
+    {
+        durability = null;
+        maxDurability = null;
+        priceAdjustmentPercent = 0;
+
+        var hasDurability = !string.IsNullOrWhiteSpace(DurabilityText);
+        var hasMax = !string.IsNullOrWhiteSpace(MaxDurabilityText);
+
+        if (!hasDurability && !hasMax)
+        {
+            return true;
+        }
+
+        if (!hasDurability || !hasMax)
+        {
+            MessageBox.Show("Please enter both durability and max durability, or leave both blank.", "Incomplete durability", MessageBoxButton.OK, MessageBoxImage.Warning);
+            return false;
+        }
+
+        if (!int.TryParse(DurabilityText, out var durabilityValue) || !int.TryParse(MaxDurabilityText, out var maxDurabilityValue))
+        {
+            MessageBox.Show("Please enter whole numbers for durability and max durability.", "Invalid durability", MessageBoxButton.OK, MessageBoxImage.Error);
+            return false;
+        }
+
+        if (durabilityValue < 0 || maxDurabilityValue <= 0)
+        {
+            MessageBox.Show("Durability must be zero or higher and max durability must be greater than zero.", "Invalid durability range", MessageBoxButton.OK, MessageBoxImage.Error);
+            return false;
+        }
+
+        durability = durabilityValue;
+        maxDurability = maxDurabilityValue;
+
+        var percentage = Math.Clamp(durabilityValue / (double)maxDurabilityValue * 100.0, 0, 100);
+        var roundedDurability = Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
+
+        var roundingDifference = roundedDurability - percentage;
+        priceAdjustmentPercent = roundingDifference * 3;
 
         return true;
     }
@@ -360,6 +469,8 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         UnitPriceText = string.Empty;
         StackSizeText = "1";
         WeightText = "1.0";
+        DurabilityText = string.Empty;
+        MaxDurabilityText = string.Empty;
         _currentIconPath = string.Empty;
         IconLabel = "No icon selected";
         SelectedItem = null;
