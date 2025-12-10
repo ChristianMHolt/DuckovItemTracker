@@ -2901,5 +2901,71 @@
     "stack_size": 30,
     "weight_per_item": 0.2,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\OrganicFiber.png"
+  },
+  {
+    "name": "Thermite",
+    "unit_price": 290,
+    "stack_size": 1,
+    "weight_per_item": 1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Thermite.png"
+  },
+  {
+    "name": "Advanced Weapon Parts",
+    "unit_price": 347,
+    "stack_size": 50,
+    "weight_per_item": 0.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\AdvancedWeaponParts.png"
+  },
+  {
+    "name": "Cellar Fence Key",
+    "unit_price": 114,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CellarFenceKey.png"
+  },
+  {
+    "name": "Cowboy Hat 100%",
+    "unit_price": 86,
+    "stack_size": 1,
+    "weight_per_item": 0.12,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CowboyHat.png",
+    "durability": 30,
+    "max_durability": 30
+  },
+  {
+    "name": "SR-3M 100%",
+    "unit_price": 2002,
+    "stack_size": 1,
+    "weight_per_item": 2.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SR-3M_.png",
+    "durability": 100,
+    "max_durability": 100
+  },
+  {
+    "name": "SKS-45 100%",
+    "unit_price": 1240,
+    "stack_size": 1,
+    "weight_per_item": 3.65,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SKS-45.png",
+    "durability": 120,
+    "max_durability": 120
+  },
+  {
+    "name": "TOZ-66 100%",
+    "unit_price": 226,
+    "stack_size": 1,
+    "weight_per_item": 2.71,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TOZ-66.png",
+    "durability": 100,
+    "max_durability": 100
+  },
+  {
+    "name": "RPG-7 100%",
+    "unit_price": 4436,
+    "stack_size": 1,
+    "weight_per_item": 6.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RPG-7.png",
+    "durability": 100,
+    "max_durability": 100
   }
 ]
