@@ -432,19 +432,36 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return string.Empty;
         }
 
+        string normalized;
+
         if (rawName.Contains('_'))
         {
             var underscoreCount = rawName.Count(ch => ch == '_');
             if (underscoreCount == 1 && rawName.EndsWith("_", StringComparison.Ordinal))
             {
-                return rawName[..^1];
+                normalized = rawName[..^1];
             }
-
-            return rawName.Replace('_', ' ');
+            else
+            {
+                normalized = rawName.Replace('_', ' ');
+            }
+        }
+        else
+        {
+            normalized = Regex.Replace(rawName, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
         }
 
-        var normalized = Regex.Replace(rawName, "(?<!^)(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\\d)|(?<=\\d)(?=[A-Za-z]))", " ");
         normalized = Regex.Replace(normalized, "\\s+", " ").Trim();
+
+        var levelMatch = Regex.Match(normalized, @"^Lv\.?\s*(\d+)(.*)", RegexOptions.IgnoreCase);
+        if (levelMatch.Success)
+        {
+            var suffix = levelMatch.Groups[2].Value.TrimStart();
+            var formattedPrefix = $"Lv.{levelMatch.Groups[1].Value}";
+            return string.IsNullOrWhiteSpace(suffix)
+                ? formattedPrefix
+                : $"{formattedPrefix} {suffix}";
+        }
 
         var prefixes = new[] { "Totem", "Blueprint", "Recipe" };
         foreach (var prefix in prefixes)
