@@ -45,6 +45,7 @@
         <SolidColorBrush x:Key="BorderBrush" Color="#21324B" />
         <SolidColorBrush x:Key="HeaderTextBrush" Color="#E6ECF5" />
         <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <conv:RoundDownConverter x:Key="RoundDownConverter" />
 
         <Style TargetType="GroupBox">
             <Setter Property="Foreground" Value="White" />
@@ -417,7 +418,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Item" Binding="{Binding Name}" Width="*" />
-                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat=F2}" Width="100" />
+                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, Converter={StaticResource RoundDownConverter}, StringFormat=F0}" Width="100" />
                 <DataGridTextColumn Header="Stack Size" Binding="{Binding StackSize}" Width="90" />
                 <DataGridTextColumn Header="Price/Stack" Binding="{Binding PricePerStack, StringFormat=F2}" Width="110" />
                 <DataGridTextColumn Header="Weight/Item (kg)" Binding="{Binding WeightPerItem, StringFormat=F3}" Width="140" />
