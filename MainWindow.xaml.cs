@@ -609,7 +609,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         return true;
     }
 
-    private bool TryParseDurability(out int? durability, out int? maxDurability, out double priceAdjustmentPercent, out int? roundedDurability)
+    private bool TryParseDurability(out double? durability, out double? maxDurability, out double priceAdjustmentPercent, out int? roundedDurability)
     {
         durability = null;
         maxDurability = null;
@@ -630,9 +630,9 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return false;
         }
 
-        if (!int.TryParse(DurabilityText, out var durabilityValue) || !int.TryParse(MaxDurabilityText, out var maxDurabilityValue))
+        if (!double.TryParse(DurabilityText, out var durabilityValue) || !double.TryParse(MaxDurabilityText, out var maxDurabilityValue))
         {
-            MessageBox.Show("Please enter whole numbers for durability and max durability.", "Invalid durability", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show("Please enter numeric values for durability and max durability.", "Invalid durability", MessageBoxButton.OK, MessageBoxImage.Error);
             return false;
         }
 

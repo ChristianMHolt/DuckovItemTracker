@@ -21,10 +21,10 @@ public class Item
     public string? IconPath { get; set; }
 
     [JsonPropertyName("durability")]
-    public int? Durability { get; set; }
+    public double? Durability { get; set; }
 
     [JsonPropertyName("max_durability")]
-    public int? MaxDurability { get; set; }
+    public double? MaxDurability { get; set; }
 
     [JsonIgnore]
     public double PricePerStack => StackSize > 0 ? UnitPrice * StackSize : 0.0;
