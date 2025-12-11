@@ -385,7 +385,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         }
 
         NameText = SelectedItem.Name;
-        UnitPriceText = SelectedItem.UnitPrice.ToString("F2");
+        UnitPriceText = Math.Floor(SelectedItem.UnitPrice).ToString("F0");
         StackSizeText = SelectedItem.StackSize.ToString();
         WeightText = SelectedItem.WeightPerItem.ToString("F3");
         DurabilityText = SelectedItem.Durability?.ToString() ?? string.Empty;
