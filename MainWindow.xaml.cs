@@ -631,8 +631,11 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         var percentage = Math.Clamp(durabilityValue / (double)maxDurabilityValue * 100.0, 0, 100);
         roundedDurability = (int)Math.Clamp(Math.Round(percentage / 5.0, MidpointRounding.AwayFromZero) * 5, 0, 100);
 
-        var roundingDifference = roundedDurability.Value - percentage;
-        priceAdjustmentPercent = roundingDifference * 2.5;
+        if (durabilityValue > 0)
+        {
+            var targetPriceMultiplier = roundedDurability.Value * maxDurabilityValue / (100.0 * durabilityValue);
+            priceAdjustmentPercent = (targetPriceMultiplier - 1) * 100;
+        }
 
         return true;
     }
