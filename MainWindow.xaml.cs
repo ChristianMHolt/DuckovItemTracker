@@ -210,6 +210,20 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     }
 
     public string AddOrUpdateButtonText => SelectedItem is null ? "Add Item" : "Update Item";
+    public bool CanGenerateDurabilityVariants
+    {
+        get => _canGenerateDurabilityVariants;
+        private set
+        {
+            if (_canGenerateDurabilityVariants == value)
+            {
+                return;
+            }
+
+            _canGenerateDurabilityVariants = value;
+            OnPropertyChanged(nameof(CanGenerateDurabilityVariants));
+        }
+    }
     public bool IsNameSuggestionVisible
     {
         get => _isNameSuggestionVisible;
@@ -227,6 +241,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     public string SelectedSortField { get; set; }
     public string SelectedSortOrder { get; set; }
+    private bool _canGenerateDurabilityVariants;
     private bool _isNameSuggestionVisible;
 
     private void LoadItems()
@@ -388,11 +403,13 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         {
             DurabilityPercentText = percentageText;
             UpdateNameAvailability(roundedPercentage);
+            CanGenerateDurabilityVariants = true;
         }
         else
         {
             DurabilityPercentText = string.Empty;
             NameAvailabilityText = string.Empty;
+            CanGenerateDurabilityVariants = false;
         }
     }
 
@@ -707,6 +724,101 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         RefreshView();
         ClearForm(keepStatus: true);
         FocusNameTextBox();
+    }
+
+    private void OnGenerateDurabilityVariants(object sender, RoutedEventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(NameText))
+        {
+            MessageBox.Show("Please enter an item name before generating variants.", "Missing name", MessageBoxButton.OK, MessageBoxImage.Warning);
+            return;
+        }
+
+        if (!double.TryParse(UnitPriceText, out var unitPrice) ||
+            !int.TryParse(StackSizeText, out var stackSize) ||
+            !double.TryParse(WeightText, out var weight))
+        {
+            MessageBox.Show("Please enter valid numeric values for price, stack size, and weight.", "Invalid number", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (stackSize <= 0)
+        {
+            MessageBox.Show("Stack size must be greater than zero.", "Invalid stack size", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (weight <= 0)
+        {
+            MessageBox.Show("Weight per item must be greater than zero.", "Invalid weight", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (!TryParseDurability(out var durability, out var maxDurability, out var priceAdjustmentPercent, out var roundedDurability) ||
+            durability is null || maxDurability is null || roundedDurability is null)
+        {
+            return;
+        }
+
+        if (Math.Abs(priceAdjustmentPercent) > 0.001)
+        {
+            unitPrice *= 1 + priceAdjustmentPercent / 100.0;
+        }
+
+        var baseDurabilityValue = durability.Value;
+        var maxDurabilityValue = maxDurability.Value;
+        var cleanedName = RemoveDurabilitySuffix(NameText.Trim());
+        var basePriceMultiplier = baseDurabilityValue > 0 ? unitPrice / baseDurabilityValue : unitPrice;
+        var newItemsCount = 0;
+        var updatedItemsCount = 0;
+        var newVariants = new List<Item>();
+
+        for (var percentage = 5; percentage <= 100; percentage += 5)
+        {
+            var targetDurability = (int)Math.Round(maxDurabilityValue * percentage / 100.0, MidpointRounding.AwayFromZero);
+            var finalName = string.IsNullOrWhiteSpace(cleanedName)
+                ? $"{percentage}%"
+                : $"{cleanedName} {percentage}%";
+
+            var targetPrice = baseDurabilityValue > 0
+                ? basePriceMultiplier * targetDurability
+                : unitPrice;
+
+            var variant = new Item
+            {
+                Name = finalName,
+                UnitPrice = targetPrice,
+                StackSize = stackSize,
+                WeightPerItem = weight,
+                Durability = targetDurability,
+                MaxDurability = maxDurabilityValue,
+                IconPath = _currentIconPath,
+            };
+
+            var existingIndex = _items
+                .Select((item, index) => (item, index))
+                .FirstOrDefault(pair => pair.item.Name.Equals(finalName, StringComparison.OrdinalIgnoreCase));
+
+            if (existingIndex.item is not null)
+            {
+                _items[existingIndex.index] = variant;
+                updatedItemsCount++;
+            }
+            else
+            {
+                _items.Add(variant);
+                newVariants.Add(variant);
+                newItemsCount++;
+            }
+        }
+
+        SaveItems();
+        foreach (var variant in newVariants)
+        {
+            _repository.CopyDataFileAndItemIcon(variant);
+        }
+        RefreshView();
+        StatusText = $"Generated durability variants ({newItemsCount} added, {updatedItemsCount} updated).";
     }
 
     private void OnDelete(object sender, RoutedEventArgs e)
