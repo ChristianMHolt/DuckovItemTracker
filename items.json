@@ -131,6 +131,15 @@
     "max_durability": 120
   },
   {
+    "name": "AK-47 60%",
+    "unit_price": 1141.6666666666665,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\AK-47.PNG",
+    "durability": 70,
+    "max_durability": 120
+  },
+  {
     "name": "AK-47 70%",
     "unit_price": 1279.770833333333,
     "stack_size": 1,
@@ -141,7 +150,7 @@
   },
   {
     "name": "AK-47 75%",
-    "unit_price": 1274,
+    "unit_price": 1383,
     "stack_size": 1,
     "weight_per_item": 4.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-47.PNG",
@@ -172,6 +181,15 @@
     "stack_size": 1,
     "weight_per_item": 2.71,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-74U.png"
+  },
+  {
+    "name": "AK-103 30%",
+    "unit_price": 932.0208333333333,
+    "stack_size": 1,
+    "weight_per_item": 3.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png",
+    "durability": 35,
+    "max_durability": 120
   },
   {
     "name": "AK-103 50%",
@@ -216,6 +234,15 @@
     "weight_per_item": 3.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png",
     "durability": 104,
+    "max_durability": 120
+  },
+  {
+    "name": "AK-103 90%",
+    "unit_price": 2850.1666666666665,
+    "stack_size": 1,
+    "weight_per_item": 3.4,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/AK-103.png",
+    "durability": 107,
     "max_durability": 120
   },
   {
@@ -415,11 +442,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Book.png"
   },
   {
-    "name": "Bottled Water",
+    "name": "Bottled Water 100%",
     "unit_price": 195,
     "stack_size": 1,
     "weight_per_item": 0.5,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BottledWater.PNG",
+    "durability": 2,
+    "max_durability": 2
   },
   {
     "name": "BR Extended Drum Magazine II",
@@ -539,6 +568,24 @@
     "stack_size": 3,
     "weight_per_item": 0.12,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Carrot.png"
+  },
+  {
+    "name": "Casual Outfit 95%",
+    "unit_price": 110.175,
+    "stack_size": 1,
+    "weight_per_item": 0.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CasualOutfit.png",
+    "durability": 48,
+    "max_durability": 50
+  },
+  {
+    "name": "Casual Outfit 100%",
+    "unit_price": 118,
+    "stack_size": 1,
+    "weight_per_item": 0.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\CasualOutfit.png",
+    "durability": 50,
+    "max_durability": 50
   },
   {
     "name": "CD Drive",
@@ -725,12 +772,57 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/DormRoom106Key.png"
   },
   {
+    "name": "DT MDR-556 40%",
+    "unit_price": 1543.75,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 42,
+    "max_durability": 100
+  },
+  {
+    "name": "DT MDR-556 45%",
+    "unit_price": 1690.05,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 47,
+    "max_durability": 100
+  },
+  {
     "name": "DT MDR-556 50%",
     "unit_price": 2160,
     "stack_size": 1,
     "weight_per_item": 4.4,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
     "durability": 50,
+    "max_durability": 100
+  },
+  {
+    "name": "DT MDR-556 55%",
+    "unit_price": 2094,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 55,
+    "max_durability": 100
+  },
+  {
+    "name": "DT MDR-556 65%",
+    "unit_price": 2508.1749999999997,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 64,
+    "max_durability": 100
+  },
+  {
+    "name": "DT MDR-556 70%",
+    "unit_price": 2686.5249999999996,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 69,
     "max_durability": 100
   },
   {
@@ -926,18 +1018,22 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
   },
   {
-    "name": "First Aid Kit",
+    "name": "First Aid Kit 100%",
     "unit_price": 419,
     "stack_size": 1,
     "weight_per_item": 0.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FirstAidKit.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FirstAidKit.png",
+    "durability": 175,
+    "max_durability": 175
   },
   {
-    "name": "First Aid Kit (L)",
+    "name": "First Aid Kit (L) 100%",
     "unit_price": 687,
     "stack_size": 1,
     "weight_per_item": 1.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FirstAidKitL.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FirstAidKitL.png",
+    "durability": 400,
+    "max_durability": 400
   },
   {
     "name": "First Aid Kit (S)",
@@ -1015,6 +1111,13 @@
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Glick.png"
+  },
+  {
+    "name": "Gold Framed Glasses",
+    "unit_price": 41,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\GoldFramedGlasses.png"
   },
   {
     "name": "Golden Ring",
@@ -1120,6 +1223,15 @@
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HolographicSight.png"
+  },
+  {
+    "name": "Homemade Candy 100%",
+    "unit_price": 244,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\HomemadeCandy.png",
+    "durability": 10,
+    "max_durability": 10
   },
   {
     "name": "Homemade Shotgun 75%",
@@ -1343,42 +1455,108 @@
     "unit_price": 102,
     "stack_size": 1,
     "weight_per_item": 1.1,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv2LightHelmet.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv2LightHelmet.png",
+    "durability": 28,
+    "max_durability": 56
+  },
+  {
+    "name": "Lv.2 Light Helmet 70%",
+    "unit_price": 168.74999999999997,
+    "stack_size": 1,
+    "weight_per_item": 1.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv2LightHelmet.png",
+    "durability": 40,
+    "max_durability": 56
+  },
+  {
+    "name": "Lv.2 Light Helmet 85%",
+    "unit_price": 210.49107142857142,
+    "stack_size": 1,
+    "weight_per_item": 1.1,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv2LightHelmet.png",
+    "durability": 47,
+    "max_durability": 56
+  },
+  {
+    "name": "Lv.3 Body Armor 65%",
+    "unit_price": 601,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png",
+    "durability": 52,
+    "max_durability": 80
+  },
+  {
+    "name": "Lv.3 Body Armor 70%",
+    "unit_price": 638.40625,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png",
+    "durability": 57,
+    "max_durability": 80
   },
   {
     "name": "Lv.3 Body Armor 100%",
     "unit_price": 915,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3BodyArmor.png",
+    "durability": 80,
+    "max_durability": 80
+  },
+  {
+    "name": "Lv.3 Combat Body Armor 50%",
+    "unit_price": 647.0625,
+    "stack_size": 1,
+    "weight_per_item": 5.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png",
+    "durability": 53,
+    "max_durability": 104
   },
   {
     "name": "Lv.3 Combat Body Armor 60%",
-    "unit_price": 788,
+    "unit_price": 795.5769230769231,
     "stack_size": 1,
     "weight_per_item": 5.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png",
+    "durability": 62,
+    "max_durability": 104
   },
   {
     "name": "Lv.3 Combat Body Armor 65%",
-    "unit_price": 817,
+    "unit_price": 809.1442307692307,
     "stack_size": 1,
     "weight_per_item": 5.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png",
+    "durability": 68,
+    "max_durability": 104
+  },
+  {
+    "name": "Lv.3 Combat Body Armor 70%",
+    "unit_price": 923.293269230769,
+    "stack_size": 1,
+    "weight_per_item": 5.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv3CombatBodyArmor.png",
+    "durability": 71,
+    "max_durability": 104
   },
   {
     "name": "Lv.3 Combat Body Armor 75%",
     "unit_price": 970,
     "stack_size": 1,
     "weight_per_item": 5.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png",
+    "durability": 78,
+    "max_durability": 104
   },
   {
     "name": "Lv.3 Combat Body Armor 100%",
     "unit_price": 1228,
     "stack_size": 1,
     "weight_per_item": 5.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv3CombatBodyArmor.png",
+    "durability": 104,
+    "max_durability": 104
   },
   {
     "name": "Lv.3 Heavy Body Armor 50%",
@@ -1453,46 +1631,85 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BallisticHelmet.png"
   },
   {
+    "name": "Lv.4 Body Armor 50%",
+    "unit_price": 863,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BodyArmor.png",
+    "durability": 50,
+    "max_durability": 100
+  },
+  {
+    "name": "Lv.4 Body Armor 65%",
+    "unit_price": 1130.5749999999998,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BodyArmor.png",
+    "durability": 64,
+    "max_durability": 100
+  },
+  {
     "name": "Lv.4 Body Armor 85%",
     "unit_price": 1475,
     "stack_size": 1,
     "weight_per_item": 4.3,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4BodyArmor.png",
+    "durability": 85,
+    "max_durability": 100
   },
   {
     "name": "Lv.4 Combat Body Armor 50%",
-    "unit_price": 1099,
+    "unit_price": 1082.8382352941178,
     "stack_size": 1,
     "weight_per_item": 3.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png",
+    "durability": 43,
+    "max_durability": 85
+  },
+  {
+    "name": "Lv.4 Combat Body Armor 60%",
+    "unit_price": 1160.4705882352941,
+    "stack_size": 1,
+    "weight_per_item": 3.8,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png",
+    "durability": 53,
+    "max_durability": 85
   },
   {
     "name": "Lv.4 Combat Body Armor 70%",
-    "unit_price": 1389,
+    "unit_price": 1368.5735294117644,
     "stack_size": 1,
     "weight_per_item": 3.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png",
+    "durability": 60,
+    "max_durability": 85
   },
   {
     "name": "Lv.4 Combat Body Armor 75%",
-    "unit_price": 1469,
+    "unit_price": 1458.1985294117646,
     "stack_size": 1,
     "weight_per_item": 3.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Lv4CombatBodyArmor.png",
+    "durability": 64,
+    "max_durability": 85
   },
   {
     "name": "Lv.4 Combat Body Armor 80%",
     "unit_price": 1576,
     "stack_size": 1,
     "weight_per_item": 3.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png",
+    "durability": 68,
+    "max_durability": 85
   },
   {
     "name": "Lv.4 Combat Body Armor 85%",
-    "unit_price": 1690,
+    "unit_price": 1702.4264705882354,
     "stack_size": 1,
     "weight_per_item": 3.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv4CombatBodyArmor.png",
+    "durability": 72,
+    "max_durability": 85
   },
   {
     "name": "Lv.4 Heavy Body Armor 25%",
@@ -1573,12 +1790,30 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5CombatHelmet.png"
   },
   {
+    "name": "Lv.5 Heavy Body Armor 10%",
+    "unit_price": 427.08333333333337,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png",
+    "durability": 15,
+    "max_durability": 180
+  },
+  {
     "name": "Lv.5 Heavy Body Armor 15%",
     "unit_price": 684.6,
     "stack_size": 1,
     "weight_per_item": 8.6,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png",
     "durability": 24,
+    "max_durability": 180
+  },
+  {
+    "name": "Lv.5 Heavy Body Armor 20%",
+    "unit_price": 989.0694444444445,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png",
+    "durability": 37,
     "max_durability": 180
   },
   {
@@ -1595,6 +1830,15 @@
     "weight_per_item": 8.6,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5BodyArmor.png",
     "durability": 72,
+    "max_durability": 180
+  },
+  {
+    "name": "Lv.5 Heavy Body Armor 45%",
+    "unit_price": 2173.958333333333,
+    "stack_size": 1,
+    "weight_per_item": 8.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5HeavyBodyArmor.png",
+    "durability": 78,
     "max_durability": 180
   },
   {
@@ -1617,6 +1861,60 @@
     "stack_size": 1,
     "weight_per_item": 2.2,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5LightHelmet.png"
+  },
+  {
+    "name": "M1A 35%",
+    "unit_price": 1525.1999999999998,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 34,
+    "max_durability": 100
+  },
+  {
+    "name": "M1A 50%",
+    "unit_price": 2215.5,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\M1A.png",
+    "durability": 48,
+    "max_durability": 100
+  },
+  {
+    "name": "M1A 55%",
+    "unit_price": 2386.7999999999997,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 56,
+    "max_durability": 100
+  },
+  {
+    "name": "M1A 60%",
+    "unit_price": 2631,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 60,
+    "max_durability": 100
+  },
+  {
+    "name": "M1A 75%",
+    "unit_price": 3320.9999999999995,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 74,
+    "max_durability": 100
+  },
+  {
+    "name": "M1A 85%",
+    "unit_price": 3837.75,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 83,
+    "max_durability": 100
   },
   {
     "name": "M1A 100%",
@@ -1677,25 +1975,76 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MetalPlate.png"
   },
   {
+    "name": "MF 45%",
+    "unit_price": 920.55,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 47,
+    "max_durability": 100
+  },
+  {
+    "name": "MF 50%",
+    "unit_price": 1075.425,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 51,
+    "max_durability": 100
+  },
+  {
     "name": "MF 55%",
     "unit_price": 1137,
     "stack_size": 1,
     "weight_per_item": 2.9,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 55,
+    "max_durability": 100
   },
   {
     "name": "MF 60%",
     "unit_price": 1221,
     "stack_size": 1,
     "weight_per_item": 2.9,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 60,
+    "max_durability": 100
+  },
+  {
+    "name": "MF 65%",
+    "unit_price": 1346,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 65,
+    "max_durability": 100
+  },
+  {
+    "name": "MF 70%",
+    "unit_price": 1400.3,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 72,
+    "max_durability": 100
   },
   {
     "name": "MF 75%",
     "unit_price": 1370,
     "stack_size": 1,
     "weight_per_item": 2.9,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MF.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MF.png",
+    "durability": 75,
+    "max_durability": 100
+  },
+  {
+    "name": "MF 100%",
+    "unit_price": 2057,
+    "stack_size": 1,
+    "weight_per_item": 2.9,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MF.png",
+    "durability": 100,
+    "max_durability": 100
   },
   {
     "name": "Mic",
@@ -1791,6 +2140,24 @@
     "weight_per_item": 1.8,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
     "durability": 70,
+    "max_durability": 100
+  },
+  {
+    "name": "MP7 75%",
+    "unit_price": 1606.5,
+    "stack_size": 1,
+    "weight_per_item": 1.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 73,
+    "max_durability": 100
+  },
+  {
+    "name": "MP7 85%",
+    "unit_price": 1816.3,
+    "stack_size": 1,
+    "weight_per_item": 1.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 84,
     "max_durability": 100
   },
   {
@@ -2132,6 +2499,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/RifleExtendedMuzzle.png"
   },
   {
+    "name": "Rifle Horizontal Muzzle Brake",
+    "unit_price": 1248,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RifleHorizontalMuzzleBrake.png"
+  },
+  {
     "name": "Rifle Muzzle Brake (Spread)",
     "unit_price": 260,
     "stack_size": 1,
@@ -2222,6 +2596,15 @@
     "max_durability": 100
   },
   {
+    "name": "RPK 15%",
+    "unit_price": 922,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png",
+    "durability": 15,
+    "max_durability": 100
+  },
+  {
     "name": "RPK 40%",
     "unit_price": 2507.45,
     "stack_size": 1,
@@ -2231,11 +2614,29 @@
     "max_durability": 100
   },
   {
+    "name": "RPK 65%",
+    "unit_price": 4143.049999999999,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png",
+    "durability": 64,
+    "max_durability": 100
+  },
+  {
     "name": "RPK 70%",
     "unit_price": 4674,
     "stack_size": 1,
     "weight_per_item": 5.8,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png"
+  },
+  {
+    "name": "RPK 75%",
+    "unit_price": 5297.2,
+    "stack_size": 1,
+    "weight_per_item": 5.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\RPK.png",
+    "durability": 74,
+    "max_durability": 100
   },
   {
     "name": "RPK 80%",
@@ -2426,6 +2827,24 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SkiGoggles.png"
   },
   {
+    "name": "SKS-45 55%",
+    "unit_price": 698.625,
+    "stack_size": 1,
+    "weight_per_item": 3.65,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SKS-45.png",
+    "durability": 68,
+    "max_durability": 120
+  },
+  {
+    "name": "SKS-45 90%",
+    "unit_price": 1156.6041666666665,
+    "stack_size": 1,
+    "weight_per_item": 3.65,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SKS-45.png",
+    "durability": 107,
+    "max_durability": 120
+  },
+  {
     "name": "SKS-45 100%",
     "unit_price": 1240,
     "stack_size": 1,
@@ -2482,6 +2901,13 @@
     "stack_size": 1,
     "weight_per_item": 0.1,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SMGQuickMagazine.png"
+  },
+  {
+    "name": "SMG Spiral Muzzle Break",
+    "unit_price": 572,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SMGSpiralMuzzleBreak.png"
   },
   {
     "name": "SMG Vertical Muzzle Break",
@@ -2603,6 +3029,24 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SpikedBaseballBat.png"
   },
   {
+    "name": "Sports Vest 95%",
+    "unit_price": 77.02499999999999,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SportsVest.png",
+    "durability": 48,
+    "max_durability": 50
+  },
+  {
+    "name": "Sports Vest 100%",
+    "unit_price": 82,
+    "stack_size": 1,
+    "weight_per_item": 0.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SportsVest.png",
+    "durability": 50,
+    "max_durability": 50
+  },
+  {
     "name": "SR-3M 100%",
     "unit_price": 2002,
     "stack_size": 1,
@@ -2662,26 +3106,37 @@
   },
   {
     "name": "StG 77 50%",
-    "unit_price": 975.2,
+    "unit_price": 1023.96,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png",
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
     "durability": 48,
     "max_durability": 100
   },
   {
     "name": "StG 77 55%",
-    "unit_price": 1020,
+    "unit_price": 1050,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
+    "durability": 55,
+    "max_durability": 100
+  },
+  {
+    "name": "StG 77 60%",
+    "unit_price": 1121.25,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
+    "durability": 61,
+    "max_durability": 100
   },
   {
     "name": "StG 77 70%",
     "unit_price": 1327,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png",
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
     "durability": 70,
     "max_durability": 100
   },
@@ -2690,22 +3145,53 @@
     "unit_price": 1360,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StG77.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
+    "durability": 75,
+    "max_durability": 100
+  },
+  {
+    "name": "StG 77 80%",
+    "unit_price": 1542.6249999999998,
+    "stack_size": 1,
+    "weight_per_item": 3.6,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
+    "durability": 79,
+    "max_durability": 100
   },
   {
     "name": "StG 77 85%",
     "unit_price": 1897,
     "stack_size": 1,
     "weight_per_item": 3.6,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77_.png",
+    "durability": 85,
+    "max_durability": 100
+  },
+  {
+    "name": "StG 77A3 75%",
+    "unit_price": 1753.05,
+    "stack_size": 1,
+    "weight_per_item": 3.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77A3_.png",
+    "durability": 76,
+    "max_durability": 100
   },
   {
     "name": "StG 77A3 80%",
-    "unit_price": 1916.8300000000002,
+    "unit_price": 1964.7507499999997,
     "stack_size": 1,
     "weight_per_item": 3.7,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG77A3.png",
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77A3_.png",
     "durability": 79,
+    "max_durability": 100
+  },
+  {
+    "name": "StG 77A3 85%",
+    "unit_price": 1999,
+    "stack_size": 1,
+    "weight_per_item": 3.7,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\StG_77A3_.png",
+    "durability": 85,
     "max_durability": 100
   },
   {
@@ -2962,10 +3448,21 @@
   },
   {
     "name": "Toy Gun 75%",
-    "unit_price": 654,
+    "unit_price": 590.9,
     "stack_size": 1,
     "weight_per_item": 0.8,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToyGun.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ToyGun.png",
+    "durability": 154,
+    "max_durability": 200
+  },
+  {
+    "name": "Toy Gun 95%",
+    "unit_price": 761.3625000000001,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ToyGun.png",
+    "durability": 191,
+    "max_durability": 200
   },
   {
     "name": "Toy Rocket",
@@ -3016,14 +3513,27 @@
     "unit_price": 508,
     "stack_size": 1,
     "weight_per_item": 3.7,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/UP-45.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/UP-45.png",
+    "durability": 50,
+    "max_durability": 100
+  },
+  {
+    "name": "UP-45 80%",
+    "unit_price": 743,
+    "stack_size": 1,
+    "weight_per_item": 3.7,
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/UP-45.png",
+    "durability": 80,
+    "max_durability": 100
   },
   {
     "name": "UP-45 100%",
     "unit_price": 872,
     "stack_size": 1,
     "weight_per_item": 3.5,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\UP-45.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\UP-45.png",
+    "durability": 100,
+    "max_durability": 100
   },
   {
     "name": "uPhone",
@@ -3059,6 +3569,42 @@
     "stack_size": 1,
     "weight_per_item": 3.5,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\UZI.png"
+  },
+  {
+    "name": "Vector 40%",
+    "unit_price": 871.65,
+    "stack_size": 1,
+    "weight_per_item": 2.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
+    "durability": 41,
+    "max_durability": 100
+  },
+  {
+    "name": "Vector 50%",
+    "unit_price": 1085.175,
+    "stack_size": 1,
+    "weight_per_item": 2.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
+    "durability": 51,
+    "max_durability": 100
+  },
+  {
+    "name": "Vector 70%",
+    "unit_price": 1548.75,
+    "stack_size": 1,
+    "weight_per_item": 2.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
+    "durability": 68,
+    "max_durability": 100
+  },
+  {
+    "name": "Vector 75%",
+    "unit_price": 1647.175,
+    "stack_size": 1,
+    "weight_per_item": 2.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
+    "durability": 74,
+    "max_durability": 100
   },
   {
     "name": "Vida\u0027s Helmet 40%",
@@ -3278,32 +3824,5 @@
     "stack_size": 3,
     "weight_per_item": 0.5,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
-  },
-  {
-    "name": "M1A 50%",
-    "unit_price": 2215.5,
-    "stack_size": 1,
-    "weight_per_item": 4.3,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\M1A.png",
-    "durability": 48,
-    "max_durability": 100
-  },
-  {
-    "name": "DT MDR-556 55%",
-    "unit_price": 2094,
-    "stack_size": 1,
-    "weight_per_item": 4.4,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
-    "durability": 55,
-    "max_durability": 100
-  },
-  {
-    "name": "Vector 40%",
-    "unit_price": 871.65,
-    "stack_size": 1,
-    "weight_per_item": 2.2,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
-    "durability": 41,
-    "max_durability": 100
   }
 ]
