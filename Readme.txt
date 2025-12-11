@@ -20,3 +20,5 @@ Name suggestions:
 	
 Keybinds:
 	CTRL+S: Adds or updates an item in the database.
+	ALT+S: Go to search bar.
+	ALT+C: Clears the search bar.
