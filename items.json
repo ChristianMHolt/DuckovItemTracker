@@ -131,6 +131,15 @@
     "max_durability": 120
   },
   {
+    "name": "AK-47 70%",
+    "unit_price": 1279.770833333333,
+    "stack_size": 1,
+    "weight_per_item": 4.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\AK-47.PNG",
+    "durability": 85,
+    "max_durability": 120
+  },
+  {
     "name": "AK-47 75%",
     "unit_price": 1274,
     "stack_size": 1,
@@ -273,6 +282,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedGrip.png"
   },
   {
+    "name": "Balanced Stock I",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BalancedStockI.png"
+  },
+  {
     "name": "Balanced Stock II",
     "unit_price": 572,
     "stack_size": 1,
@@ -280,18 +296,18 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/BalancedStockII.png"
   },
   {
-    "name": "BalancedStockI",
-    "unit_price": 260,
-    "stack_size": 1,
-    "weight_per_item": 0.3,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BalancedStockI.png"
-  },
-  {
     "name": "Bandage",
     "unit_price": 124,
     "stack_size": 1,
     "weight_per_item": 0.2,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Bandage.png"
+  },
+  {
+    "name": "Baseball Bat",
+    "unit_price": 358,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\BaseballBat.png"
   },
   {
     "name": "Basic AP Arrow",
@@ -488,6 +504,13 @@
     "stack_size": 3,
     "weight_per_item": 0.4,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/CannedTunaInWater.png"
+  },
+  {
+    "name": "Cannon",
+    "unit_price": 543,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Cannon.png"
   },
   {
     "name": "Car Battery",
@@ -706,14 +729,18 @@
     "unit_price": 2160,
     "stack_size": 1,
     "weight_per_item": 4.4,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 50,
+    "max_durability": 100
   },
   {
     "name": "DT MDR-556 75%",
     "unit_price": 2855,
     "stack_size": 1,
     "weight_per_item": 4.4,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 75,
+    "max_durability": 100
   },
   {
     "name": "Duck Egg",
@@ -779,32 +806,40 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\ElectricRESInjector.png"
   },
   {
-    "name": "Electrified MP7 45%",
+    "name": "Electrified MP7 75%",
     "unit_price": 1400,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png",
+    "durability": 75,
+    "max_durability": 100
   },
   {
     "name": "Electrified MP7 85%",
     "unit_price": 2870,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png",
+    "durability": 85,
+    "max_durability": 100
   },
   {
     "name": "Electrified MP7 90%",
     "unit_price": 3046,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png",
+    "durability": 90,
+    "max_durability": 100
   },
   {
     "name": "Electrified MP7 100%",
     "unit_price": 3400,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Electrified_MP7_.png",
+    "durability": 100,
+    "max_durability": 100
   },
   {
     "name": "Electronic Parts",
@@ -891,6 +926,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/FireRESInjector.PNG"
   },
   {
+    "name": "First Aid Kit",
+    "unit_price": 419,
+    "stack_size": 1,
+    "weight_per_item": 0.8,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FirstAidKit.png"
+  },
+  {
     "name": "First Aid Kit (L)",
     "unit_price": 687,
     "stack_size": 1,
@@ -947,6 +989,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Football.png"
   },
   {
+    "name": "Future Controller",
+    "unit_price": 2686,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\FutureController.png"
+  },
+  {
     "name": "Gas Mask 100%",
     "unit_price": 278,
     "stack_size": 1,
@@ -966,6 +1015,13 @@
     "stack_size": 1,
     "weight_per_item": 0.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Glick.png"
+  },
+  {
+    "name": "Golden Ring",
+    "unit_price": 1955,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\GoldenRing.png"
   },
   {
     "name": "Golf Club",
@@ -1052,6 +1108,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hip-FireStockI.png"
   },
   {
+    "name": "Hip-Fire Stock II",
+    "unit_price": 1248,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Hip-FireStockII.png"
+  },
+  {
     "name": "Holographic Sight",
     "unit_price": 260,
     "stack_size": 1,
@@ -1113,6 +1176,13 @@
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Ink.png"
+  },
+  {
+    "name": "Intel File",
+    "unit_price": 2171,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\IntelFile.png"
   },
   {
     "name": "Intelligent Robot",
@@ -1549,11 +1619,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Lv5LightHelmet.png"
   },
   {
-    "name": "M1A",
+    "name": "M1A 100%",
     "unit_price": 4090,
     "stack_size": 1,
     "weight_per_item": 4.3,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png"
+    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/M1A.png",
+    "durability": 100,
+    "max_durability": 100
   },
   {
     "name": "Marker",
@@ -1681,21 +1753,27 @@
     "unit_price": 865,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 40,
+    "max_durability": 100
   },
   {
     "name": "MP7 55%",
     "unit_price": 1141,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 55,
+    "max_durability": 100
   },
   {
     "name": "MP7 60%",
     "unit_price": 1250,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 60,
+    "max_durability": 100
   },
   {
     "name": "MP7 65%",
@@ -1711,7 +1789,9 @@
     "unit_price": 1491,
     "stack_size": 1,
     "weight_per_item": 1.8,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MP7_.png",
+    "durability": 70,
+    "max_durability": 100
   },
   {
     "name": "MP-155",
@@ -1719,6 +1799,15 @@
     "stack_size": 1,
     "weight_per_item": 3.8,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/MP-155.PNG"
+  },
+  {
+    "name": "Mysterious Key O 100%",
+    "unit_price": 131678,
+    "stack_size": 1,
+    "weight_per_item": 0.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\MysteriousKeyO.png",
+    "durability": 10,
+    "max_durability": 10
   },
   {
     "name": "Nail",
@@ -2381,6 +2470,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SMGExtendedMagazineIII.png"
   },
   {
+    "name": "SMG Muzzle Brake (Spread)",
+    "unit_price": 260,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SMGMuzzleBrakeSpread.png"
+  },
+  {
     "name": "SMG Quick Magazine",
     "unit_price": 260,
     "stack_size": 1,
@@ -2498,6 +2594,13 @@
     "stack_size": 240,
     "weight_per_item": 0.03,
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/SpecialAPBulletL.PNG"
+  },
+  {
+    "name": "Spiked Baseball Bat",
+    "unit_price": 1907,
+    "stack_size": 1,
+    "weight_per_item": 0.5,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SpikedBaseballBat.png"
   },
   {
     "name": "SR-3M 100%",
@@ -2620,6 +2723,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/StrongWingInjector.png"
   },
   {
+    "name": "Sunglasses",
+    "unit_price": 624,
+    "stack_size": 1,
+    "weight_per_item": 0.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Sunglasses.png"
+  },
+  {
     "name": "Super Glue A",
     "unit_price": 438,
     "stack_size": 1,
@@ -2739,6 +2849,13 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/ToteBag.png"
   },
   {
+    "name": "Totem: Aegis I",
+    "unit_price": 182,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemAegisI.png"
+  },
+  {
     "name": "Totem: Efficiency I",
     "unit_price": 182,
     "stack_size": 1,
@@ -2767,11 +2884,18 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemHPI.png"
   },
   {
+    "name": "Totem: Marathon I",
+    "unit_price": 520,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemMarathonI.png"
+  },
+  {
     "name": "Totem: Ninja II",
     "unit_price": 520,
     "stack_size": 1,
     "weight_per_item": 0.3,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemNinjaII.htm"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemNinjaII.png"
   },
   {
     "name": "Totem: Perception I",
@@ -2800,6 +2924,20 @@
     "stack_size": 1,
     "weight_per_item": 0.3,
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemRecoveryI.png"
+  },
+  {
+    "name": "Totem: Sniper I",
+    "unit_price": 182,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemSniperI.png"
+  },
+  {
+    "name": "Totem: Space RES I",
+    "unit_price": 1040,
+    "stack_size": 1,
+    "weight_per_item": 0.3,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\TotemSpaceRESI.png"
   },
   {
     "name": "Totem: Sturdy II",
@@ -2923,18 +3061,13 @@
     "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\UZI.png"
   },
   {
-    "name": "Vector",
-    "unit_price": 1335,
-    "stack_size": 1,
-    "weight_per_item": 2.2,
-    "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Vector.png"
-  },
-  {
     "name": "Vida\u0027s Helmet 40%",
     "unit_price": 897,
     "stack_size": 1,
     "weight_per_item": 2.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 28,
+    "max_durability": 70
   },
   {
     "name": "Vida\u0027s Helmet 50%",
@@ -2946,18 +3079,31 @@
     "max_durability": 70
   },
   {
+    "name": "Vida\u0027s Helmet 55%",
+    "unit_price": 1273.3392857142856,
+    "stack_size": 1,
+    "weight_per_item": 2.1,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 38,
+    "max_durability": 70
+  },
+  {
     "name": "Vida\u0027s Helmet 70%",
     "unit_price": 1571,
     "stack_size": 1,
     "weight_per_item": 2.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 49,
+    "max_durability": 70
   },
   {
     "name": "Vida\u0027s Helmet 75%",
-    "unit_price": 1797,
+    "unit_price": 1764.9107142857147,
     "stack_size": 1,
     "weight_per_item": 2.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png"
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\VidasHelmet.png",
+    "durability": 53,
+    "max_durability": 70
   },
   {
     "name": "Vida\u0027s Helmet 80%",
@@ -3134,19 +3280,30 @@
     "icon_path": "X:/Software/DuckovItemTracker/ItemPNGS/Yogurt.png"
   },
   {
-    "name": "SMG Muzzle Brake (Spread)",
-    "unit_price": 260,
-    "stack_size": 1,
-    "weight_per_item": 0.1,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\SMGMuzzleBrakeSpread.png"
-  },
-  {
-    "name": "AK-47 70%",
-    "unit_price": 1279.770833333333,
+    "name": "M1A 50%",
+    "unit_price": 2215.5,
     "stack_size": 1,
     "weight_per_item": 4.3,
-    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\AK-47.PNG",
-    "durability": 85,
-    "max_durability": 120
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\M1A.png",
+    "durability": 48,
+    "max_durability": 100
+  },
+  {
+    "name": "DT MDR-556 55%",
+    "unit_price": 2094,
+    "stack_size": 1,
+    "weight_per_item": 4.4,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\DT_MDR-556.png",
+    "durability": 55,
+    "max_durability": 100
+  },
+  {
+    "name": "Vector 40%",
+    "unit_price": 871.65,
+    "stack_size": 1,
+    "weight_per_item": 2.2,
+    "icon_path": "X:\\Software\\DuckovItemTrackerCSharp\\bin\\Release\\net8.0-windows\\win-x64\\ItemPNGS\\Vector.png",
+    "durability": 41,
+    "max_durability": 100
   }
 ]
