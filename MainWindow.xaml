@@ -18,9 +18,15 @@
         <CommandBinding Command="{x:Static local:MainWindow.AddOrUpdateCommand}"
                         Executed="OnAddOrUpdateCommandExecuted"
                         CanExecute="OnAddOrUpdateCommandCanExecute" />
+        <CommandBinding Command="{x:Static local:MainWindow.FocusSearchCommand}"
+                        Executed="OnFocusSearchExecuted" />
+        <CommandBinding Command="{x:Static local:MainWindow.ClearSearchCommand}"
+                        Executed="OnClearSearchExecuted" />
     </Window.CommandBindings>
     <Window.InputBindings>
         <KeyBinding Key="S" Modifiers="Control" Command="{x:Static local:MainWindow.AddOrUpdateCommand}" />
+        <KeyBinding Key="S" Modifiers="Alt" Command="{x:Static local:MainWindow.FocusSearchCommand}" />
+        <KeyBinding Key="C" Modifiers="Alt" Command="{x:Static local:MainWindow.ClearSearchCommand}" />
     </Window.InputBindings>
     <Window.Resources>
         <DropShadowEffect x:Key="SoftShadow" BlurRadius="12" ShadowDepth="2" Direction="270" Opacity="0.35" Color="#000000" />
@@ -382,7 +388,7 @@
                 <GroupBox Grid.Column="1" Header="Search" Padding="12">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBlock Text="Search items:" VerticalAlignment="Center" />
-                        <TextBox Width="240" Margin="6,0,0,0" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox x:Name="SearchTextBox" Width="240" Margin="6,0,0,0" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
                         <Button Content="Clear Search" Margin="8,0,0,0" Click="OnClearSearch" />
                     </StackPanel>
                 </GroupBox>

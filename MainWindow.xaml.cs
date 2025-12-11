@@ -30,6 +30,16 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         nameof(AddOrUpdateCommand),
         typeof(MainWindow));
 
+    public static RoutedUICommand FocusSearchCommand { get; } = new(
+        "Focus Search",
+        nameof(FocusSearchCommand),
+        typeof(MainWindow));
+
+    public static RoutedUICommand ClearSearchCommand { get; } = new(
+        "Clear Search",
+        nameof(ClearSearchCommand),
+        typeof(MainWindow));
+
     private string _nameText = string.Empty;
     private string _unitPriceText = string.Empty;
     private string _stackSizeText = "1";
@@ -630,6 +640,19 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private void OnAddOrUpdateCommandExecuted(object sender, ExecutedRoutedEventArgs e)
     {
         OnAddOrUpdate(sender, e);
+        e.Handled = true;
+    }
+
+    private void OnFocusSearchExecuted(object sender, ExecutedRoutedEventArgs e)
+    {
+        SearchTextBox.Focus();
+        SearchTextBox.SelectAll();
+        e.Handled = true;
+    }
+
+    private void OnClearSearchExecuted(object sender, ExecutedRoutedEventArgs e)
+    {
+        OnClearSearch(sender, e);
         e.Handled = true;
     }
 
