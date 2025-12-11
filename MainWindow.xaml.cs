@@ -754,21 +754,21 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             return;
         }
 
-        if (!TryParseDurability(out var durability, out var maxDurability, out var priceAdjustmentPercent, out var roundedDurability) ||
+        if (!TryParseDurability(out var durability, out var maxDurability, out _, out var roundedDurability) ||
             durability is null || maxDurability is null || roundedDurability is null)
         {
             return;
         }
 
-        if (Math.Abs(priceAdjustmentPercent) > 0.001)
-        {
-            unitPrice *= 1 + priceAdjustmentPercent / 100.0;
-        }
-
         var baseDurabilityValue = durability.Value;
         var maxDurabilityValue = maxDurability.Value;
         var cleanedName = RemoveDurabilitySuffix(NameText.Trim());
-        var basePriceMultiplier = baseDurabilityValue > 0 ? unitPrice / baseDurabilityValue : unitPrice;
+        var currentDurabilityPercentage = maxDurabilityValue > 0
+            ? baseDurabilityValue / (double)maxDurabilityValue * 100.0
+            : 0;
+        var fullDurabilityPriceEstimate = currentDurabilityPercentage > 0
+            ? unitPrice * 100.0 / currentDurabilityPercentage
+            : unitPrice;
         var newItemsCount = 0;
         var updatedItemsCount = 0;
         var newVariants = new List<Item>();
@@ -780,9 +780,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
                 ? $"{percentage}%"
                 : $"{cleanedName} {percentage}%";
 
-            var targetPrice = baseDurabilityValue > 0
-                ? basePriceMultiplier * targetDurability
-                : unitPrice;
+            var targetPrice = fullDurabilityPriceEstimate * percentage / 100.0;
 
             var variant = new Item
             {
