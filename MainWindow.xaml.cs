@@ -418,8 +418,8 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         percentageText = string.Empty;
         roundedPercentage = 0;
 
-        if (int.TryParse(DurabilityText, out var durability) &&
-            int.TryParse(MaxDurabilityText, out var maxDurability) &&
+        if (double.TryParse(DurabilityText, out var durability) &&
+            double.TryParse(MaxDurabilityText, out var maxDurability) &&
             maxDurability > 0 &&
             durability >= 0)
         {
