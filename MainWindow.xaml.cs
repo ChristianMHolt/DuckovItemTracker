@@ -817,6 +817,8 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         }
         RefreshView();
         StatusText = $"Generated durability variants ({newItemsCount} added, {updatedItemsCount} updated).";
+        ClearForm(keepStatus: true);
+        FocusNameTextBox();
     }
 
     private void OnDelete(object sender, RoutedEventArgs e)
